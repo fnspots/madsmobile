@@ -10,6 +10,7 @@ meta/tier rankings, weapon stats, characters & skins, and news, for:
 - PUBG Mobile (/madsmobile/{lang}/pubgm/)
 - Delta Force Mobile (/madsmobile/{lang}/deltaforce/)
 - Arena Breakout (/madsmobile/{lang}/arenabreakout/)
+- Blood Strike (/madsmobile/{lang}/bloodstrike/)
 
 Available languages: en, zh, fr, it, pt, hi, es.
 Content is refreshed on a monthly cadence as each game's seasonal updates land.
