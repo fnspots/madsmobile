@@ -43,6 +43,7 @@
     <a href="/madsmobile/it/pubgm/characters/">Personaggi</a>
     <a href="/madsmobile/it/pubgm/blog/">Blog</a>
     </span></nav>
+    
     <section class="game-hero">
       <h1>PUBG Mobile</h1>
       <p class="meta-line">Krafton / Tencent Games &middot; 2018</p>
@@ -58,46 +59,79 @@
       
     </section>
     <section class="weapons-section">
-      <h2>Armi</h2>
       <p class="notice">Dati di esempio — in attesa di aggiornamento verificato.</p>
       
-    <div class="weapons-toolbar">
-      <input type="search" id="weapon-search" placeholder="Cerca un'arma...">
+    <div class="weapons-tabs">
+      <button type="button" class="tab-btn active" data-tab-target="panel-best-pubgm">Armi Migliori</button>
+      <button type="button" class="tab-btn" data-tab-target="panel-complete-pubgm">Armi Complete</button>
     </div>
-    <table class="weapons-table" id="weapons-table">
-      <thead>
-        <tr>
-          <th data-sort="name">Nome <span class="sort-arrow"></span></th>
-          <th data-sort="class">Classe <span class="sort-arrow"></span></th>
-          <th data-sort="tier-rank">Livello <span class="sort-arrow"></span></th>
-          <th data-sort="none">Gittata</th>
-          <th data-sort="none">Modifica recente</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr data-name="sample weapon a" data-class="assault rifle" data-tier-rank="3">
-          <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span>Sample Weapon A <span class="badge meta">META</span></td>
-          <td>Assault Rifle</td>
-          <td><span class="tier-badge tier-A">A</span></td>
-          <td>Mid</td>
-          <td>Sample placeholder</td>
-        </tr>
-        <tr data-name="sample weapon b" data-class="smg" data-tier-rank="2">
-          <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span>Sample Weapon B </td>
-          <td>SMG</td>
-          <td><span class="tier-badge tier-B">B</span></td>
-          <td>Close</td>
-          <td>Sample placeholder</td>
-        </tr>
-        <tr data-name="sample weapon c" data-class="sniper rifle" data-tier-rank="4">
-          <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span>Sample Weapon C <span class="badge meta">META</span></td>
-          <td>Sniper Rifle</td>
-          <td><span class="tier-badge tier-S">S</span></td>
-          <td>Long</td>
-          <td>Sample placeholder</td>
-        </tr></tbody>
-    </table>
-    <p id="no-results-msg" class="notice" hidden>Nessuna arma corrisponde alla tua ricerca.</p>
+    <div class="weapon-tab-panels">
+      
+    <div class="weapon-tab-panel active" id="panel-best-pubgm">
+      <div class="weapon-toolbar">
+        <input type="search" class="weapon-search" placeholder="Cerca un'arma...">
+        <div class="weapon-sort-buttons">
+          <button type="button" data-sort-key="name">Nome</button>
+          <button type="button" data-sort-key="tier-rank">Livello</button>
+        </div>
+      </div>
+      <div class="weapon-card-grid"></div>
+      <p class="no-results-msg notice" hidden>Nessuna arma corrisponde alla tua ricerca.</p>
+    </div>
+    
+      
+    <div class="weapon-tab-panel" id="panel-complete-pubgm">
+      <div class="weapon-toolbar">
+        <input type="search" class="weapon-search" placeholder="Cerca un'arma...">
+        <div class="weapon-sort-buttons">
+          <button type="button" data-sort-key="name">Nome</button>
+          <button type="button" data-sort-key="tier-rank">Livello</button>
+        </div>
+      </div>
+      <div class="weapon-card-grid">
+    <div class="weapon-card" id="weapon-pubgm-sample-1" data-name="sample weapon a" data-class="assault rifle" data-tier-rank="3">
+      <div class="weapon-card-head">
+        <span class="weapon-card-icon" aria-hidden="true"></span>
+        <div>
+          <div class="weapon-card-name">Sample Weapon A <span class="badge meta">META</span></div>
+          <div class="weapon-card-line">Assault Rifle &middot; <span class="tier-badge tier-A">A</span> &middot; Mid</div>
+        </div>
+      </div>
+      <p class="weapon-card-notes">Placeholder entry — replace with verified pubgm weapon data.</p>
+      <p class="weapon-card-change"><em>Sample placeholder</em></p>
+      <p class="stats-pending">Statistiche dettagliate in fase di verifica.</p>
+    </div>
+    
+    <div class="weapon-card" id="weapon-pubgm-sample-2" data-name="sample weapon b" data-class="smg" data-tier-rank="2">
+      <div class="weapon-card-head">
+        <span class="weapon-card-icon" aria-hidden="true"></span>
+        <div>
+          <div class="weapon-card-name">Sample Weapon B </div>
+          <div class="weapon-card-line">SMG &middot; <span class="tier-badge tier-B">B</span> &middot; Close</div>
+        </div>
+      </div>
+      <p class="weapon-card-notes">Placeholder entry — replace with verified pubgm weapon data.</p>
+      <p class="weapon-card-change"><em>Sample placeholder</em></p>
+      <p class="stats-pending">Statistiche dettagliate in fase di verifica.</p>
+    </div>
+    
+    <div class="weapon-card" id="weapon-pubgm-sample-3" data-name="sample weapon c" data-class="sniper rifle" data-tier-rank="4">
+      <div class="weapon-card-head">
+        <span class="weapon-card-icon" aria-hidden="true"></span>
+        <div>
+          <div class="weapon-card-name">Sample Weapon C <span class="badge meta">META</span></div>
+          <div class="weapon-card-line">Sniper Rifle &middot; <span class="tier-badge tier-S">S</span> &middot; Long</div>
+        </div>
+      </div>
+      <p class="weapon-card-notes">Placeholder entry — replace with verified pubgm weapon data.</p>
+      <p class="weapon-card-change"><em>Sample placeholder</em></p>
+      <p class="stats-pending">Statistiche dettagliate in fase di verifica.</p>
+    </div>
+    </div>
+      <p class="no-results-msg notice" hidden>Nessuna arma corrisponde alla tua ricerca.</p>
+    </div>
+    
+    </div>
     
     </section>
     <section class="teaser-section">
