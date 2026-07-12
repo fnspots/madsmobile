@@ -45,6 +45,13 @@ section{margin-bottom:36px}
 .weapons-table th,.weapons-table td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;font-size:.92rem}
 .weapons-table th{cursor:pointer;user-select:none;color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.03em}
 .weapons-table th:hover{color:var(--fg)}
+.table-scroll{overflow-x:auto}
+.complete-table-wrap .weapon-toolbar{margin-bottom:10px}
+.complete-table th{white-space:nowrap}
+.complete-table td{white-space:nowrap}
+.complete-table td.cell-notes{white-space:normal;max-width:280px;color:var(--muted);font-size:.85rem}
+.cell-dash{color:var(--muted)}
+
 .cell-weapon{display:flex;align-items:center;gap:8px;font-weight:600}
 .weapon-icon{width:28px;height:28px;border-radius:6px;background:#20262e;border:1px solid var(--line);display:inline-block;flex:none;object-fit:cover}
 .tier-badge{display:inline-block;min-width:22px;text-align:center;padding:2px 8px;border-radius:6px;font-weight:800;font-size:.8rem;color:#12151a}

@@ -1,44 +1,52 @@
 
 (function(){
-  var search = document.getElementById('weapon-search');
-  var table = document.getElementById('weapons-table');
-  var noResults = document.getElementById('no-results-msg');
-  if (search && table) {
-    var rows = Array.prototype.slice.call(table.querySelectorAll('tbody tr'));
-    search.addEventListener('input', function(){
-      var q = search.value.trim().toLowerCase();
-      var visible = 0;
-      rows.forEach(function(r){
-        var match = r.dataset.name.indexOf(q) !== -1 || r.dataset.class.indexOf(q) !== -1;
-        r.hidden = !match;
-        if (match) visible++;
+  // --- Complete Weapons: sortable, filterable table (one per game page) ---
+  var NUMERIC_SORT_KEYS = {"tier-rank":1,"rpm":1,"magazine":1};
+  Array.prototype.slice.call(document.querySelectorAll('.complete-table-wrap')).forEach(function(wrap){
+    var search = wrap.querySelector('.complete-search');
+    var table = wrap.querySelector('.complete-table');
+    var noResults = wrap.querySelector('.no-results-msg');
+    if (!table) return;
+    var tbody = table.querySelector('tbody');
+    var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+    if (search) {
+      search.addEventListener('input', function(){
+        var q = search.value.trim().toLowerCase();
+        var visible = 0;
+        rows.forEach(function(r){
+          var match = r.dataset.name.indexOf(q) !== -1 || r.dataset.class.indexOf(q) !== -1;
+          r.hidden = !match;
+          if (match) visible++;
+        });
+        if (noResults) noResults.hidden = visible !== 0;
       });
-      if (noResults) noResults.hidden = visible !== 0;
-    });
-  }
-  if (table) {
-    var ths = table.querySelectorAll('th[data-sort]');
+    }
     var dir = {};
-    ths.forEach(function(th){
+    Array.prototype.slice.call(table.querySelectorAll('th[data-sort]')).forEach(function(th){
       var key = th.dataset.sort;
       if (key === 'none') return;
       th.addEventListener('click', function(){
-        var tbody = table.querySelector('tbody');
-        var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
         dir[key] = dir[key] === 'asc' ? 'desc' : 'asc';
         var mult = dir[key] === 'asc' ? 1 : -1;
-        rows.sort(function(a, b){
-          var av = key === 'tier-rank' ? parseInt(a.dataset.tierRank || a.dataset['tierRank'] || a.getAttribute('data-tier-rank'), 10) : a.dataset[key] || a.getAttribute('data-'+key);
-          var bv = key === 'tier-rank' ? parseInt(b.dataset.tierRank || b.getAttribute('data-tier-rank'), 10) : b.dataset[key] || b.getAttribute('data-'+key);
-          if (key === 'tier-rank') return (av - bv) * mult;
+        var isNumeric = !!NUMERIC_SORT_KEYS[key];
+        var sorted = rows.slice().sort(function(a, b){
+          var av = a.dataset[key.replace(/-([a-z])/g, function(m,c){return c.toUpperCase();})] || a.getAttribute('data-'+key);
+          var bv = b.dataset[key.replace(/-([a-z])/g, function(m,c){return c.toUpperCase();})] || b.getAttribute('data-'+key);
+          if (isNumeric) {
+            av = parseFloat(av); bv = parseFloat(bv);
+            if (isNaN(av)) av = -1;
+            if (isNaN(bv)) bv = -1;
+            return (av - bv) * mult;
+          }
+          av = (av || '').toLowerCase(); bv = (bv || '').toLowerCase();
           if (av < bv) return -1 * mult;
           if (av > bv) return 1 * mult;
           return 0;
         });
-        rows.forEach(function(r){ tbody.appendChild(r); });
+        sorted.forEach(function(r){ tbody.appendChild(r); });
       });
     });
-  }
+  });
 
   // --- game page template v2: weapon cards (Best / Complete tabs) ---
   function setupWeaponPanel(panel){
