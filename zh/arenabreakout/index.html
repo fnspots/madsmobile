@@ -43,6 +43,7 @@
     <a href="/madsmobile/zh/arenabreakout/characters/">角色</a>
     <a href="/madsmobile/zh/arenabreakout/blog/">资讯</a>
     </span></nav>
+    
     <section class="game-hero">
       <h1>暗区突围</h1>
       <p class="meta-line">Tencent (Proxima Beta) &middot; 2023</p>
@@ -58,46 +59,79 @@
       
     </section>
     <section class="weapons-section">
-      <h2>武器</h2>
       <p class="notice">示例数据 — 等待核实更新。</p>
       
-    <div class="weapons-toolbar">
-      <input type="search" id="weapon-search" placeholder="搜索武器...">
+    <div class="weapons-tabs">
+      <button type="button" class="tab-btn active" data-tab-target="panel-best-arenabreakout">最佳武器</button>
+      <button type="button" class="tab-btn" data-tab-target="panel-complete-arenabreakout">全部武器</button>
     </div>
-    <table class="weapons-table" id="weapons-table">
-      <thead>
-        <tr>
-          <th data-sort="name">名称 <span class="sort-arrow"></span></th>
-          <th data-sort="class">类别 <span class="sort-arrow"></span></th>
-          <th data-sort="tier-rank">梯度 <span class="sort-arrow"></span></th>
-          <th data-sort="none">射程</th>
-          <th data-sort="none">近期改动</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr data-name="sample weapon a" data-class="assault rifle" data-tier-rank="3">
-          <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span>Sample Weapon A <span class="badge meta">热门</span></td>
-          <td>Assault Rifle</td>
-          <td><span class="tier-badge tier-A">A</span></td>
-          <td>Mid</td>
-          <td>Sample placeholder</td>
-        </tr>
-        <tr data-name="sample weapon b" data-class="smg" data-tier-rank="2">
-          <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span>Sample Weapon B </td>
-          <td>SMG</td>
-          <td><span class="tier-badge tier-B">B</span></td>
-          <td>Close</td>
-          <td>Sample placeholder</td>
-        </tr>
-        <tr data-name="sample weapon c" data-class="sniper rifle" data-tier-rank="4">
-          <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span>Sample Weapon C <span class="badge meta">热门</span></td>
-          <td>Sniper Rifle</td>
-          <td><span class="tier-badge tier-S">S</span></td>
-          <td>Long</td>
-          <td>Sample placeholder</td>
-        </tr></tbody>
-    </table>
-    <p id="no-results-msg" class="notice" hidden>没有符合搜索条件的武器。</p>
+    <div class="weapon-tab-panels">
+      
+    <div class="weapon-tab-panel active" id="panel-best-arenabreakout">
+      <div class="weapon-toolbar">
+        <input type="search" class="weapon-search" placeholder="搜索武器...">
+        <div class="weapon-sort-buttons">
+          <button type="button" data-sort-key="name">名称</button>
+          <button type="button" data-sort-key="tier-rank">梯度</button>
+        </div>
+      </div>
+      <div class="weapon-card-grid"></div>
+      <p class="no-results-msg notice" hidden>没有符合搜索条件的武器。</p>
+    </div>
+    
+      
+    <div class="weapon-tab-panel" id="panel-complete-arenabreakout">
+      <div class="weapon-toolbar">
+        <input type="search" class="weapon-search" placeholder="搜索武器...">
+        <div class="weapon-sort-buttons">
+          <button type="button" data-sort-key="name">名称</button>
+          <button type="button" data-sort-key="tier-rank">梯度</button>
+        </div>
+      </div>
+      <div class="weapon-card-grid">
+    <div class="weapon-card" id="weapon-arenabreakout-sample-1" data-name="sample weapon a" data-class="assault rifle" data-tier-rank="3">
+      <div class="weapon-card-head">
+        <span class="weapon-card-icon" aria-hidden="true"></span>
+        <div>
+          <div class="weapon-card-name">Sample Weapon A <span class="badge meta">热门</span></div>
+          <div class="weapon-card-line">Assault Rifle &middot; <span class="tier-badge tier-A">A</span> &middot; Mid</div>
+        </div>
+      </div>
+      <p class="weapon-card-notes">Placeholder entry — replace with verified arenabreakout weapon data.</p>
+      <p class="weapon-card-change"><em>Sample placeholder</em></p>
+      <p class="stats-pending">详细数据待核实。</p>
+    </div>
+    
+    <div class="weapon-card" id="weapon-arenabreakout-sample-2" data-name="sample weapon b" data-class="smg" data-tier-rank="2">
+      <div class="weapon-card-head">
+        <span class="weapon-card-icon" aria-hidden="true"></span>
+        <div>
+          <div class="weapon-card-name">Sample Weapon B </div>
+          <div class="weapon-card-line">SMG &middot; <span class="tier-badge tier-B">B</span> &middot; Close</div>
+        </div>
+      </div>
+      <p class="weapon-card-notes">Placeholder entry — replace with verified arenabreakout weapon data.</p>
+      <p class="weapon-card-change"><em>Sample placeholder</em></p>
+      <p class="stats-pending">详细数据待核实。</p>
+    </div>
+    
+    <div class="weapon-card" id="weapon-arenabreakout-sample-3" data-name="sample weapon c" data-class="sniper rifle" data-tier-rank="4">
+      <div class="weapon-card-head">
+        <span class="weapon-card-icon" aria-hidden="true"></span>
+        <div>
+          <div class="weapon-card-name">Sample Weapon C <span class="badge meta">热门</span></div>
+          <div class="weapon-card-line">Sniper Rifle &middot; <span class="tier-badge tier-S">S</span> &middot; Long</div>
+        </div>
+      </div>
+      <p class="weapon-card-notes">Placeholder entry — replace with verified arenabreakout weapon data.</p>
+      <p class="weapon-card-change"><em>Sample placeholder</em></p>
+      <p class="stats-pending">详细数据待核实。</p>
+    </div>
+    </div>
+      <p class="no-results-msg notice" hidden>没有符合搜索条件的武器。</p>
+    </div>
+    
+    </div>
     
     </section>
     <section class="teaser-section">
