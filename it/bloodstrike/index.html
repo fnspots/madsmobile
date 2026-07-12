@@ -87,149 +87,180 @@
       <p class="no-results-msg notice" hidden>Nessuna arma corrisponde alla tua ricerca.</p>
     </div>
     
-      
-    <div class="weapon-tab-panel" id="panel-complete-bloodstrike">
+      <div class="weapon-tab-panel" id="panel-complete-bloodstrike">
+    <div class="complete-table-wrap">
       <div class="weapon-toolbar">
-        <input type="search" class="weapon-search" placeholder="Cerca un'arma...">
-        <div class="weapon-sort-buttons">
-          <button type="button" data-sort-key="name">Nome</button>
-          <button type="button" data-sort-key="tier-rank">Livello</button>
-        </div>
+        <input type="search" class="weapon-search complete-search" placeholder="Cerca un'arma...">
       </div>
-      <div class="weapon-card-grid">
-    <div class="weapon-card" id="weapon-bloodstrike-ump" data-name="ump" data-class="smg" data-tier-rank="4">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">UMP <span class="badge meta">META</span></div>
-          <div class="weapon-card-line">SMG &middot; <span class="tier-badge tier-S">S</span> &middot; Close-Mid</div>
-        </div>
-      </div>
-      <p class="weapon-card-notes">High damage (31 torso / 39 headshot) with the best TTK-to-recoil ratio in the current patch; dominant at close-to-mid range.</p>
-      <p class="weapon-card-change"><em>Dominant this meta</em></p>
-      <p class="stats-pending">Statistiche dettagliate in fase di verifica.</p>
-    </div>
+      <div class="table-scroll">
+        <table class="weapons-table complete-table">
+          <thead><tr><th data-sort="name">Nome</th><th data-sort="class">Classe</th><th data-sort="tier-rank">Livello</th><th data-sort="none">Gittata</th><th data-sort="none">Danno corpo</th><th data-sort="rpm">CPM</th><th data-sort="none">TTK</th><th data-sort="none">Velocità ADS</th><th data-sort="none">Rinculo</th><th data-sort="magazine">Caricatore</th><th data-sort="none">Miglior build danno</th><th data-sort="none">Note</th></tr></thead>
+          <tbody>
+    <tr id="weapon-bloodstrike-ump" data-name="ump" data-class="smg"
+        data-tier-rank="4" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>UMP</span> <span class="badge meta">META</span></td>
+      <td>SMG</td>
+      <td><span class="tier-badge tier-S">S</span></td>
+      <td>Close-Mid</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">High damage (31 torso / 39 headshot) with the best TTK-to-recoil ratio in the current patch; dominant at close-to-mid range.</td>
+    </tr>
     
-    <div class="weapon-card" id="weapon-bloodstrike-spear" data-name="spear" data-class="assault rifle" data-tier-rank="4">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">Spear <span class="badge meta">META</span></div>
-          <div class="weapon-card-line">Assault Rifle &middot; <span class="tier-badge tier-S">S</span> &middot; Mid</div>
-        </div>
-      </div>
-      <p class="weapon-card-notes">One of the most consistent weapons in Blood Strike, with strong performance across all maps.</p>
-      <p class="weapon-card-change"><em>Consistent top pick</em></p>
-      <p class="stats-pending">Statistiche dettagliate in fase di verifica.</p>
-    </div>
+    <tr id="weapon-bloodstrike-spear" data-name="spear" data-class="assault rifle"
+        data-tier-rank="4" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Spear</span> <span class="badge meta">META</span></td>
+      <td>Assault Rifle</td>
+      <td><span class="tier-badge tier-S">S</span></td>
+      <td>Mid</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">One of the most consistent weapons in Blood Strike, with strong performance across all maps.</td>
+    </tr>
     
-    <div class="weapon-card" id="weapon-bloodstrike-hk416" data-name="hk416" data-class="assault rifle" data-tier-rank="4">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">HK416 <span class="badge meta">META</span></div>
-          <div class="weapon-card-line">Assault Rifle &middot; <span class="tier-badge tier-S">S</span> &middot; Mid-Long</div>
-        </div>
-      </div>
-      <p class="weapon-card-notes">Settled in as the premier all-rounder, with controllable recoil and competitive time-to-kill.</p>
-      <p class="weapon-card-change"><em>Premier all-rounder</em></p>
-      <p class="stats-pending">Statistiche dettagliate in fase di verifica.</p>
-    </div>
+    <tr id="weapon-bloodstrike-hk416" data-name="hk416" data-class="assault rifle"
+        data-tier-rank="4" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>HK416</span> <span class="badge meta">META</span></td>
+      <td>Assault Rifle</td>
+      <td><span class="tier-badge tier-S">S</span></td>
+      <td>Mid-Long</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">Settled in as the premier all-rounder, with controllable recoil and competitive time-to-kill.</td>
+    </tr>
     
-    <div class="weapon-card" id="weapon-bloodstrike-magnum" data-name="magnum" data-class="secondary" data-tier-rank="3">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">Magnum <span class="badge meta">META</span></div>
-          <div class="weapon-card-line">Secondary &middot; <span class="tier-badge tier-A">A</span> &middot; Close-Mid</div>
-        </div>
-      </div>
-      <p class="weapon-card-notes">Made a huge comeback, capable of two-shotting enemies.</p>
-      <p class="weapon-card-change"><em>Major comeback</em></p>
-      <p class="stats-pending">Statistiche dettagliate in fase di verifica.</p>
-    </div>
+    <tr id="weapon-bloodstrike-magnum" data-name="magnum" data-class="secondary"
+        data-tier-rank="3" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Magnum</span> <span class="badge meta">META</span></td>
+      <td>Secondary</td>
+      <td><span class="tier-badge tier-A">A</span></td>
+      <td>Close-Mid</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">Made a huge comeback, capable of two-shotting enemies.</td>
+    </tr>
     
-    <div class="weapon-card" id="weapon-bloodstrike-m1887" data-name="m1887" data-class="shotgun" data-tier-rank="3">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">M1887 <span class="badge meta">META</span></div>
-          <div class="weapon-card-line">Shotgun &middot; <span class="tier-badge tier-A">A</span> &middot; Close</div>
-        </div>
-      </div>
-      <p class="weapon-card-notes">Remains one of the most powerful shotguns in the meta even after recent nerfs.</p>
-      <p class="weapon-card-change"><em>Still strong after nerfs</em></p>
-      <p class="stats-pending">Statistiche dettagliate in fase di verifica.</p>
-    </div>
+    <tr id="weapon-bloodstrike-m1887" data-name="m1887" data-class="shotgun"
+        data-tier-rank="3" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>M1887</span> <span class="badge meta">META</span></td>
+      <td>Shotgun</td>
+      <td><span class="tier-badge tier-A">A</span></td>
+      <td>Close</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">Remains one of the most powerful shotguns in the meta even after recent nerfs.</td>
+    </tr>
     
-    <div class="weapon-card" id="weapon-bloodstrike-ak47" data-name="ak47" data-class="assault rifle" data-tier-rank="3">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">AK47 </div>
-          <div class="weapon-card-line">Assault Rifle &middot; <span class="tier-badge tier-A">A</span> &middot; Mid-Long</div>
-        </div>
-      </div>
-      <p class="weapon-card-notes">High-skill, high-reward alternative with harder recoil control but strong first-shot damage.</p>
-      <p class="weapon-card-change"><em>Stable</em></p>
-      <p class="stats-pending">Statistiche dettagliate in fase di verifica.</p>
-    </div>
+    <tr id="weapon-bloodstrike-ak47" data-name="ak47" data-class="assault rifle"
+        data-tier-rank="3" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>AK47</span> </td>
+      <td>Assault Rifle</td>
+      <td><span class="tier-badge tier-A">A</span></td>
+      <td>Mid-Long</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">High-skill, high-reward alternative with harder recoil control but strong first-shot damage.</td>
+    </tr>
     
-    <div class="weapon-card" id="weapon-bloodstrike-inp9" data-name="inp9" data-class="smg" data-tier-rank="2">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">INP9 </div>
-          <div class="weapon-card-line">SMG &middot; <span class="tier-badge tier-B">B</span> &middot; Close</div>
-        </div>
-      </div>
-      <p class="weapon-card-notes">Equipped with armor-piercing rounds, one of the fastest-killing SMGs with the out-shielding wildcard.</p>
-      <p class="weapon-card-change"><em>Stable</em></p>
-      <p class="stats-pending">Statistiche dettagliate in fase di verifica.</p>
-    </div>
+    <tr id="weapon-bloodstrike-inp9" data-name="inp9" data-class="smg"
+        data-tier-rank="2" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>INP9</span> </td>
+      <td>SMG</td>
+      <td><span class="tier-badge tier-B">B</span></td>
+      <td>Close</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">Equipped with armor-piercing rounds, one of the fastest-killing SMGs with the out-shielding wildcard.</td>
+    </tr>
     
-    <div class="weapon-card" id="weapon-bloodstrike-m82" data-name="m82" data-class="sniper rifle" data-tier-rank="2">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">M82 </div>
-          <div class="weapon-card-line">Sniper Rifle &middot; <span class="tier-badge tier-B">B</span> &middot; Long</div>
-        </div>
-      </div>
-      <p class="weapon-card-notes">Best sniper pick this meta, with the second-highest damage in class and good mobility.</p>
-      <p class="weapon-card-change"><em>Stable</em></p>
-      <p class="stats-pending">Statistiche dettagliate in fase di verifica.</p>
-    </div>
+    <tr id="weapon-bloodstrike-m82" data-name="m82" data-class="sniper rifle"
+        data-tier-rank="2" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>M82</span> </td>
+      <td>Sniper Rifle</td>
+      <td><span class="tier-badge tier-B">B</span></td>
+      <td>Long</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">Best sniper pick this meta, with the second-highest damage in class and good mobility.</td>
+    </tr>
     
-    <div class="weapon-card" id="weapon-bloodstrike-pp19-bizon" data-name="pp-19 bizon" data-class="smg" data-tier-rank="2">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">PP-19 Bizon </div>
-          <div class="weapon-card-line">SMG &middot; <span class="tier-badge tier-B">B</span> &middot; Close-Mid</div>
-        </div>
-      </div>
-      <p class="weapon-card-notes">Standout SMG choice in the current meta.</p>
-      <p class="weapon-card-change"><em>Stable</em></p>
-      <p class="stats-pending">Statistiche dettagliate in fase di verifica.</p>
-    </div>
+    <tr id="weapon-bloodstrike-pp19-bizon" data-name="pp-19 bizon" data-class="smg"
+        data-tier-rank="2" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>PP-19 Bizon</span> </td>
+      <td>SMG</td>
+      <td><span class="tier-badge tier-B">B</span></td>
+      <td>Close-Mid</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">Standout SMG choice in the current meta.</td>
+    </tr>
     
-    <div class="weapon-card" id="weapon-bloodstrike-rpk" data-name="rpk" data-class="lmg" data-tier-rank="2">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">RPK </div>
-          <div class="weapon-card-line">LMG &middot; <span class="tier-badge tier-B">B</span> &middot; Mid</div>
-        </div>
+    <tr id="weapon-bloodstrike-rpk" data-name="rpk" data-class="lmg"
+        data-tier-rank="2" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>RPK</span> </td>
+      <td>LMG</td>
+      <td><span class="tier-badge tier-B">B</span></td>
+      <td>Mid</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">Standout LMG choice in the current meta.</td>
+    </tr>
+    </tbody>
+        </table>
       </div>
-      <p class="weapon-card-notes">Standout LMG choice in the current meta.</p>
-      <p class="weapon-card-change"><em>Stable</em></p>
-      <p class="stats-pending">Statistiche dettagliate in fase di verifica.</p>
-    </div>
-    </div>
       <p class="no-results-msg notice" hidden>Nessuna arma corrisponde alla tua ricerca.</p>
     </div>
-    
+    </div>
     </div>
     
     </section>
