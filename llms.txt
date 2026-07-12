@@ -1,0 +1,17 @@
+# MADS Mobile
+
+Meta · Arsenal · Data · Shooters — the mobile FPS database
+
+A fact-checked, multi-language database of mobile FPS/battle-royale games:
+meta/tier rankings, weapon stats, characters & skins, and news, for:
+
+- Call of Duty: Mobile (/madsmobile/{lang}/codm/)
+- Free Fire (/madsmobile/{lang}/freefire/)
+- PUBG Mobile (/madsmobile/{lang}/pubgm/)
+- Delta Force Mobile (/madsmobile/{lang}/deltaforce/)
+- Arena Breakout (/madsmobile/{lang}/arenabreakout/)
+
+Available languages: en, zh, fr, it, pt, hi, es.
+Content is refreshed on a monthly cadence as each game's seasonal updates land.
+Weapon tier ratings (S/A/B/C) are editorial assessments based on cited public sources;
+see the Sources section on each game and blog page for provenance.
