@@ -81,58 +81,68 @@
       <p class="no-results-msg notice" hidden>Nenhuma arma corresponde à sua busca.</p>
     </div>
     
-      
-    <div class="weapon-tab-panel" id="panel-complete-deltaforce">
+      <div class="weapon-tab-panel" id="panel-complete-deltaforce">
+    <div class="complete-table-wrap">
       <div class="weapon-toolbar">
-        <input type="search" class="weapon-search" placeholder="Buscar arma...">
-        <div class="weapon-sort-buttons">
-          <button type="button" data-sort-key="name">Nome</button>
-          <button type="button" data-sort-key="tier-rank">Nível</button>
-        </div>
+        <input type="search" class="weapon-search complete-search" placeholder="Buscar arma...">
       </div>
-      <div class="weapon-card-grid">
-    <div class="weapon-card" id="weapon-deltaforce-sample-1" data-name="sample weapon a" data-class="assault rifle" data-tier-rank="3">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">Sample Weapon A <span class="badge meta">META</span></div>
-          <div class="weapon-card-line">Assault Rifle &middot; <span class="tier-badge tier-A">A</span> &middot; Mid</div>
-        </div>
-      </div>
-      <p class="weapon-card-notes">Placeholder entry — replace with verified deltaforce weapon data.</p>
-      <p class="weapon-card-change"><em>Sample placeholder</em></p>
-      <p class="stats-pending">Estatísticas detalhadas pendentes de verificação.</p>
-    </div>
+      <div class="table-scroll">
+        <table class="weapons-table complete-table">
+          <thead><tr><th data-sort="name">Nome</th><th data-sort="class">Classe</th><th data-sort="tier-rank">Nível</th><th data-sort="none">Alcance</th><th data-sort="none">Dano corpo</th><th data-sort="rpm">RPM</th><th data-sort="none">TTK</th><th data-sort="none">Velocidade ADS</th><th data-sort="none">Recuo</th><th data-sort="magazine">Carregador</th><th data-sort="none">Melhor build de dano</th><th data-sort="none">Notas</th></tr></thead>
+          <tbody>
+    <tr id="weapon-deltaforce-sample-1" data-name="sample weapon a" data-class="assault rifle"
+        data-tier-rank="3" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Sample Weapon A</span> <span class="badge meta">META</span></td>
+      <td>Assault Rifle</td>
+      <td><span class="tier-badge tier-A">A</span></td>
+      <td>Mid</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">Placeholder entry — replace with verified deltaforce weapon data.</td>
+    </tr>
     
-    <div class="weapon-card" id="weapon-deltaforce-sample-2" data-name="sample weapon b" data-class="smg" data-tier-rank="2">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">Sample Weapon B </div>
-          <div class="weapon-card-line">SMG &middot; <span class="tier-badge tier-B">B</span> &middot; Close</div>
-        </div>
-      </div>
-      <p class="weapon-card-notes">Placeholder entry — replace with verified deltaforce weapon data.</p>
-      <p class="weapon-card-change"><em>Sample placeholder</em></p>
-      <p class="stats-pending">Estatísticas detalhadas pendentes de verificação.</p>
-    </div>
+    <tr id="weapon-deltaforce-sample-2" data-name="sample weapon b" data-class="smg"
+        data-tier-rank="2" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Sample Weapon B</span> </td>
+      <td>SMG</td>
+      <td><span class="tier-badge tier-B">B</span></td>
+      <td>Close</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">Placeholder entry — replace with verified deltaforce weapon data.</td>
+    </tr>
     
-    <div class="weapon-card" id="weapon-deltaforce-sample-3" data-name="sample weapon c" data-class="sniper rifle" data-tier-rank="4">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">Sample Weapon C <span class="badge meta">META</span></div>
-          <div class="weapon-card-line">Sniper Rifle &middot; <span class="tier-badge tier-S">S</span> &middot; Long</div>
-        </div>
+    <tr id="weapon-deltaforce-sample-3" data-name="sample weapon c" data-class="sniper rifle"
+        data-tier-rank="4" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Sample Weapon C</span> <span class="badge meta">META</span></td>
+      <td>Sniper Rifle</td>
+      <td><span class="tier-badge tier-S">S</span></td>
+      <td>Long</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">Placeholder entry — replace with verified deltaforce weapon data.</td>
+    </tr>
+    </tbody>
+        </table>
       </div>
-      <p class="weapon-card-notes">Placeholder entry — replace with verified deltaforce weapon data.</p>
-      <p class="weapon-card-change"><em>Sample placeholder</em></p>
-      <p class="stats-pending">Estatísticas detalhadas pendentes de verificação.</p>
-    </div>
-    </div>
       <p class="no-results-msg notice" hidden>Nenhuma arma corresponde à sua busca.</p>
     </div>
-    
+    </div>
     </div>
     
     </section>

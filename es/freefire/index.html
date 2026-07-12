@@ -81,58 +81,68 @@
       <p class="no-results-msg notice" hidden>Ninguna arma coincide con tu búsqueda.</p>
     </div>
     
-      
-    <div class="weapon-tab-panel" id="panel-complete-freefire">
+      <div class="weapon-tab-panel" id="panel-complete-freefire">
+    <div class="complete-table-wrap">
       <div class="weapon-toolbar">
-        <input type="search" class="weapon-search" placeholder="Buscar armas...">
-        <div class="weapon-sort-buttons">
-          <button type="button" data-sort-key="name">Nombre</button>
-          <button type="button" data-sort-key="tier-rank">Nivel</button>
-        </div>
+        <input type="search" class="weapon-search complete-search" placeholder="Buscar armas...">
       </div>
-      <div class="weapon-card-grid">
-    <div class="weapon-card" id="weapon-freefire-sample-1" data-name="sample weapon a" data-class="assault rifle" data-tier-rank="3">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">Sample Weapon A <span class="badge meta">META</span></div>
-          <div class="weapon-card-line">Assault Rifle &middot; <span class="tier-badge tier-A">A</span> &middot; Mid</div>
-        </div>
-      </div>
-      <p class="weapon-card-notes">Placeholder entry — replace with verified freefire weapon data.</p>
-      <p class="weapon-card-change"><em>Sample placeholder</em></p>
-      <p class="stats-pending">Estadísticas detalladas pendientes de verificación.</p>
-    </div>
+      <div class="table-scroll">
+        <table class="weapons-table complete-table">
+          <thead><tr><th data-sort="name">Nombre</th><th data-sort="class">Clase</th><th data-sort="tier-rank">Nivel</th><th data-sort="none">Alcance</th><th data-sort="none">Daño cuerpo</th><th data-sort="rpm">RPM</th><th data-sort="none">TTK</th><th data-sort="none">Velocidad ADS</th><th data-sort="none">Retroceso</th><th data-sort="magazine">Cargador</th><th data-sort="none">Mejor build de daño</th><th data-sort="none">Notas</th></tr></thead>
+          <tbody>
+    <tr id="weapon-freefire-sample-1" data-name="sample weapon a" data-class="assault rifle"
+        data-tier-rank="3" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Sample Weapon A</span> <span class="badge meta">META</span></td>
+      <td>Assault Rifle</td>
+      <td><span class="tier-badge tier-A">A</span></td>
+      <td>Mid</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">Placeholder entry — replace with verified freefire weapon data.</td>
+    </tr>
     
-    <div class="weapon-card" id="weapon-freefire-sample-2" data-name="sample weapon b" data-class="smg" data-tier-rank="2">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">Sample Weapon B </div>
-          <div class="weapon-card-line">SMG &middot; <span class="tier-badge tier-B">B</span> &middot; Close</div>
-        </div>
-      </div>
-      <p class="weapon-card-notes">Placeholder entry — replace with verified freefire weapon data.</p>
-      <p class="weapon-card-change"><em>Sample placeholder</em></p>
-      <p class="stats-pending">Estadísticas detalladas pendientes de verificación.</p>
-    </div>
+    <tr id="weapon-freefire-sample-2" data-name="sample weapon b" data-class="smg"
+        data-tier-rank="2" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Sample Weapon B</span> </td>
+      <td>SMG</td>
+      <td><span class="tier-badge tier-B">B</span></td>
+      <td>Close</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">Placeholder entry — replace with verified freefire weapon data.</td>
+    </tr>
     
-    <div class="weapon-card" id="weapon-freefire-sample-3" data-name="sample weapon c" data-class="sniper rifle" data-tier-rank="4">
-      <div class="weapon-card-head">
-        <span class="weapon-card-icon" aria-hidden="true"></span>
-        <div>
-          <div class="weapon-card-name">Sample Weapon C <span class="badge meta">META</span></div>
-          <div class="weapon-card-line">Sniper Rifle &middot; <span class="tier-badge tier-S">S</span> &middot; Long</div>
-        </div>
+    <tr id="weapon-freefire-sample-3" data-name="sample weapon c" data-class="sniper rifle"
+        data-tier-rank="4" data-rpm="-1" data-magazine="-1">
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Sample Weapon C</span> <span class="badge meta">META</span></td>
+      <td>Sniper Rifle</td>
+      <td><span class="tier-badge tier-S">S</span></td>
+      <td>Long</td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td><span class="cell-dash">&mdash;</span></td>
+      <td class="cell-notes">Placeholder entry — replace with verified freefire weapon data.</td>
+    </tr>
+    </tbody>
+        </table>
       </div>
-      <p class="weapon-card-notes">Placeholder entry — replace with verified freefire weapon data.</p>
-      <p class="weapon-card-change"><em>Sample placeholder</em></p>
-      <p class="stats-pending">Estadísticas detalladas pendientes de verificación.</p>
-    </div>
-    </div>
       <p class="no-results-msg notice" hidden>Ninguna arma coincide con tu búsqueda.</p>
     </div>
-    
+    </div>
     </div>
     
     </section>
