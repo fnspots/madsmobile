@@ -5,7 +5,7 @@ Meta · Arsenal · Data · Shooters — the mobile FPS database
 A fact-checked, multi-language database of mobile FPS/battle-royale games:
 meta/tier rankings, weapon stats, characters & skins, and news, for:
 
-- Call of Duty: Mobile (/madsmobile/{lang}/codm/)
+- Call of Duty: Mobile — aka COD Mobile, CODM, Call of Duty Mobile (/madsmobile/{lang}/codm/)
 - Free Fire (/madsmobile/{lang}/freefire/)
 - PUBG Mobile (/madsmobile/{lang}/pubgm/)
 - Delta Force Mobile (/madsmobile/{lang}/deltaforce/)

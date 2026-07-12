@@ -35,6 +35,7 @@ main{max-width:1000px;margin:0 auto;padding:24px 20px 60px}
 .crumbs .tabs a{margin-left:14px;color:var(--muted)}
 .game-hero h1{margin-bottom:2px}
 .meta-line{color:var(--muted);margin-top:0}
+.also-known-as{color:var(--muted);font-size:.85rem;margin-top:2px}
 section{margin-bottom:36px}
 .notice{background:#3a2f18;border:1px solid #6b4d1f;color:#f2c744;padding:10px 14px;border-radius:8px;font-size:.9rem}
 .verified{color:var(--muted);font-size:.85rem}
