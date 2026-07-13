@@ -7,9 +7,9 @@ meta/tier rankings, weapon stats, characters & skins, and news, for:
 
 - Call of Duty: Mobile — aka COD Mobile, CODM, Call of Duty Mobile (/madsmobile/{lang}/codm/)
 - Free Fire — aka Garena Free Fire, FF, Free Fire MAX (/madsmobile/{lang}/freefire/)
-- PUBG Mobile (/madsmobile/{lang}/pubgm/)
-- Delta Force Mobile (/madsmobile/{lang}/deltaforce/)
-- Arena Breakout (/madsmobile/{lang}/arenabreakout/)
+- PUBG Mobile — aka PUBG Mobile, PUBGM, PUBG: Exhilarating Battlefield (/madsmobile/{lang}/pubgm/)
+- Delta Force Mobile — aka Delta Force Mobile, Delta Force, DF Mobile, 三角洲行动 (/madsmobile/{lang}/deltaforce/)
+- Arena Breakout — aka Arena Breakout, AB, 暗区突围, Arena Breakout Mobile (/madsmobile/{lang}/arenabreakout/)
 - Blood Strike (/madsmobile/{lang}/bloodstrike/)
 
 Available languages: en, zh, fr, it, pt, hi, es.
