@@ -30,6 +30,10 @@
 <body>
 <header class="site-header">
   <a class="brand" href="/madsmobile/it/"><img src="/madsmobile/assets/img/brand/logo.png" alt="MADS Mobile" class="brand-logo" width="32" height="32"><span class="brand-text">MADS Mobile</span></a>
+  <nav class="site-nav" aria-label="Home">
+    <a href="/madsmobile/it/">Home</a>
+    <a href="/madsmobile/it/blog/">Blog</a>
+  </nav>
   <nav class="crumbs"><a href="/madsmobile/it/">&larr; Torna a tutti i giochi</a><span class="tabs">
     <a href="/madsmobile/it/freefire/">Meta / Armi</a>
     <a href="/madsmobile/it/freefire/characters/">Personaggi</a>
@@ -53,15 +57,20 @@
       <p class="meta-line">Garena &middot; 2017</p>
       <p class="also-known-as">Conosciuto anche come: Garena Free Fire, FF, Free Fire MAX</p>
     </section>
-    <section class="about-section">
-      <h2>Informazioni</h2>
-      <p>Garena Free Fire è uno sparatutto battle royale lanciato a livello globale nel 2017, diventato uno dei giochi mobile più scaricati al mondo, con comunità particolarmente grandi in America Latina, India (come Free Fire MAX) e Sud-est asiatico. Ogni partita mette 50 giocatori su un'isola che si restringe, e il gioco si basa su personaggi con abilità (attive e passive) sopra un arsenale di armi più ridotto e veloce rispetto alla maggior parte degli sparatutto mobile. Questa pagina viene aggiornata ogni volta che arrivano nuovi personaggi, armi o patch di bilanciamento.</p>
-    </section>
-    <section class="meta-section">
-      <h2>Meta attuale</h2>
-      <p class="verified">Ultima verifica: 2026-07-12</p>
-      <p>Scelte migliori attuali: <a href="#weapon-freefire-m1887">M1887</a> guida tutte le armi per le eliminazioni a corto raggio, con <a href="#weapon-freefire-mp40">MP40</a> subito dietro come SMG da rush con il DPS più alto. <a href="#weapon-freefire-groza">Groza</a> resta il miglior fucile d'assalto complessivo a qualsiasi distanza, e <a href="#weapon-freefire-woodpecker">Woodpecker</a> è il miglior fucile di precisione per headshot che perforano l'armatura. Sul fronte personaggi, Alok, Chrono e K formano il nucleo di quasi ogni formazione competitiva grazie alle loro abilità attive, mentre Jota e Hayato sono scelte passive quasi obbligatorie per squadre aggressive orientate al rush.</p>
-      
+    <section class="dev-info-row"><span class="dev-info-item"><strong>Sviluppatore:</strong> 111dots Studio</span><span class="dev-info-item"><strong>Editore:</strong> Garena</span><span class="dev-info-item"><strong>Sito Ufficiale:</strong> <a href="https://ff.garena.com/en" target="_blank" rel="noopener nofollow">ff.garena.com/en</a></span></section>
+    <section class="meta-about-row">
+      <div class="meta-col">
+        <h2>Meta attuale</h2>
+        <p class="verified">Ultima verifica: 2026-07-12</p>
+        <p>Scelte migliori attuali: <a href="#weapon-freefire-m1887">M1887</a> guida tutte le armi per le eliminazioni a corto raggio, con <a href="#weapon-freefire-mp40">MP40</a> subito dietro come SMG da rush con il DPS più alto. <a href="#weapon-freefire-groza">Groza</a> resta il miglior fucile d'assalto complessivo a qualsiasi distanza, e <a href="#weapon-freefire-woodpecker">Woodpecker</a> è il miglior fucile di precisione per headshot che perforano l'armatura. Sul fronte personaggi, Alok, Chrono e K formano il nucleo di quasi ogni formazione competitiva grazie alle loro abilità attive, mentre Jota e Hayato sono scelte passive quasi obbligatorie per squadre aggressive orientate al rush.</p>
+        
+      </div>
+      <div class="about-col">
+        <details class="about-details">
+          <summary class="about-toggle-btn">Informazioni su Free Fire</summary>
+          <div class="about-details-body"><p>Garena Free Fire è uno sparatutto battle royale lanciato a livello globale nel 2017, diventato uno dei giochi mobile più scaricati al mondo, con comunità particolarmente grandi in America Latina, India (come Free Fire MAX) e Sud-est asiatico. Ogni partita mette 50 giocatori su un'isola che si restringe, e il gioco si basa su personaggi con abilità (attive e passive) sopra un arsenale di armi più ridotto e veloce rispetto alla maggior parte degli sparatutto mobile. Questa pagina viene aggiornata ogni volta che arrivano nuovi personaggi, armi o patch di bilanciamento.</p></div>
+        </details>
+      </div>
     </section>
     <section class="weapons-section">
       
@@ -77,8 +86,8 @@
       <div class="weapon-toolbar">
         <input type="search" class="weapon-search" placeholder="Cerca un'arma...">
         <div class="weapon-sort-buttons">
-          <button type="button" data-sort-key="name">Nome</button>
-          <button type="button" data-sort-key="tier-rank">Livello</button>
+          <button type="button" data-sort-key="name">Nome <span class="sort-icon" aria-hidden="true"></span></button>
+          <button type="button" data-sort-key="tier-rank">Livello <span class="sort-icon" aria-hidden="true"></span></button>
         </div>
       </div>
       <div class="weapon-card-grid">
@@ -222,7 +231,7 @@
       </div>
       <div class="table-scroll">
         <table class="weapons-table complete-table">
-          <thead><tr><th data-sort="name">Nome</th><th data-sort="class">Classe</th><th data-sort="tier-rank">Livello</th><th data-sort="none">Gittata</th><th data-sort="none">Ruolo</th><th data-sort="none">Danno corpo</th><th data-sort="rpm">CPM</th><th data-sort="none">Cadenza di tiro</th><th data-sort="none">TTK</th><th data-sort="none">Velocità ADS</th><th data-sort="none">Precisione</th><th data-sort="none">Rinculo</th><th data-sort="none">Mobilità</th><th data-sort="none">Penet. Armatura</th><th data-sort="magazine">Caricatore</th><th data-sort="none">Miglior build danno</th><th data-sort="none">Note</th></tr></thead>
+          <thead><tr><th data-sort="name">Nome <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">Classe <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">Livello <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Gittata</th><th data-sort="none">Ruolo</th><th data-sort="none">Danno corpo</th><th data-sort="rpm">CPM <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Cadenza di tiro</th><th data-sort="none">TTK</th><th data-sort="none">Velocità ADS</th><th data-sort="none">Precisione</th><th data-sort="none">Rinculo</th><th data-sort="none">Mobilità</th><th data-sort="none">Penet. Armatura</th><th data-sort="magazine">Caricatore <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Miglior build danno</th><th data-sort="none">Note</th></tr></thead>
           <tbody>
     <tr id="weapon-freefire-mp40" data-name="mp40" data-class="mitra (smg)"
         data-tier-rank="4" data-rpm="-1" data-magazine="20">
@@ -696,6 +705,10 @@
     
     </section>
     <section class="teaser-section">
+      <h2>Personaggi e Skin</h2>
+      <a class="see-all" href="/madsmobile/it/freefire/characters/">Personaggi &rarr;</a>
+    </section>
+    <section class="teaser-section">
       <h2>Blog</h2>
       <div class="post-grid">
         <a class="post-teaser" href="/madsmobile/it/freefire/blog/coming-soon/">
@@ -706,16 +719,15 @@
         </a></div>
       <a class="see-all" href="/madsmobile/it/freefire/blog/">Blog &rarr;</a>
     </section>
-    <section class="teaser-section">
-      <h2>Personaggi e Skin</h2>
-      <a class="see-all" href="/madsmobile/it/freefire/characters/">Personaggi &rarr;</a>
-    </section>
     
 </main>
 <footer class="site-footer">
+  <p class="footer-description">MADS Mobile è un database verificato di armi, personaggi e classifiche meta per i migliori sparatutto mobile al mondo.</p>
+  <p class="footer-disclaimer">Le informazioni pubblicate su MADS Mobile si basano su ricerca, analisi e valutazione dei dati di gioco disponibili. Aggiornamenti e modifiche di bilanciamento possono modificare statistiche e consigli. Se noti discrepanze, contatta il nostro team.</p>
   <p>Database di sparatutto mobile verificato. Dati aggiornati mensilmente.</p>
   <p class="footer-social"><span class="footer-social-label">Seguici:</span> <a href="https://www.instagram.com/madsmobilegg/" target="_blank" rel="noopener noreferrer">Instagram</a> <a href="https://x.com/MADSmobile" target="_blank" rel="noopener noreferrer">X</a> <a href="https://www.threads.com/@madsmobilegg" target="_blank" rel="noopener noreferrer">Threads</a></p>
   <p class="footer-contact">Contatto: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
+  <p class="footer-copyright">&copy; 2026 MADS Mobile &mdash; Tutti i diritti riservati.</p>
 </footer>
 <script src="/madsmobile/assets/app.js"></script>
 </body>
