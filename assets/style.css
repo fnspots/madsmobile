@@ -71,6 +71,10 @@ section{margin-bottom:36px}
 .see-all{display:inline-block;margin-top:10px}
 .char-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
 .char-card{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:16px}
+.build-card{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:16px}
+.weapon-card-role{color:var(--muted);font-size:.85rem;font-weight:600;margin:2px 0}
+.char-best-weapons{font-size:.85rem;color:var(--muted)}
+.badge.ability-type{background:var(--bg3,#2a2a2a);border-radius:6px;padding:1px 6px;font-size:.75rem;margin-left:4px}
 .char-portrait{width:100%;aspect-ratio:3/4;background:#20262e;border:1px solid var(--line);border-radius:8px;margin-bottom:10px;object-fit:cover;display:block}
 .char-slot,.char-collab{color:var(--muted);font-size:.85rem;margin:0 0 4px}
 .blog-post .post-body{white-space:pre-line}

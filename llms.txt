@@ -6,7 +6,7 @@ A fact-checked, multi-language database of mobile FPS/battle-royale games:
 meta/tier rankings, weapon stats, characters & skins, and news, for:
 
 - Call of Duty: Mobile — aka COD Mobile, CODM, Call of Duty Mobile (/madsmobile/{lang}/codm/)
-- Free Fire (/madsmobile/{lang}/freefire/)
+- Free Fire — aka Garena Free Fire, FF, Free Fire MAX (/madsmobile/{lang}/freefire/)
 - PUBG Mobile (/madsmobile/{lang}/pubgm/)
 - Delta Force Mobile (/madsmobile/{lang}/deltaforce/)
 - Arena Breakout (/madsmobile/{lang}/arenabreakout/)
