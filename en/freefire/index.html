@@ -30,6 +30,10 @@
 <body>
 <header class="site-header">
   <a class="brand" href="/madsmobile/en/"><img src="/madsmobile/assets/img/brand/logo.png" alt="MADS Mobile" class="brand-logo" width="32" height="32"><span class="brand-text">MADS Mobile</span></a>
+  <nav class="site-nav" aria-label="Home">
+    <a href="/madsmobile/en/">Home</a>
+    <a href="/madsmobile/en/blog/">Blog</a>
+  </nav>
   <nav class="crumbs"><a href="/madsmobile/en/">&larr; Back to all games</a><span class="tabs">
     <a href="/madsmobile/en/freefire/">Meta / Weapons</a>
     <a href="/madsmobile/en/freefire/characters/">Characters</a>
@@ -53,15 +57,20 @@
       <p class="meta-line">Garena &middot; 2017</p>
       <p class="also-known-as">Also known as: Garena Free Fire, FF, Free Fire MAX</p>
     </section>
-    <section class="about-section">
-      <h2>About</h2>
-      <p>Garena Free Fire is a battle royale shooter that launched globally in 2017 and became one of the most-downloaded mobile games in the world, with especially large communities across Latin America, India (as Free Fire MAX) and Southeast Asia. Matches drop 50 players onto a shrinking island, and the game is built around ability-based characters (Active and Passive skills) layered on top of a smaller, faster weapon sandbox than most mobile shooters. This page is refreshed as new characters, weapons and balance patches land.</p>
-    </section>
-    <section class="meta-section">
-      <h2>Current Meta</h2>
-      <p class="verified">Last verified: 2026-07-12</p>
-      <p>Current top-tier picks: <a href="#weapon-freefire-m1887">M1887</a> leads all weapons for close-range eliminations, with <a href="#weapon-freefire-mp40">MP40</a> right behind it as the highest-DPS rush SMG. <a href="#weapon-freefire-groza">Groza</a> remains the best all-around assault rifle at any range, and <a href="#weapon-freefire-woodpecker">Woodpecker</a> is the top precision rifle for armor-penetrating headshots. On the character side, Alok, Chrono and K form the core of nearly every competitive lineup thanks to their Active abilities, while Jota and Hayato are close to mandatory Passive picks for aggressive, rush-focused squads.</p>
-      
+    <section class="dev-info-row"><span class="dev-info-item"><strong>Developer:</strong> 111dots Studio</span><span class="dev-info-item"><strong>Publisher:</strong> Garena</span><span class="dev-info-item"><strong>Official Website:</strong> <a href="https://ff.garena.com/en" target="_blank" rel="noopener nofollow">ff.garena.com/en</a></span></section>
+    <section class="meta-about-row">
+      <div class="meta-col">
+        <h2>Current Meta</h2>
+        <p class="verified">Last verified: 2026-07-12</p>
+        <p>Current top-tier picks: <a href="#weapon-freefire-m1887">M1887</a> leads all weapons for close-range eliminations, with <a href="#weapon-freefire-mp40">MP40</a> right behind it as the highest-DPS rush SMG. <a href="#weapon-freefire-groza">Groza</a> remains the best all-around assault rifle at any range, and <a href="#weapon-freefire-woodpecker">Woodpecker</a> is the top precision rifle for armor-penetrating headshots. On the character side, Alok, Chrono and K form the core of nearly every competitive lineup thanks to their Active abilities, while Jota and Hayato are close to mandatory Passive picks for aggressive, rush-focused squads.</p>
+        
+      </div>
+      <div class="about-col">
+        <details class="about-details">
+          <summary class="about-toggle-btn">About Free Fire</summary>
+          <div class="about-details-body"><p>Garena Free Fire is a battle royale shooter that launched globally in 2017 and became one of the most-downloaded mobile games in the world, with especially large communities across Latin America, India (as Free Fire MAX) and Southeast Asia. Matches drop 50 players onto a shrinking island, and the game is built around ability-based characters (Active and Passive skills) layered on top of a smaller, faster weapon sandbox than most mobile shooters. This page is refreshed as new characters, weapons and balance patches land.</p></div>
+        </details>
+      </div>
     </section>
     <section class="weapons-section">
       
@@ -77,8 +86,8 @@
       <div class="weapon-toolbar">
         <input type="search" class="weapon-search" placeholder="Search weapons...">
         <div class="weapon-sort-buttons">
-          <button type="button" data-sort-key="name">Name</button>
-          <button type="button" data-sort-key="tier-rank">Tier</button>
+          <button type="button" data-sort-key="name">Name <span class="sort-icon" aria-hidden="true"></span></button>
+          <button type="button" data-sort-key="tier-rank">Tier <span class="sort-icon" aria-hidden="true"></span></button>
         </div>
       </div>
       <div class="weapon-card-grid">
@@ -222,7 +231,7 @@
       </div>
       <div class="table-scroll">
         <table class="weapons-table complete-table">
-          <thead><tr><th data-sort="name">Name</th><th data-sort="class">Class</th><th data-sort="tier-rank">Tier</th><th data-sort="none">Range</th><th data-sort="none">Role</th><th data-sort="none">Body Dmg</th><th data-sort="rpm">RPM</th><th data-sort="none">Fire Rate</th><th data-sort="none">TTK</th><th data-sort="none">ADS speed</th><th data-sort="none">Accuracy</th><th data-sort="none">Recoil</th><th data-sort="none">Mobility</th><th data-sort="none">Armor Pen</th><th data-sort="magazine">Magazine</th><th data-sort="none">Best Damage Build</th><th data-sort="none">Notes</th></tr></thead>
+          <thead><tr><th data-sort="name">Name <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">Class <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">Tier <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Range</th><th data-sort="none">Role</th><th data-sort="none">Body Dmg</th><th data-sort="rpm">RPM <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Fire Rate</th><th data-sort="none">TTK</th><th data-sort="none">ADS speed</th><th data-sort="none">Accuracy</th><th data-sort="none">Recoil</th><th data-sort="none">Mobility</th><th data-sort="none">Armor Pen</th><th data-sort="magazine">Magazine <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Best Damage Build</th><th data-sort="none">Notes</th></tr></thead>
           <tbody>
     <tr id="weapon-freefire-mp40" data-name="mp40" data-class="smg"
         data-tier-rank="4" data-rpm="-1" data-magazine="20">
@@ -696,6 +705,10 @@
     
     </section>
     <section class="teaser-section">
+      <h2>Characters &amp; Skins</h2>
+      <a class="see-all" href="/madsmobile/en/freefire/characters/">Characters &rarr;</a>
+    </section>
+    <section class="teaser-section">
       <h2>Blog</h2>
       <div class="post-grid">
         <a class="post-teaser" href="/madsmobile/en/freefire/blog/coming-soon/">
@@ -706,16 +719,15 @@
         </a></div>
       <a class="see-all" href="/madsmobile/en/freefire/blog/">Blog &rarr;</a>
     </section>
-    <section class="teaser-section">
-      <h2>Characters &amp; Skins</h2>
-      <a class="see-all" href="/madsmobile/en/freefire/characters/">Characters &rarr;</a>
-    </section>
     
 </main>
 <footer class="site-footer">
+  <p class="footer-description">MADS Mobile is a fact-checked database of weapons, characters and meta rankings for the world's top mobile shooters.</p>
+  <p class="footer-disclaimer">The information published on MADS Mobile is based on research, analysis and evaluation of available game data. Updates and balance changes may modify statistics and recommendations. If you find discrepancies, please contact our team.</p>
   <p>Fact-checked mobile FPS database. Data refreshed monthly.</p>
   <p class="footer-social"><span class="footer-social-label">Follow us:</span> <a href="https://www.instagram.com/madsmobilegg/" target="_blank" rel="noopener noreferrer">Instagram</a> <a href="https://x.com/MADSmobile" target="_blank" rel="noopener noreferrer">X</a> <a href="https://www.threads.com/@madsmobilegg" target="_blank" rel="noopener noreferrer">Threads</a></p>
   <p class="footer-contact">Contact: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
+  <p class="footer-copyright">&copy; 2026 MADS Mobile &mdash; All rights reserved.</p>
 </footer>
 <script src="/madsmobile/assets/app.js"></script>
 </body>

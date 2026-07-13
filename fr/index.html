@@ -30,17 +30,26 @@
 <body>
 <header class="site-header">
   <a class="brand" href="/madsmobile/fr/"><img src="/madsmobile/assets/img/brand/logo.png" alt="MADS Mobile" class="brand-logo" width="32" height="32"><span class="brand-text">MADS Mobile</span></a>
+  <nav class="site-nav" aria-label="Accueil">
+    <a href="/madsmobile/fr/">Accueil</a>
+    <a href="/madsmobile/fr/blog/">Blog</a>
+  </nav>
   
   <nav class="lang-switch" aria-label="Langue"><a class="" href="/madsmobile/en/">English</a><a class="" href="/madsmobile/zh/">中文</a><a class="active" href="/madsmobile/fr/">Français</a><a class="" href="/madsmobile/it/">Italiano</a><a class="" href="/madsmobile/pt/">Português</a><a class="" href="/madsmobile/hi/">हिन्दी</a><a class="" href="/madsmobile/es/">Español</a></nav>
 </header>
 <main>
 
     <section class="hero">
-      <h1>MADS Mobile</h1>
-      <p class="tagline">Meta · Arsenal · Data · Shooters — the mobile FPS database</p>
+      <div class="hero-brand-wrap">
+        <h1 class="hero-brand">MADS</h1>
+        <p class="hero-subtitle">Meta &bull; Arsenal &bull; Data &bull; Shooters</p>
+      </div>
+      <p class="hero-tagline">Base de Données des Jeux de Tir Mobiles</p>
       <p class="lede">Choisissez un jeu pour voir sa méta actuelle, les statistiques d'armes, les personnages et les actualités.</p>
     </section>
-    <section class="game-grid">
+    <section class="game-grid-section">
+      <h2 class="cta-heading">Choisissez Votre Jeu Préféré</h2>
+      <div class="game-grid">
         <a class="game-card" href="/madsmobile/fr/codm/">
           <div class="game-card-icon" aria-hidden="true"><img src="https://raw.githubusercontent.com/fnspots/madsmobile/main/MADS_images/Call%20of%20Duty%20Mobile/Icons/MADS_mobile_CODM_Global_Ghost.webp" alt="Call of Duty: Mobile" loading="lazy"></div>
           <div class="game-card-name">Call of Duty: Mobile</div>
@@ -70,7 +79,8 @@
           <div class="game-card-icon" aria-hidden="true"><img src="https://raw.githubusercontent.com/fnspots/madsmobile/main/MADS_images/Blood%20Strike%20Mobile/Icons/MADS_mobile_blood-strike.webp" alt="Blood Strike" loading="lazy"></div>
           <div class="game-card-name">Blood Strike</div>
           
-        </a></section>
+        </a></div>
+    </section>
     
         <section class="featured-section">
           <h2>Dernières actualités</h2>
@@ -92,9 +102,12 @@
     
 </main>
 <footer class="site-footer">
+  <p class="footer-description">MADS Mobile est une base de données vérifiée d'armes, de personnages et de classements méta pour les meilleurs jeux de tir mobiles au monde.</p>
+  <p class="footer-disclaimer">Les informations publiées sur MADS Mobile reposent sur la recherche, l'analyse et l'évaluation des données de jeu disponibles. Les mises à jour et les changements d'équilibrage peuvent modifier les statistiques et les recommandations. Si vous constatez des divergences, veuillez contacter notre équipe.</p>
   <p>Base de données de FPS mobiles vérifiée. Données actualisées mensuellement.</p>
   <p class="footer-social"><span class="footer-social-label">Suivez-nous:</span> <a href="https://www.instagram.com/madsmobilegg/" target="_blank" rel="noopener noreferrer">Instagram</a> <a href="https://x.com/MADSmobile" target="_blank" rel="noopener noreferrer">X</a> <a href="https://www.threads.com/@madsmobilegg" target="_blank" rel="noopener noreferrer">Threads</a></p>
   <p class="footer-contact">Contact: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
+  <p class="footer-copyright">&copy; 2026 MADS Mobile &mdash; Tous droits réservés.</p>
 </footer>
 <script src="/madsmobile/assets/app.js"></script>
 </body>

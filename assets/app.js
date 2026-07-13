@@ -22,9 +22,9 @@
       });
     }
     var dir = {};
-    Array.prototype.slice.call(table.querySelectorAll('th[data-sort]')).forEach(function(th){
+    var sortableThs = Array.prototype.slice.call(table.querySelectorAll('th[data-sort]')).filter(function(th){ return th.dataset.sort !== 'none'; });
+    sortableThs.forEach(function(th){
       var key = th.dataset.sort;
-      if (key === 'none') return;
       th.addEventListener('click', function(){
         dir[key] = dir[key] === 'asc' ? 'desc' : 'asc';
         var mult = dir[key] === 'asc' ? 1 : -1;
@@ -44,6 +44,14 @@
           return 0;
         });
         sorted.forEach(function(r){ tbody.appendChild(r); });
+        sortableThs.forEach(function(t){
+          t.classList.remove('sort-active');
+          var ic = t.querySelector('.sort-icon');
+          if (ic) ic.textContent = '';
+        });
+        th.classList.add('sort-active');
+        var icon = th.querySelector('.sort-icon');
+        if (icon) icon.textContent = dir[key] === 'asc' ? '▲' : '▼';
       });
     });
   });
@@ -68,7 +76,8 @@
       });
     }
     var dir = {};
-    Array.prototype.slice.call(panel.querySelectorAll('[data-sort-key]')).forEach(function(btn){
+    var sortBtns = Array.prototype.slice.call(panel.querySelectorAll('[data-sort-key]'));
+    sortBtns.forEach(function(btn){
       btn.addEventListener('click', function(){
         var key = btn.dataset.sortKey;
         dir[key] = dir[key] === 'asc' ? 'desc' : 'asc';
@@ -87,6 +96,14 @@
           return 0;
         });
         sorted.forEach(function(c){ grid.appendChild(c); });
+        sortBtns.forEach(function(b){
+          b.classList.remove('sort-active');
+          var ic = b.querySelector('.sort-icon');
+          if (ic) ic.textContent = '';
+        });
+        btn.classList.add('sort-active');
+        var icon = btn.querySelector('.sort-icon');
+        if (icon) icon.textContent = dir[key] === 'asc' ? '▲' : '▼';
       });
     });
   }
