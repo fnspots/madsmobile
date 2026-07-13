@@ -6,7 +6,7 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,Seg
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 .site-header{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:var(--bg2);border-bottom:1px solid var(--line);flex-wrap:wrap;gap:10px}
-.brand{font-weight:400;font-size:1.15rem;color:var(--fg);font-family:'Michroma',sans-serif;letter-spacing:.02em}
+.brand{display:flex;align-items:center;gap:9px;font-weight:400;font-size:1.15rem;color:var(--fg);font-family:'Michroma',sans-serif;letter-spacing:.02em}.brand-logo{width:32px;height:32px;object-fit:contain;flex-shrink:0}.brand-text{line-height:1}
 .lang-switch a{margin-left:8px;font-size:.85rem;color:var(--muted)}
 .lang-switch a.active{color:var(--accent);font-weight:700}
 main{max-width:1000px;margin:0 auto;padding:24px 20px 60px}
@@ -78,7 +78,7 @@ section{margin-bottom:36px}
 .char-portrait{width:100%;aspect-ratio:3/4;background:#20262e;border:1px solid var(--line);border-radius:8px;margin-bottom:10px;object-fit:cover;display:block}
 .char-slot,.char-collab{color:var(--muted);font-size:.85rem;margin:0 0 4px}
 .blog-post .post-body{white-space:pre-line}
-.site-footer{text-align:center;color:var(--muted);font-size:.8rem;padding:24px;border-top:1px solid var(--line)}
+.site-footer{text-align:center;color:var(--muted);font-size:.8rem;padding:24px;border-top:1px solid var(--line)}.site-footer p{margin:4px 0}.footer-social-label{margin-right:2px}.footer-social a,.footer-contact a{margin:0 4px;color:var(--muted)}.footer-social a:hover,.footer-contact a:hover{color:var(--accent)}
 .lang-list{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;list-style:none;padding:0}
 @media (max-width:600px){.site-header{flex-direction:column;align-items:flex-start}.lang-switch{display:flex;flex-wrap:wrap}}
 
