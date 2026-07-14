@@ -30,17 +30,17 @@
 <body>
 <header class="site-header">
   <a class="brand" href="/madsmobile/en/"><img src="/madsmobile/assets/img/brand/logo.png" alt="MADS Mobile" class="brand-logo" width="32" height="32"><span class="brand-text">MADS Mobile</span></a>
-  <nav class="site-nav" aria-label="Home">
-    <a href="/madsmobile/en/">Home</a>
-    <a href="/madsmobile/en/blog/">Blog</a>
-  </nav>
   <nav class="crumbs"><a href="/madsmobile/en/">&larr; Back to all games</a><span class="tabs">
     <a href="/madsmobile/en/pubgm/">Meta / Weapons</a>
     <a href="/madsmobile/en/pubgm/characters/">Characters</a>
     
     <a href="/madsmobile/en/pubgm/blog/">Blog</a>
     </span></nav>
-  <nav class="lang-switch" aria-label="Language"><a class="active" href="/madsmobile/en/pubgm/">English</a><a class="" href="/madsmobile/zh/pubgm/">中文</a><a class="" href="/madsmobile/fr/pubgm/">Français</a><a class="" href="/madsmobile/it/pubgm/">Italiano</a><a class="" href="/madsmobile/pt/pubgm/">Português</a><a class="" href="/madsmobile/hi/pubgm/">हिन्दी</a><a class="" href="/madsmobile/es/pubgm/">Español</a></nav>
+  <nav class="lang-switch" aria-label="Language">
+    <a class="blog-nav-link" href="/madsmobile/en/blog/">Blog</a>
+    <span class="nav-divider" aria-hidden="true"></span>
+    <a class="active" href="/madsmobile/en/pubgm/">English</a><a class="" href="/madsmobile/zh/pubgm/">中文</a><a class="" href="/madsmobile/fr/pubgm/">Français</a><a class="" href="/madsmobile/it/pubgm/">Italiano</a><a class="" href="/madsmobile/pt/pubgm/">Português</a><a class="" href="/madsmobile/hi/pubgm/">हिन्दी</a><a class="" href="/madsmobile/es/pubgm/">Español</a>
+  </nav>
 </header>
 <main>
 
@@ -58,26 +58,26 @@
       <p class="also-known-as">Also known as: PUBG Mobile, PUBGM, PUBG: Exhilarating Battlefield</p>
     </section>
     <section class="dev-info-row"><span class="dev-info-item"><strong>Developer:</strong> LightSpeed Studios (Tencent) &amp; PUBG Studios (Krafton)</span><span class="dev-info-item"><strong>Publisher:</strong> Tencent (LightSpeed &amp; Quantum Studio) in partnership with PUBG Studios / Krafton</span><span class="dev-info-item"><strong>Official Website:</strong> <a href="https://www.pubgmobile.com/" target="_blank" rel="noopener nofollow">www.pubgmobile.com</a></span></section>
-    <section class="meta-about-row">
-      <div class="meta-col">
-        <h2>Current Meta</h2>
+    <div class="weapons-tabs meta-about-tabs">
+      <button type="button" class="tab-btn active" data-tab-target="panel-meta-pubgm">Current Meta</button>
+      <button type="button" class="tab-btn" data-tab-target="panel-about-pubgm">About PUBG Mobile</button>
+    </div>
+    <div class="weapon-tab-panels">
+      <div class="weapon-tab-panel active" id="panel-meta-pubgm">
         <p class="verified">Last verified: 2026-07-12</p>
         <p>Current category leaders: the <a href="#weapon-pubgm-ar001">AUG</a> tops Assault Rifles for stability and 5.56mm ammo economy, the <a href="#weapon-pubgm-smg001">P90</a> leads SMGs with extreme close-range raw DPS, the <a href="#weapon-pubgm-dmr001">MK14</a> is the top DMR for high-precision damage, the <a href="#weapon-pubgm-sr001">AWM</a> remains the top Sniper Rifle for massive one-shot potential, the <a href="#weapon-pubgm-sg001">DBS</a> leads Shotguns for one-tap headshot priority, and the <a href="#weapon-pubgm-lmg001">MG3</a> tops LMGs for sustained suppression. Recommended pairings from the current meta dashboard include <a href="#weapon-pubgm-ar001">AUG</a>+MK12 for a competitive-focused loadout, Beryl M762+Mini14 for an aggressive slayer build, and M416+Mini14 as a balanced, beginner-friendly setup.</p>
-        <details class="sources"><summary>Sources</summary><ul><li><a href="https://en.wikipedia.org/wiki/PUBG_Mobile" rel="nofollow noopener" target="_blank">PUBG Mobile - Wikipedia</a></li></ul></details>
       </div>
-      <div class="about-col">
-        <details class="about-details">
-          <summary class="about-toggle-btn">About PUBG Mobile</summary>
-          <div class="about-details-body"><p>PUBG Mobile is a free-to-play battle royale shooter co-developed by Tencent's LightSpeed &amp; Quantum Studio in partnership with PUBG Studios (Krafton), bringing the original PUBG: Battlegrounds experience to phones. It released in China as 'PUBG: Exhilarating Battlefield' on February 9, 2018, then launched worldwide as PUBG Mobile on March 19, 2018, going on to become one of the highest-grossing mobile games of all time. The game runs on regular content updates that rebalance weapon stats, attachments, and map rotations. This page is refreshed as each patch lands to keep the meta current.</p></div>
-        </details>
+      <div class="weapon-tab-panel" id="panel-about-pubgm">
+        <p>PUBG Mobile is a free-to-play battle royale shooter co-developed by Tencent's LightSpeed &amp; Quantum Studio in partnership with PUBG Studios (Krafton), bringing the original PUBG: Battlegrounds experience to phones. It released in China as 'PUBG: Exhilarating Battlefield' on February 9, 2018, then launched worldwide as PUBG Mobile on March 19, 2018, going on to become one of the highest-grossing mobile games of all time. The game runs on regular content updates that rebalance weapon stats, attachments, and map rotations. This page is refreshed as each patch lands to keep the meta current.</p>
       </div>
-    </section>
+    </div>
     <section class="weapons-section">
       
       
     <div class="weapons-tabs">
       <button type="button" class="tab-btn active" data-tab-target="panel-best-pubgm">Best Weapons</button>
       <button type="button" class="tab-btn" data-tab-target="panel-complete-pubgm">Complete Weapons</button>
+      
       
     </div>
     <div class="weapon-tab-panels">
@@ -269,7 +269,7 @@
       </div>
       <div class="table-scroll">
         <table class="weapons-table complete-table">
-          <thead><tr><th data-sort="name">Name <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">Class <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">Tier <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Range</th><th data-sort="none">Role</th><th data-sort="none">Body Dmg</th><th data-sort="rpm">RPM <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Fire Rate</th><th data-sort="none">TTK</th><th data-sort="none">ADS speed</th><th data-sort="none">Accuracy</th><th data-sort="none">Recoil</th><th data-sort="none">Mobility</th><th data-sort="none">Armor Pen</th><th data-sort="magazine">Magazine <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Best Damage Build</th><th data-sort="none">Notes</th></tr></thead>
+          <thead><tr><th data-sort="name">Name <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">Class <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">Tier <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Range</th><th data-sort="rpm">RPM <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="magazine">Magazine <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Notes</th></tr></thead>
           <tbody>
     <tr id="weapon-pubgm-ar001" data-name="aug" data-class="assault rifle"
         data-tier-rank="0" data-rpm="750" data-magazine="30">
@@ -277,18 +277,7 @@
       <td>Assault Rifle</td>
       <td><span class="tier-badge tier-S+">S+</span></td>
       <td>Short-Medium</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>750</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>750</td><td>30</td>
       <td class="cell-notes">The top-tier all-rounder AR this patch: high accuracy and recoil control at short-medium range, pairing naturally with the MK12 for longer engagements.</td>
     </tr>
     
@@ -298,18 +287,7 @@
       <td>Assault Rifle</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Short-Medium</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>700</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>700</td><td>30</td>
       <td class="cell-notes">An aggressive slayer pick with the highest raw damage among meta ARs, best paired with the Mini14 for a flexible long-range tap option.</td>
     </tr>
     
@@ -319,18 +297,7 @@
       <td>Assault Rifle</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Short-Medium-Long</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>700</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>700</td><td>30</td>
       <td class="cell-notes">The classic high-precision, low-recoil, beginner-friendly all-rounder, effective at every range and a top pick on every map in the pool.</td>
     </tr>
     
@@ -340,18 +307,7 @@
       <td>Assault Rifle</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Short-Medium</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>680</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>680</td><td>30</td>
       <td class="cell-notes">A solid viable pick with strong headshot potential at short-medium range, pairing well with the SKS as a designated marksman backup.</td>
     </tr>
     
@@ -361,18 +317,7 @@
       <td>Assault Rifle</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Short</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>600</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>600</td><td>30</td>
       <td class="cell-notes">Highest raw damage per shot among meta ARs, but its short effective range keeps it mostly limited to close engagements, best paired with the SLR.</td>
     </tr>
     
@@ -382,18 +327,7 @@
       <td>Assault Rifle</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Short-Medium</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>625</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>625</td><td>30</td>
       <td class="cell-notes">A situational pick with balanced accuracy and recoil control at short-medium range, pairing with the Mini14 for extra reach.</td>
     </tr>
     
@@ -403,18 +337,7 @@
       <td>Assault Rifle</td>
       <td><span class="tier-badge tier-S+">S+</span></td>
       <td>Short-Medium</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>900</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>900</td><td>30</td>
       <td class="cell-notes">A crate-exclusive S+ meta pick thanks to its extremely high fire rate, best paired with the AWM for a devastating close-to-extreme range combo.</td>
     </tr>
     
@@ -424,18 +347,7 @@
       <td>SMG</td>
       <td><span class="tier-badge tier-S+">S+</span></td>
       <td>Short</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>1000</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>50</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>1000</td><td>50</td>
       <td class="cell-notes">The fastest-firing SMG in the game and a crate-exclusive S+ meta pick, best used alongside the AWM to cover its total lack of range.</td>
     </tr>
     
@@ -445,18 +357,7 @@
       <td>SMG</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Short</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>600</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>600</td><td>30</td>
       <td class="cell-notes">A reliable meta SMG with strong accuracy and control for its class, pairing naturally with the M24 for mid-to-long range coverage.</td>
     </tr>
     
@@ -466,18 +367,7 @@
       <td>SMG</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Short</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>1200</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>19</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>1200</td><td>19</td>
       <td class="cell-notes">A viable pick with the highest fire rate of any SMG and excellent mobility, though its small magazine forces frequent reloads.</td>
     </tr>
     
@@ -487,18 +377,7 @@
       <td>SMG</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Short</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>900</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>900</td><td>30</td>
       <td class="cell-notes">A dependable viable SMG with solid accuracy and control, best paired with the SLR to extend its reach beyond close quarters.</td>
     </tr>
     
@@ -508,18 +387,7 @@
       <td>DMR</td>
       <td><span class="tier-badge tier-S+">S+</span></td>
       <td>Medium-Long</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>850</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>10</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>850</td><td>10</td>
       <td class="cell-notes">Crate-exclusive S+ meta DMR with maximum headshot potential and the highest damage in its class, pairing with the AUG for shorter-range cover.</td>
     </tr>
     
@@ -529,18 +397,7 @@
       <td>DMR</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Long</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>700</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>20</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>700</td><td>20</td>
       <td class="cell-notes">A meta all-rounder DMR with high accuracy and control, favored at long range and pairing naturally with the Beryl M762.</td>
     </tr>
     
@@ -550,18 +407,7 @@
       <td>DMR</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Medium-Long</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>750</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>20</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>750</td><td>20</td>
       <td class="cell-notes">A meta medium-long range DMR with strong accuracy and high headshot potential, pairing with the AUG for mid-range flexibility.</td>
     </tr>
     
@@ -571,18 +417,7 @@
       <td>DMR</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Long</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>600</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>10</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>600</td><td>10</td>
       <td class="cell-notes">A viable long-range DMR with heavy per-shot damage, though its low recoil control demands precise, deliberate shooting.</td>
     </tr>
     
@@ -592,18 +427,7 @@
       <td>DMR</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Medium-Long</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>600</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>10</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>600</td><td>10</td>
       <td class="cell-notes">A situational medium-long range DMR with high headshot potential, best suited for Erangel's open engagements.</td>
     </tr>
     
@@ -613,18 +437,7 @@
       <td>Sniper Rifle</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Extreme</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>5</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>30</td><td>5</td>
       <td class="cell-notes">The hardest-hitting meta sniper in the game, effective at extreme range but paired with the AUG to cover its very low fire rate and mobility.</td>
     </tr>
     
@@ -634,18 +447,7 @@
       <td>Sniper Rifle</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Long-Extreme</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>35</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>5</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>35</td><td>5</td>
       <td class="cell-notes">A meta long-to-extreme range sniper favored on open maps, pairing with the Beryl M762 to handle anything closer than its ideal range.</td>
     </tr>
     
@@ -655,18 +457,7 @@
       <td>Sniper Rifle</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Long-Extreme</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>5</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>30</td><td>5</td>
       <td class="cell-notes">A viable long-to-extreme range sniper with maximum headshot potential, best used alongside the M416 for closer engagements.</td>
     </tr>
     
@@ -676,18 +467,7 @@
       <td>LMG</td>
       <td><span class="tier-badge tier-S+">S+</span></td>
       <td>Short-Medium</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>990</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>75</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>990</td><td>75</td>
       <td class="cell-notes">Crate-exclusive S+ meta LMG with the largest sustained magazine capacity in the game, ideal for suppressing short-medium range lanes alongside the Mini14.</td>
     </tr>
     
@@ -697,18 +477,7 @@
       <td>LMG</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Short-Medium</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>75</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>800</td><td>75</td>
       <td class="cell-notes">A viable suppression LMG with a deep magazine matching the MG3's capacity, but weaker recoil control and mobility hold it back from meta status.</td>
     </tr>
     
@@ -718,18 +487,7 @@
       <td>Shotgun</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Very Short</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>240</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>14</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>240</td><td>14</td>
       <td class="cell-notes">A meta close-range shotgun with excellent accuracy and mobility for its class, pairing naturally with the M416 to cover longer engagements.</td>
     </tr>
     
@@ -739,18 +497,7 @@
       <td>Shotgun</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Very Short</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>350</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>5</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>350</td><td>5</td>
       <td class="cell-notes">A situational very-close-range shotgun best reserved for tight indoor fights, held back by a very small magazine and low accuracy.</td>
     </tr>
     </tbody>
@@ -764,7 +511,7 @@
     
     </section>
     <section class="teaser-section">
-      <h2>Characters &amp; Skins</h2>
+      <h2>Characters</h2>
       <a class="see-all" href="/madsmobile/en/pubgm/characters/">Characters &rarr;</a>
     </section>
     <section class="teaser-section">
@@ -782,10 +529,8 @@
 </main>
 <footer class="site-footer">
   <p class="footer-description">MADS Mobile is a fact-checked database of weapons, characters and meta rankings for the world's top mobile shooters.</p>
-  <p class="footer-disclaimer">The information published on MADS Mobile is based on research, analysis and evaluation of available game data. Updates and balance changes may modify statistics and recommendations. If you find discrepancies, please contact our team.</p>
-  <p>Fact-checked mobile FPS database. Data refreshed monthly.</p>
+  <p class="footer-disclaimer">The information published on MADS Mobile is based on research, analysis and evaluation of available game data. Updates and balance changes may modify statistics and recommendations. If you find discrepancies, please contact our team. Contact: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
   <p class="footer-social"><span class="footer-social-label">Follow us:</span> <a href="https://www.instagram.com/madsmobilegg/" target="_blank" rel="noopener noreferrer">Instagram</a> <a href="https://x.com/MADSmobile" target="_blank" rel="noopener noreferrer">X</a> <a href="https://www.threads.com/@madsmobilegg" target="_blank" rel="noopener noreferrer">Threads</a></p>
-  <p class="footer-contact">Contact: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
   <p class="footer-copyright">&copy; 2026 MADS Mobile &mdash; All rights reserved.</p>
 </footer>
 <script src="/madsmobile/assets/app.js"></script>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weapon Comparison | Call of Duty: Mobile | MADS Mobile</title>
+<meta name="description" content="Weapon Comparison - Call of Duty: Mobile">
+<link rel="canonical" href="https://fnspots.github.io/madsmobile/en/codm/compare/">
+<link rel="alternate" hreflang="en" href="https://fnspots.github.io/madsmobile/en/codm/compare/">
+<link rel="alternate" hreflang="zh" href="https://fnspots.github.io/madsmobile/zh/codm/compare/">
+<link rel="alternate" hreflang="fr" href="https://fnspots.github.io/madsmobile/fr/codm/compare/">
+<link rel="alternate" hreflang="it" href="https://fnspots.github.io/madsmobile/it/codm/compare/">
+<link rel="alternate" hreflang="pt" href="https://fnspots.github.io/madsmobile/pt/codm/compare/">
+<link rel="alternate" hreflang="hi" href="https://fnspots.github.io/madsmobile/hi/codm/compare/">
+<link rel="alternate" hreflang="es" href="https://fnspots.github.io/madsmobile/es/codm/compare/">
+<link rel="alternate" hreflang="x-default" href="https://fnspots.github.io/madsmobile/en/codm/compare/">
+<meta property="og:title" content="Weapon Comparison | Call of Duty: Mobile | MADS Mobile">
+<meta property="og:description" content="Weapon Comparison - Call of Duty: Mobile">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fnspots.github.io/madsmobile/en/codm/compare/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/madsmobile/assets/favicon.ico" sizes="any">
+<link rel="icon" href="/madsmobile/assets/favicon-16x16.png" type="image/png" sizes="16x16">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/madsmobile/assets/style.css">
+
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/madsmobile/en/"><img src="/madsmobile/assets/img/brand/logo.png" alt="MADS Mobile" class="brand-logo" width="32" height="32"><span class="brand-text">MADS Mobile</span></a>
+  <nav class="crumbs"><a href="/madsmobile/en/">&larr; Back to all games</a><span class="tabs">
+    <a href="/madsmobile/en/codm/">Meta / Weapons</a>
+    <a href="/madsmobile/en/codm/characters/">Characters</a>
+    
+    <a href="/madsmobile/en/codm/blog/">Blog</a>
+    </span></nav>
+  <nav class="lang-switch" aria-label="Language">
+    <a class="blog-nav-link" href="/madsmobile/en/blog/">Blog</a>
+    <span class="nav-divider" aria-hidden="true"></span>
+    <a class="active" href="/madsmobile/en/codm/compare/">English</a><a class="" href="/madsmobile/zh/codm/compare/">中文</a><a class="" href="/madsmobile/fr/codm/compare/">Français</a><a class="" href="/madsmobile/it/codm/compare/">Italiano</a><a class="" href="/madsmobile/pt/codm/compare/">Português</a><a class="" href="/madsmobile/hi/codm/compare/">हिन्दी</a><a class="" href="/madsmobile/es/codm/compare/">Español</a>
+  </nav>
+</header>
+<main>
+
+    <nav class="crumbs"><a href="/madsmobile/en/">&larr; Back to all games</a><span class="tabs">
+    <a href="/madsmobile/en/codm/">Meta / Weapons</a>
+    <a href="/madsmobile/en/codm/characters/">Characters</a>
+    
+    <a href="/madsmobile/en/codm/blog/">Blog</a>
+    </span></nav>
+    <h1>Weapon Comparison &mdash; Call of Duty: Mobile</h1>
+    <div id="compare-app" class="compare-app">
+      <div class="compare-pickers">
+        <label class="compare-picker">
+          <span>Weapon A</span>
+          <select id="compare-select-a" aria-label="Weapon A"></select>
+        </label>
+        <label class="compare-picker">
+          <span>Weapon B</span>
+          <select id="compare-select-b" aria-label="Weapon B"></select>
+        </label>
+      </div>
+      <div id="compare-table-wrap" class="compare-table-wrap"></div>
+      <div id="compare-bars-wrap" class="compare-bars-wrap"></div>
+      <div class="compare-radar-wrap">
+        <canvas id="compare-radar-chart"></canvas>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <script>
+      window.__COMPARE_WEAPONS__ = [{"id": "switchblade-x9", "name": "Switchblade X9", "classLabel": "SMG", "tier": "S", "bodyDamage": "27-24-20", "damageByRange": [27.0, 24.0, 20.0], "rpmRaw": "850", "rpmNum": 850.0, "ttk": "~280 ms", "ttkMs": 280.0, "adsSpeed": "Very fast", "adsSpeedScore": 4, "recoilRaw": "★★★", "recoilStars": 3, "recoilScore": 3, "magazine": 30.0, "bestDamageBuild": "MIP Light Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Agile Stock"}, {"id": "vmp", "name": "VMP", "classLabel": "SMG", "tier": "A", "bodyDamage": "Medium-High (27-32)", "damageByRange": null, "rpmRaw": "~900", "rpmNum": 900.0, "ttk": "~280ms", "ttkMs": 280.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "Low", "recoilStars": null, "recoilScore": 2, "magazine": 40.0, "bestDamageBuild": "Long Barrel + Suppressor + Extended Mag + Laser + Grip"}, {"id": "qq9", "name": "QQ9", "classLabel": "SMG", "tier": "A", "bodyDamage": "25-20", "damageByRange": [25.0, 20.0], "rpmRaw": "830", "rpmNum": 830.0, "ttk": "~290 ms", "ttkMs": 290.0, "adsSpeed": "Very fast", "adsSpeedScore": 4, "recoilRaw": "★★★", "recoilStars": 3, "recoilScore": 3, "magazine": 45.0, "bestDamageBuild": "Monolithic Integral Suppressor + No Stock + 45 Round Extended Mag + OWC Laser Tactical + Granulated Grip Tape"}, {"id": "so-14", "name": "SO-14", "classLabel": "Assault Rifle", "tier": "B", "bodyDamage": "High (30-40)", "damageByRange": null, "rpmRaw": "~500", "rpmNum": 500.0, "ttk": "~350ms", "ttkMs": 350.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "Medium", "recoilStars": null, "recoilScore": 3, "magazine": 20.0, "bestDamageBuild": "Marksman Barrel + Monolithic Suppressor + Extended Mag + Laser + Granulated Grip"}, {"id": "bal-27", "name": "BAL-27", "classLabel": "Assault Rifle", "tier": "S", "bodyDamage": "High (28-34)", "damageByRange": null, "rpmRaw": "~800", "rpmNum": 800.0, "ttk": "~300ms", "ttkMs": 300.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "Low", "recoilStars": null, "recoilScore": 2, "magazine": 45.0, "bestDamageBuild": "Monolithic Suppressor + Extended Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "type-63", "name": "Type 63", "classLabel": "Marksman Rifle", "tier": "S", "bodyDamage": "Very High (55-60)", "damageByRange": null, "rpmRaw": "~350", "rpmNum": 350.0, "ttk": "~280ms", "ttkMs": 280.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "Low", "recoilStars": null, "recoilScore": 2, "magazine": 25.0, "bestDamageBuild": "Taskforce Barrel + Agency Suppressor + Extended Mag + Laser + Field Agent Grip"}, {"id": "hs0405", "name": "HS0405", "classLabel": "Shotgun", "tier": "S", "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + Sleight of Hand + Stock"}, {"id": "vlk-rogue", "name": "VLK Rogue", "classLabel": "Shotgun", "tier": "S", "bodyDamage": "Extreme (100+)", "damageByRange": null, "rpmRaw": "Pump", "rpmNum": null, "ttk": "Instant (1-shot)", "ttkMs": 1.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "Low", "recoilStars": null, "recoilScore": 2, "magazine": 12.0, "bestDamageBuild": "Marauder Suppressor + Extended Barrel + Laser + Mobility Stock + Sleight of Hand"}, {"id": "locus", "name": "Locus", "classLabel": "Sniper Rifle", "tier": "S", "bodyDamage": "One-Shot High (120+)", "damageByRange": null, "rpmRaw": "~60", "rpmNum": 60.0, "ttk": "Instant", "ttkMs": null, "adsSpeed": "Very Fast", "adsSpeedScore": 4, "recoilRaw": "Low", "recoilStars": null, "recoilScore": 2, "magazine": 10.0, "bestDamageBuild": "Skeleton Stock + OWC Laser Tactical + Stippled Grip Tape + Extended Mag + Tactical Suppressor"}, {"id": "l-car-9", "name": "L-CAR 9", "classLabel": "Secondary", "tier": "A", "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Akimbo + OWC Laser Tactical + Extended Mag + Monolithic Suppressor + Granulated Grip Tape"}, {"id": "fss-hurricane", "name": "FSS Hurricane", "classLabel": "SMG", "tier": "B", "bodyDamage": "Medium-High (25-30)", "damageByRange": null, "rpmRaw": "~1100", "rpmNum": 1100.0, "ttk": "~270ms", "ttkMs": 270.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "Medium", "recoilStars": null, "recoilScore": 3, "magazine": 50.0, "bestDamageBuild": "Monolithic Suppressor + Demo Quicksilver Stock + Laser + Extended Mag + Granulated Grip"}, {"id": "xm4", "name": "XM4", "classLabel": "Assault Rifle", "tier": "A", "bodyDamage": "High (29-33)", "damageByRange": null, "rpmRaw": "~800", "rpmNum": 800.0, "ttk": "~290ms", "ttkMs": 290.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "Low", "recoilStars": null, "recoilScore": 2, "magazine": 45.0, "bestDamageBuild": "Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag + Laser"}, {"id": "dr-h", "name": "DR-H", "classLabel": "Assault Rifle", "tier": "S", "bodyDamage": "32-28-24", "damageByRange": [32.0, 28.0, 24.0], "rpmRaw": "605", "rpmNum": 605.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★★", "recoilStars": 4, "recoilScore": 4, "magazine": 25.0, "bestDamageBuild": "OTM Mag + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + No Stock"}, {"id": "oden", "name": "ODEN", "classLabel": "Assault Rifle", "tier": "B", "bodyDamage": "48-32-25", "damageByRange": [48.0, 32.0, 25.0], "rpmRaw": "500", "rpmNum": 500.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Slow", "adsSpeedScore": 1, "recoilRaw": "★★★", "recoilStars": 3, "recoilScore": 3, "magazine": 30.0, "bestDamageBuild": "Colossus Suppressor + RTC Heavy Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "as-val", "name": "AS VAL", "classLabel": "Assault Rifle", "tier": "A", "bodyDamage": "35-30-24", "damageByRange": [35.0, 30.0, 24.0], "rpmRaw": "800", "rpmNum": 800.0, "ttk": "~270-300 ms", "ttkMs": 285.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "★★★", "recoilStars": 3, "recoilScore": 3, "magazine": 25.0, "bestDamageBuild": "MIP 200mm Mid Range Barrel + Large Extended Mag + OWC Laser Tactical + Granulated Grip Tape + No Stock"}, {"id": "cr-56-amax", "name": "CR-56 AMAX", "classLabel": "Assault Rifle", "tier": "A", "bodyDamage": "34-30-25", "damageByRange": [34.0, 30.0, 25.0], "rpmRaw": "625", "rpmNum": 625.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★", "recoilStars": 3, "recoilScore": 3, "magazine": 30.0, "bestDamageBuild": "MIP Custom Long Barrel + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "ak-47", "name": "AK-47", "classLabel": "Assault Rifle", "tier": "A", "bodyDamage": "33-30", "damageByRange": [33.0, 30.0], "rpmRaw": "600", "rpmNum": 600.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "High", "recoilStars": null, "recoilScore": 4, "magazine": 30.0, "bestDamageBuild": "Monolithic Suppressor + OWC Marksman + Granulated Grip Tape + OWC Laser Tactical + Extended Mag"}, {"id": "man-o-war", "name": "Man-O-War", "classLabel": "Assault Rifle", "tier": "B", "bodyDamage": "37-30", "damageByRange": [37.0, 30.0], "rpmRaw": "550", "rpmNum": 550.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Slow", "adsSpeedScore": 1, "recoilRaw": "Medium", "recoilStars": null, "recoilScore": 3, "magazine": 25.0, "bestDamageBuild": "Monolithic Suppressor + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "type-25", "name": "Type 25", "classLabel": "Assault Rifle", "tier": "B", "bodyDamage": "24-20", "damageByRange": [24.0, 20.0], "rpmRaw": "900", "rpmNum": 900.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "High", "recoilStars": null, "recoilScore": 4, "magazine": 30.0, "bestDamageBuild": "RTC Steady Stock + Stopping Power Reload + OWC Laser Tactical + Granulated Grip Tape + MIP Light Barrel"}, {"id": "uss9", "name": "USS9", "classLabel": "SMG", "tier": "A", "bodyDamage": "High (30+)", "damageByRange": null, "rpmRaw": "~750", "rpmNum": 750.0, "ttk": "~300ms", "ttkMs": 300.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "Very Low", "recoilStars": null, "recoilScore": 1, "magazine": 40.0, "bestDamageBuild": "Suppressor + Long Barrel + Extended Mag + Laser + Granulated Grip"}, {"id": "cbr4", "name": "CBR4", "classLabel": "SMG", "tier": "S", "bodyDamage": "24-21-18", "damageByRange": [24.0, 21.0, 18.0], "rpmRaw": "800", "rpmNum": 800.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "★★★★★", "recoilStars": 5, "recoilScore": 5, "magazine": 50.0, "bestDamageBuild": "OWC Marksman Barrel + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "ppsh-41", "name": "PPSh-41", "classLabel": "SMG", "tier": "A", "bodyDamage": "24-20", "damageByRange": [24.0, 20.0], "rpmRaw": "900", "rpmNum": 900.0, "ttk": "~280 ms", "ttkMs": 280.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "★★★", "recoilStars": 3, "recoilScore": 3, "magazine": 45.0, "bestDamageBuild": "Reinforced Heavy Barrel + 55 Round Drum Mag + Field Agent Grip + OWC Laser Tactical + No Stock"}, {"id": "pp19-bizon", "name": "PP19 Bizon", "classLabel": "SMG", "tier": "B", "bodyDamage": "26-23", "damageByRange": [26.0, 23.0], "rpmRaw": "650", "rpmNum": 650.0, "ttk": "~330 ms", "ttkMs": 330.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★★★", "recoilStars": 5, "recoilScore": 5, "magazine": 64.0, "bestDamageBuild": "Monolithic Suppressor + Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape"}, {"id": "qxr", "name": "QXR", "classLabel": "SMG", "tier": "A", "bodyDamage": "Medium (24-28)", "damageByRange": null, "rpmRaw": "~850", "rpmNum": 850.0, "ttk": "~290ms", "ttkMs": 290.0, "adsSpeed": "Very Fast", "adsSpeedScore": 4, "recoilRaw": "Low", "recoilStars": null, "recoilScore": 2, "magazine": 40.0, "bestDamageBuild": "Enhanced Bolt + Monolithic Suppressor + Extended Mag + Laser + Granulated Grip"}, {"id": "holger-26", "name": "Holger 26", "classLabel": "LMG", "tier": "S", "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "MIP Light Barrel (Short) + Large Extended Mag + OWC Laser Tactical + Granulated Grip Tape + No Stock"}, {"id": "chopper", "name": "Chopper", "classLabel": "LMG", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Heavy Handle + RTC Light Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape"}, {"id": "sks", "name": "SKS", "classLabel": "Marksman Rifle", "tier": "A", "bodyDamage": "Very High (60+)", "damageByRange": null, "rpmRaw": "~400", "rpmNum": 400.0, "ttk": "~300ms", "ttkMs": 300.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "Low", "recoilStars": null, "recoilScore": 2, "magazine": 20.0, "bestDamageBuild": "RTC Steady Stock + OWC Laser Tactical + Extended Mag + Granulated Grip + Tactical Suppressor"}, {"id": "dl-q33", "name": "DL Q33", "classLabel": "Sniper Rifle", "tier": "S", "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Tactical Suppressor + Combat Stock + OWC Laser Tactical + Stippled Grip Tape + FMJ"}, {"id": "sp-r-208", "name": "SP-R 208", "classLabel": "Sniper Rifle", "tier": "A", "bodyDamage": "One-Shot High (120+)", "damageByRange": null, "rpmRaw": "~55", "rpmNum": 55.0, "ttk": "Instant", "ttkMs": null, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "Low", "recoilStars": null, "recoilScore": 2, "magazine": 5.0, "bestDamageBuild": "Lapua Mag + Laser Tactical + Light Barrel + Stippled Grip Tape + Skeleton Stock"}, {"id": "mk2", "name": "MK2", "classLabel": "Sniper Rifle", "tier": "A", "bodyDamage": "One-Shot High (120+)", "damageByRange": null, "rpmRaw": "~55", "rpmNum": 55.0, "ttk": "Instant", "ttkMs": null, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "Low", "recoilStars": null, "recoilScore": 2, "magazine": 6.0, "bestDamageBuild": "Sport Barrel + Laser + Stippled Grip + Sleight of Hand + Stock"}, {"id": "krm-262", "name": "KRM-262", "classLabel": "Shotgun", "tier": "S", "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + No Stock + Granulated Grip Tape"}, {"id": "r9-0", "name": "R9-0", "classLabel": "Shotgun", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "RTC Extended Barrel + Marauder Suppressor + OWC Laser Tactical + Granulated Grip Tape + Speed Up Kill"}, {"id": "striker", "name": "Striker", "classLabel": "Shotgun", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Long Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape + Stock"}, {"id": "m4", "name": "M4", "classLabel": "Assault Rifle", "tier": "B", "bodyDamage": "24-19", "damageByRange": [24.0, 19.0], "rpmRaw": "680", "rpmNum": 680.0, "ttk": "~350 ms", "ttkMs": 350.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "Very low", "recoilStars": null, "recoilScore": 1, "magazine": 30.0, "bestDamageBuild": "Monolithic Suppressor + MIP Extended Light Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "m16", "name": "M16", "classLabel": "Assault Rifle", "tier": "B", "bodyDamage": "30x3 burst", "damageByRange": null, "rpmRaw": "550", "rpmNum": 550.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "Low", "recoilStars": null, "recoilScore": 2, "magazine": 30.0, "bestDamageBuild": "OWC Marksman + Tactical Suppressor + OWC Laser Tactical + Granulated Grip Tape + Strike Stock"}, {"id": "asm10", "name": "ASM10", "classLabel": "Assault Rifle", "tier": "B", "bodyDamage": "34-28", "damageByRange": [34.0, 28.0], "rpmRaw": "550", "rpmNum": 550.0, "ttk": "~330 ms", "ttkMs": 330.0, "adsSpeed": "Slow", "adsSpeedScore": 1, "recoilRaw": "High", "recoilStars": null, "recoilScore": 4, "magazine": 25.0, "bestDamageBuild": "OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "hbra3", "name": "HBRa3", "classLabel": "Assault Rifle", "tier": "B", "bodyDamage": "29-24", "damageByRange": [29.0, 24.0], "rpmRaw": "670", "rpmNum": 670.0, "ttk": "~350 ms", "ttkMs": 350.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "Low", "recoilStars": null, "recoilScore": 2, "magazine": 30.0, "bestDamageBuild": "OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "ak117", "name": "AK117", "classLabel": "Assault Rifle", "tier": "B", "bodyDamage": "25-20", "damageByRange": [25.0, 20.0], "rpmRaw": "800", "rpmNum": 800.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Very fast", "adsSpeedScore": 4, "recoilRaw": "Medium", "recoilStars": null, "recoilScore": 3, "magazine": 40.0, "bestDamageBuild": "Monolithic Suppressor + OWC Marksman + No Stock + OWC Laser Tactical + Granulated Grip Tape"}, {"id": "lk24", "name": "LK24", "classLabel": "Assault Rifle", "tier": "B", "bodyDamage": "27-24", "damageByRange": [27.0, 24.0], "rpmRaw": "630", "rpmNum": 630.0, "ttk": "~330 ms", "ttkMs": 330.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "Very low", "recoilStars": null, "recoilScore": 1, "magazine": 30.0, "bestDamageBuild": "Monolithic Suppressor + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "kn-44", "name": "KN-44", "classLabel": "Assault Rifle", "tier": "B", "bodyDamage": "30-25", "damageByRange": [30.0, 25.0], "rpmRaw": "620", "rpmNum": 620.0, "ttk": "~320 ms", "ttkMs": 320.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "Low", "recoilStars": null, "recoilScore": 2, "magazine": 38.0, "bestDamageBuild": "OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "icr-1", "name": "ICR-1", "classLabel": "Assault Rifle", "tier": "B", "bodyDamage": "30-25-22", "damageByRange": [30.0, 25.0, 22.0], "rpmRaw": "600", "rpmNum": 600.0, "ttk": "~350 ms", "ttkMs": 350.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★★★", "recoilStars": 5, "recoilScore": 5, "magazine": 40.0, "bestDamageBuild": "OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "bk57", "name": "BK57", "classLabel": "Assault Rifle", "tier": "B", "bodyDamage": "32-28-24", "damageByRange": [32.0, 28.0, 24.0], "rpmRaw": "630", "rpmNum": 630.0, "ttk": "~320 ms", "ttkMs": 320.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★★", "recoilStars": 4, "recoilScore": 4, "magazine": 36.0, "bestDamageBuild": "OWC Marksman + Tactical Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "peacekeeper-mk2", "name": "Peacekeeper MK2", "classLabel": "Assault Rifle", "tier": "A", "bodyDamage": "32-27-24", "damageByRange": [32.0, 27.0, 24.0], "rpmRaw": "800", "rpmNum": 800.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "★★★", "recoilStars": 3, "recoilScore": 3, "magazine": 30.0, "bestDamageBuild": "Taskforce Barrel + Agency Suppressor + Double Stack Mag + Field Agent Grip + OWC Laser Tactical"}, {"id": "fr-556", "name": "FR .556", "classLabel": "Assault Rifle", "tier": "B", "bodyDamage": "30-25", "damageByRange": [30.0, 25.0], "rpmRaw": "670", "rpmNum": 670.0, "ttk": "~320 ms", "ttkMs": 320.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★★", "recoilStars": 4, "recoilScore": 4, "magazine": 30.0, "bestDamageBuild": "MIP Light Barrel + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "m13", "name": "M13", "classLabel": "Assault Rifle", "tier": "A", "bodyDamage": "24-20", "damageByRange": [24.0, 20.0], "rpmRaw": "900", "rpmNum": 900.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Very fast", "adsSpeedScore": 4, "recoilRaw": "★★★★", "recoilStars": 4, "recoilScore": 4, "magazine": 30.0, "bestDamageBuild": "RTC Heavy Long Barrel + Large Extended Mag B + OWC Laser Tactical + Granulated Grip Tape + No Stock"}, {"id": "kilo-141", "name": "Kilo 141", "classLabel": "Assault Rifle", "tier": "S", "bodyDamage": "29-25-23", "damageByRange": [29.0, 25.0, 23.0], "rpmRaw": "680", "rpmNum": 680.0, "ttk": "~350 ms", "ttkMs": 350.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "★★★★★", "recoilStars": 5, "recoilScore": 5, "magazine": 30.0, "bestDamageBuild": "Monolithic Suppressor + OWC Marksman + OWC Laser Tactical + Extended Mag + Granulated Grip Tape"}, {"id": "swordfish", "name": "Swordfish", "classLabel": "Assault Rifle", "tier": "B", "bodyDamage": "4-round burst", "damageByRange": null, "rpmRaw": "620", "rpmNum": 620.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★★★", "recoilStars": 5, "recoilScore": 5, "magazine": 36.0, "bestDamageBuild": "Halberd Mag + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + Stock"}, {"id": "krig-6", "name": "Krig 6", "classLabel": "Assault Rifle", "tier": "A", "bodyDamage": "30-25-22", "damageByRange": [30.0, 25.0, 22.0], "rpmRaw": "650", "rpmNum": 650.0, "ttk": "~320 ms", "ttkMs": 320.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★★★", "recoilStars": 5, "recoilScore": 5, "magazine": 50.0, "bestDamageBuild": "Agency Suppressor + Ranger Barrel + OWC Laser Tactical + Field Agent Grip + Extended Mag"}, {"id": "ffar-1", "name": "FFAR 1", "classLabel": "Assault Rifle", "tier": "S", "bodyDamage": "30-25-22", "damageByRange": [30.0, 25.0, 22.0], "rpmRaw": "850", "rpmNum": 850.0, "ttk": "~280-300 ms", "ttkMs": 290.0, "adsSpeed": "Very fast", "adsSpeedScore": 4, "recoilRaw": "★★★", "recoilStars": 3, "recoilScore": 3, "magazine": 44.0, "bestDamageBuild": "Taskforce Barrel + Agency Suppressor + Field Agent Grip + STANAG 50 Round + Raider Stock"}, {"id": "grau-5-56", "name": "Grau 5.56", "classLabel": "Assault Rifle", "tier": "S", "bodyDamage": "28-24-20", "damageByRange": [28.0, 24.0, 20.0], "rpmRaw": "800", "rpmNum": 800.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "★★★★★", "recoilStars": 5, "recoilScore": 5, "magazine": 60.0, "bestDamageBuild": "Tempus 26.4 Archangel + Monolithic Suppressor + 60 Round Mag + OWC Laser Tactical + Granulated Grip Tape"}, {"id": "em2", "name": "EM2", "classLabel": "Assault Rifle", "tier": "A", "bodyDamage": "35-30-25", "damageByRange": [35.0, 30.0, 25.0], "rpmRaw": "600", "rpmNum": 600.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★★", "recoilStars": 4, "recoilScore": 4, "magazine": 35.0, "bestDamageBuild": "Agency Suppressor + Ranger Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "maddox", "name": "Maddox", "classLabel": "Assault Rifle", "tier": "A", "bodyDamage": "30-25-22", "damageByRange": [30.0, 25.0, 22.0], "rpmRaw": "850", "rpmNum": 850.0, "ttk": "~280-300 ms", "ttkMs": 290.0, "adsSpeed": "Very fast", "adsSpeedScore": 4, "recoilRaw": "★★★", "recoilStars": 3, "recoilScore": 3, "magazine": 40.0, "bestDamageBuild": "Echo Fire Mod + Long Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "hvk-30", "name": "HVK-30", "classLabel": "Assault Rifle", "tier": "S", "bodyDamage": "Very high", "damageByRange": null, "rpmRaw": "700+", "rpmNum": 700.0, "ttk": "Among the best", "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Large Caliber Ammo + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + No Stock"}, {"id": "lapa", "name": "LAPA", "classLabel": "SMG", "tier": "A", "bodyDamage": "30-26-22", "damageByRange": [30.0, 26.0, 22.0], "rpmRaw": "800", "rpmNum": 800.0, "ttk": "~280 ms", "ttkMs": 280.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "★★★★", "recoilStars": 4, "recoilScore": 4, "magazine": 40.0, "bestDamageBuild": "Agency Suppressor + Rifled Barrel + Raider Stock + Field Agent Grip + Extended Mag"}, {"id": "ksp-45", "name": "KSP 45", "classLabel": "SMG", "tier": "B", "bodyDamage": "Burst", "damageByRange": null, "rpmRaw": "800", "rpmNum": 800.0, "ttk": "~270 ms", "ttkMs": 270.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★★", "recoilStars": 4, "recoilScore": 4, "magazine": 33.0, "bestDamageBuild": "Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag + OWC Laser Tactical"}, {"id": "tec-9", "name": "TEC-9", "classLabel": "SMG", "tier": "B", "bodyDamage": "34-28", "damageByRange": [34.0, 28.0], "rpmRaw": "Semi/Auto (mode-dependent)", "rpmNum": null, "ttk": "Variable", "ttkMs": null, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★★", "recoilStars": 4, "recoilScore": 4, "magazine": 48.0, "bestDamageBuild": "Full Auto Repeater + Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag"}, {"id": "gks", "name": "GKS", "classLabel": "SMG", "tier": "B", "bodyDamage": "28-24", "damageByRange": [28.0, 24.0], "rpmRaw": "600", "rpmNum": 600.0, "ttk": "~350 ms", "ttkMs": 350.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★★★", "recoilStars": 5, "recoilScore": 5, "magazine": 36.0, "bestDamageBuild": "OWC Marksman Barrel + Monolithic Suppressor + Extended Mag + OWC Laser Tactical + Granulated Grip Tape"}, {"id": "rus-79u", "name": "RUS-79U", "classLabel": "SMG", "tier": "B", "bodyDamage": "28-24", "damageByRange": [28.0, 24.0], "rpmRaw": "770", "rpmNum": 770.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "★★★★", "recoilStars": 4, "recoilScore": 4, "magazine": 38.0, "bestDamageBuild": "OWC Marksman Barrel + Monolithic Suppressor + Extended Mag + OWC Laser Tactical + Granulated Grip Tape"}, {"id": "pharo", "name": "Pharo", "classLabel": "SMG", "tier": "B", "bodyDamage": "Burst", "damageByRange": null, "rpmRaw": "900", "rpmNum": 900.0, "ttk": "Variable", "ttkMs": null, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "★★★", "recoilStars": 3, "recoilScore": 3, "magazine": 36.0, "bestDamageBuild": "OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Stock"}, {"id": "agr-556", "name": "AGR 556", "classLabel": "SMG", "tier": "B", "bodyDamage": "30-25", "damageByRange": [30.0, 25.0], "rpmRaw": "700", "rpmNum": 700.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★★", "recoilStars": 4, "recoilScore": 4, "magazine": 60.0, "bestDamageBuild": "5.56 Ammo / 60 Round Mag + Marksman Barrel + OWC Laser Tactical + Granulated Grip Tape + Stock"}, {"id": "msmc", "name": "MSMC", "classLabel": "SMG", "tier": "B", "bodyDamage": "34-27", "damageByRange": [34.0, 27.0], "rpmRaw": "850", "rpmNum": 850.0, "ttk": "~280 ms", "ttkMs": 280.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "★★", "recoilStars": 2, "recoilScore": 2, "magazine": 30.0, "bestDamageBuild": "Extended Mag + OWC Laser Tactical + No Stock + Granulated Grip Tape + Monolithic Suppressor"}, {"id": "pdw-57", "name": "PDW-57", "classLabel": "SMG", "tier": "C", "bodyDamage": "27-22", "damageByRange": [27.0, 22.0], "rpmRaw": "650", "rpmNum": 650.0, "ttk": "~350 ms", "ttkMs": 350.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★★", "recoilStars": 4, "recoilScore": 4, "magazine": 50.0, "bestDamageBuild": "Long Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Stock"}, {"id": "mx9", "name": "MX9", "classLabel": "SMG", "tier": "A", "bodyDamage": "30-24-20", "damageByRange": [30.0, 24.0, 20.0], "rpmRaw": "900", "rpmNum": 900.0, "ttk": "~270 ms", "ttkMs": 270.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "★★★", "recoilStars": 3, "recoilScore": 3, "magazine": 45.0, "bestDamageBuild": "Agency Suppressor + Taskforce Barrel + Raider Stock + Field Agent Grip + Extended Mag"}, {"id": "mac-10", "name": "MAC-10", "classLabel": "SMG", "tier": "A", "bodyDamage": "24-21-18", "damageByRange": [24.0, 21.0, 18.0], "rpmRaw": "1200", "rpmNum": 1200.0, "ttk": "~250 ms", "ttkMs": 250.0, "adsSpeed": "Very fast", "adsSpeedScore": 4, "recoilRaw": "★★", "recoilStars": 2, "recoilScore": 2, "magazine": 53.0, "bestDamageBuild": "Reinforced Heavy Barrel + STANAG 53 Round Drum + Field Agent Grip + OWC Laser Tactical + No Stock"}, {"id": "ots-9", "name": "OTs 9", "classLabel": "SMG", "tier": "S", "bodyDamage": "30-25-22", "damageByRange": [30.0, 25.0, 22.0], "rpmRaw": "850", "rpmNum": 850.0, "ttk": "~280 ms", "ttkMs": 280.0, "adsSpeed": "Fast", "adsSpeedScore": 3, "recoilRaw": "★★★★", "recoilStars": 4, "recoilScore": 4, "magazine": 40.0, "bestDamageBuild": "Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag + OWC Laser Tactical"}, {"id": "cordite", "name": "Cordite", "classLabel": "SMG", "tier": "B", "bodyDamage": "28-24", "damageByRange": [28.0, 24.0], "rpmRaw": "800", "rpmNum": 800.0, "ttk": "~300 ms", "ttkMs": 300.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★", "recoilStars": 3, "recoilScore": 3, "magazine": 40.0, "bestDamageBuild": "OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Monolithic Suppressor"}, {"id": "striker-45", "name": "Striker 45", "classLabel": "SMG", "tier": "B", "bodyDamage": "34-30-25", "damageByRange": [34.0, 30.0, 25.0], "rpmRaw": "600", "rpmNum": 600.0, "ttk": "~330 ms", "ttkMs": 330.0, "adsSpeed": "Medium", "adsSpeedScore": 2, "recoilRaw": "★★★★★", "recoilStars": 5, "recoilScore": 5, "magazine": 25.0, "bestDamageBuild": "Monolithic Suppressor + Long Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape"}, {"id": "fennec", "name": "Fennec", "classLabel": "SMG", "tier": "A", "bodyDamage": "23-19", "damageByRange": [23.0, 19.0], "rpmRaw": "1110", "rpmNum": 1110.0, "ttk": "~250 ms", "ttkMs": 250.0, "adsSpeed": "Extremely fast", "adsSpeedScore": 5, "recoilRaw": "★★", "recoilStars": 2, "recoilScore": 2, "magazine": 40.0, "bestDamageBuild": "MIP Extended Light Barrel + Large Extended Mag + OWC Laser Tactical + No Stock + Granulated Grip Tape"}, {"id": "cx-9", "name": "CX-9", "classLabel": "SMG", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "CX-38S Barrel + 50 Round Mag + OWC Laser Tactical + No Stock + Granulated Grip Tape"}, {"id": "chicom", "name": "Chicom", "classLabel": "SMG", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "OWC Marksman Barrel + Monolithic Suppressor + Extended Mag + OWC Laser Tactical + Granulated Grip Tape"}, {"id": "hg-40", "name": "HG 40", "classLabel": "SMG", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Monolithic Suppressor + OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape"}, {"id": "aks-74u", "name": "AKS-74U", "classLabel": "SMG", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Monolithic Suppressor + Marksman Barrel + Extended Mag + Laser Tactical + Granulated Grip"}, {"id": "pkm", "name": "PKM", "classLabel": "LMG", "tier": "A", "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Monolithic Suppressor + Heavy Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag"}, {"id": "rpd", "name": "RPD", "classLabel": "LMG", "tier": "A", "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Cooling Compressor Barrel + OWC Laser Tactical + Granulated Grip Tape + Stock + FMJ"}, {"id": "bruen-mk9", "name": "Bruen MK9", "classLabel": "LMG", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Summit Barrel + Monolithic Suppressor + No Stock + OWC Laser Tactical + Granulated Grip Tape"}, {"id": "s36", "name": "S36", "classLabel": "LMG", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Long Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag + Stock"}, {"id": "ul736", "name": "UL736", "classLabel": "LMG", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Heavy Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape + Stock"}, {"id": "hades", "name": "Hades", "classLabel": "LMG", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Rapid Fire Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape + Stock"}, {"id": "dingo", "name": "Dingo", "classLabel": "LMG", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Rapid Fire Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Stock"}, {"id": "mg42", "name": "MG42", "classLabel": "LMG", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Reinforced Heavy Barrel + Extended Mag + Field Agent Grip + OWC Laser Tactical + Stock"}, {"id": "m4lmg", "name": "M4LMG", "classLabel": "LMG", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Monolithic Suppressor + OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape"}, {"id": "by15", "name": "BY15", "classLabel": "Shotgun", "tier": "S", "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + No Stock + Sleight of Hand"}, {"id": "echo", "name": "Echo", "classLabel": "Shotgun", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "RTC Extended Barrel + Marauder Suppressor + OWC Laser Tactical + Extended Mag + Stock"}, {"id": "jak-12", "name": "JAK-12", "classLabel": "Shotgun", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Marauder Suppressor + RTC Extended Barrel + Large Extended Mag + OWC Laser Tactical + Granulated Grip Tape"}, {"id": "argus", "name": "Argus", "classLabel": "Shotgun", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Long Barrel + OWC Laser Tactical + No Stock + ADS attachments + Granulated Grip Tape"}, {"id": "hs2126", "name": "HS2126", "classLabel": "Shotgun", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Extended Barrel + OWC Laser Tactical + Extended Mag + Stock + Granulated Grip Tape"}, {"id": "shorty", "name": "Shorty", "classLabel": "Shotgun", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + Sleight of Hand + Mobility Stock"}, {"id": "renetti", "name": "Renetti", "classLabel": "Secondary", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Akimbo + MIP Light Barrel + OWC Laser Tactical + Lightweight Trigger + Extended Mag"}, {"id": "gs-50", "name": ".50 GS", "classLabel": "Secondary", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Lightweight Trigger + OWC Laser Tactical + Extended Mag + Stippled Grip Tape + Monolithic Suppressor"}, {"id": "j358", "name": "J358", "classLabel": "Secondary", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Stopping Power Reload + Lightweight Trigger + OWC Laser Tactical + Long Barrel + Granulated Grip Tape"}, {"id": "mw11", "name": "MW11", "classLabel": "Secondary", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "OWC Laser Tactical + Lightweight Trigger + Extended Mag + Long Barrel + Granulated Grip Tape"}, {"id": "crossbow", "name": "Crossbow", "classLabel": "Secondary", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Thermite Bolt + OWC Laser Tactical + Sleight of Hand + Marksman Barrel + Stock"}, {"id": "fhj-18", "name": "FHJ-18", "classLabel": "Launcher", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Launcher + Amped Perk + Fast Swap Secondary"}, {"id": "smrs", "name": "SMRS", "classLabel": "Launcher", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Launcher + Amped Perk + Fast Swap Secondary"}, {"id": "thumper", "name": "Thumper", "classLabel": "Launcher", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Launcher + Amped Perk + Fast Swap Secondary"}, {"id": "d13-sector", "name": "D13 Sector", "classLabel": "Launcher", "tier": null, "bodyDamage": null, "damageByRange": null, "rpmRaw": null, "rpmNum": null, "ttk": null, "ttkMs": null, "adsSpeed": null, "adsSpeedScore": null, "recoilRaw": null, "recoilStars": null, "recoilScore": null, "magazine": null, "bestDamageBuild": "Launcher + Amped Perk + Fast Swap Secondary"}];
+      window.__COMPARE_LABELS__ = {"tier": "Tier", "bodyDamage": "Body Dmg", "rpm": "RPM", "ttk": "TTK", "adsSpeed": "ADS speed", "recoil": "Recoil", "magazine": "Magazine", "build": "Best Damage Build", "rangeClose": "Close", "rangeMid": "Mid", "rangeFar": "Far", "damageByRange": "Damage by Range"};
+    </script>
+    <script>
+(function(){
+  var el = document.getElementById('compare-app');
+  if (!el) return;
+  var data = window.__COMPARE_WEAPONS__ || [];
+  var L = window.__COMPARE_LABELS__ || {};
+  var byId = {};
+  data.forEach(function(w){ byId[w.id] = w; });
+
+  var selA = document.getElementById('compare-select-a');
+  var selB = document.getElementById('compare-select-b');
+  var tableWrap = document.getElementById('compare-table-wrap');
+  var barsWrap = document.getElementById('compare-bars-wrap');
+  var radarCanvas = document.getElementById('compare-radar-chart');
+  var radarChart = null;
+
+  var ORANGE = '#ff5c39', GRAY = '#8b949e';
+  var TIER_ORDER = ['S+','S','A','B','C','D'];
+
+  // Each stat has its OWN scale, computed from the full roster (not just the
+  // two weapons being compared) -- so a 700 RPM bar always reads the same
+  // proportion no matter which pair you pick, and RPM is never plotted on
+  // the same axis as Magazine or anything else.
+  var STAT_DEFS = [
+    { key: 'rpmNum', rawKey: 'rpmRaw', label: L.rpm, higherBetter: true },
+    { key: 'magazine', rawKey: 'magazine', label: L.magazine, higherBetter: true },
+    { key: 'ttkMs', rawKey: 'ttk', label: L.ttk, higherBetter: false },
+    { key: 'adsSpeedScore', rawKey: 'adsSpeed', label: L.adsSpeed, higherBetter: true },
+    { key: 'recoilScore', rawKey: 'recoilRaw', label: L.recoil, higherBetter: false }
+  ];
+
+  var rosterMax = {};
+  STAT_DEFS.forEach(function(def){
+    var vals = data.map(function(w){ return w[def.key]; }).filter(function(v){ return v != null; });
+    rosterMax[def.key] = vals.length ? Math.max.apply(null, vals) : 1;
+  });
+
+  var params = new URLSearchParams(window.location.search);
+  var preselect = params.get('w');
+
+  var sorted = data.slice().sort(function(a,b){ return a.name.localeCompare(b.name); });
+  [selA, selB].forEach(function(sel){
+    sorted.forEach(function(w){
+      var opt = document.createElement('option');
+      opt.value = w.id;
+      opt.textContent = w.name;
+      sel.appendChild(opt.cloneNode(true));
+    });
+  });
+
+  // Default pair: the two weapons with the most complete stat coverage, so
+  // the first thing a visitor sees demonstrates every chart -- not two
+  // sparse weapons that happen to sort first alphabetically.
+  function completeness(w){
+    var n = 0;
+    STAT_DEFS.forEach(function(def){ if (w[def.key] != null) n++; });
+    if (w.damageByRange) n++;
+    return n;
+  }
+  var richest = data.slice().sort(function(a,b){ return completeness(b) - completeness(a); });
+  if (preselect && byId[preselect]) selA.value = preselect;
+  else if (richest[0]) selA.value = richest[0].id;
+  var secondChoice = richest.find(function(w){ return w.id !== selA.value; });
+  if (secondChoice) selB.value = secondChoice.id;
+
+  function winner(aVal, bVal, higherBetter){
+    if (aVal == null || bVal == null || aVal === bVal) return null;
+    var aWins = higherBetter ? aVal > bVal : aVal < bVal;
+    return aWins ? 'a' : 'b';
+  }
+
+  function statRow(label, aDisplay, bDisplay, who){
+    if ((aDisplay == null || aDisplay === '') && (bDisplay == null || bDisplay === '')) return '';
+    var av = (aDisplay == null || aDisplay === '') ? '—' : aDisplay;
+    var bv = (bDisplay == null || bDisplay === '') ? '—' : bDisplay;
+    var aCls = who === 'a' ? ' class="cell-win"' : (who === 'b' ? ' class="cell-lose"' : '');
+    var bCls = who === 'b' ? ' class="cell-win"' : (who === 'a' ? ' class="cell-lose"' : '');
+    return '<tr><th>' + label + '</th><td' + aCls + '>' + av + '</td><td' + bCls + '>' + bv + '</td></tr>';
+  }
+
+  function fmtVal(v){
+    if (v == null) return '';
+    return (Math.round(v * 10) / 10).toString();
+  }
+
+  // Hand-built HTML/CSS bar row (no Chart.js) -- gives full control over the
+  // label text and a thin, legible bar instead of a cramped canvas.
+  function barRow(name, val, max, isWinner, displayVal){
+    var pct = max > 0 ? Math.min(100, (val / max) * 100) : 0;
+    var cls = isWinner ? 'compare-bar-fill win' : 'compare-bar-fill lose';
+    return '' +
+      '<div class="compare-bar-row">' +
+        '<span class="compare-bar-name">' + name + '</span>' +
+        '<span class="compare-bar-track"><span class="' + cls + '" style="width:' + pct.toFixed(1) + '%"></span></span>' +
+        '<span class="compare-bar-value">' + (displayVal != null ? displayVal : fmtVal(val)) + '</span>' +
+      '</div>';
+  }
+
+  function statBlock(title, rowsHtml){
+    return '<div class="compare-stat-block"><div class="compare-stat-block-title">' + title + '</div>' + rowsHtml + '</div>';
+  }
+
+  function render(){
+    var a = byId[selA.value], b = byId[selB.value];
+    if (!a || !b) return;
+
+    var tierWho = null;
+    var ai = TIER_ORDER.indexOf(a.tier), bi = TIER_ORDER.indexOf(b.tier);
+    if (ai !== -1 && bi !== -1 && ai !== bi) tierWho = ai < bi ? 'a' : 'b';
+
+    var rows = '';
+    rows += statRow(L.tier, a.tier, b.tier, tierWho);
+    rows += statRow(L.bodyDamage, a.bodyDamage, b.bodyDamage, null);
+    STAT_DEFS.forEach(function(def){
+      var who = winner(a[def.key], b[def.key], def.higherBetter);
+      rows += statRow(def.label, a[def.rawKey], b[def.rawKey], who);
+    });
+    rows += statRow(L.build, a.bestDamageBuild, b.bestDamageBuild, null);
+
+    tableWrap.innerHTML =
+      '<table class="weapons-table compare-stat-table"><thead><tr><th></th><th>' + a.name + '</th><th>' + b.name + '</th></tr></thead><tbody>' +
+      rows + '</tbody></table>';
+
+    var blocks = '';
+    STAT_DEFS.forEach(function(def){
+      if (a[def.key] == null || b[def.key] == null) return;
+      var who = winner(a[def.key], b[def.key], def.higherBetter);
+      var max = rosterMax[def.key] || 1;
+      var rowsHtml =
+        barRow(a.name, a[def.key], max, who === 'a', a[def.rawKey]) +
+        barRow(b.name, b[def.key], max, who === 'b', b[def.rawKey]);
+      blocks += statBlock(def.label, rowsHtml);
+    });
+    if (a.damageByRange && b.damageByRange && a.damageByRange.length === b.damageByRange.length) {
+      var rangeLabels = a.damageByRange.length === 3 ? [L.rangeClose, L.rangeMid, L.rangeFar] : [L.rangeClose, L.rangeFar];
+      var maxDmg = Math.max(Math.max.apply(null, a.damageByRange), Math.max.apply(null, b.damageByRange));
+      var rangeRows = '';
+      rangeLabels.forEach(function(rl, i){
+        var av = a.damageByRange[i], bv = b.damageByRange[i];
+        var who = winner(av, bv, true);
+        rangeRows += '<div class="compare-bar-subgroup-label">' + rl + '</div>' +
+          barRow(a.name, av, maxDmg, who === 'a') + barRow(b.name, bv, maxDmg, who === 'b');
+      });
+      blocks += statBlock(L.damageByRange, rangeRows);
+    }
+    barsWrap.innerHTML = blocks;
+
+    // Radar: normalized 0-100 per axis (roster-relative), oriented so
+    // "further out = better" -- no numeric ticks shown, shape only.
+    var radarLabels = [], radarA = [], radarB = [];
+    function minMax(field){
+      var vals = data.map(function(w){ return w[field]; }).filter(function(v){ return v != null; });
+      return { min: Math.min.apply(null, vals), max: Math.max.apply(null, vals) };
+    }
+    function norm(val, mm, higherBetter){
+      var v = mm.max === mm.min ? 50 : ((val - mm.min) / (mm.max - mm.min)) * 100;
+      return higherBetter ? v : 100 - v;
+    }
+    STAT_DEFS.forEach(function(def){
+      if (a[def.key] == null || b[def.key] == null) return;
+      var mm = minMax(def.key);
+      radarLabels.push(def.label);
+      radarA.push(norm(a[def.key], mm, def.higherBetter));
+      radarB.push(norm(b[def.key], mm, def.higherBetter));
+    });
+    if (radarChart) radarChart.destroy();
+    if (radarLabels.length >= 3 && window.Chart) {
+      radarChart = new Chart(radarCanvas, {
+        type: 'radar',
+        data: { labels: radarLabels, datasets: [
+          { label: a.name, data: radarA, borderColor: ORANGE, backgroundColor: 'rgba(255,92,57,.2)', pointBackgroundColor: ORANGE },
+          { label: b.name, data: radarB, borderColor: GRAY, backgroundColor: 'rgba(139,148,158,.2)', pointBackgroundColor: GRAY }
+        ]},
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: { r: { min: 0, max: 100, ticks: { display: false }, pointLabels: { font: { size: 11 } }, grid: { circular: true, color: 'rgba(230,237,243,.15)' }, angleLines: { color: 'rgba(230,237,243,.15)' } } },
+          plugins: { legend: { position: 'bottom' } }
+        }
+      });
+    }
+    radarCanvas.parentElement.hidden = radarLabels.length < 3;
+  }
+
+  selA.addEventListener('change', render);
+  selB.addEventListener('change', render);
+  render();
+})();
+</script>
+    
+</main>
+<footer class="site-footer">
+  <p class="footer-description">MADS Mobile is a fact-checked database of weapons, characters and meta rankings for the world's top mobile shooters.</p>
+  <p class="footer-disclaimer">The information published on MADS Mobile is based on research, analysis and evaluation of available game data. Updates and balance changes may modify statistics and recommendations. If you find discrepancies, please contact our team. Contact: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
+  <p class="footer-social"><span class="footer-social-label">Follow us:</span> <a href="https://www.instagram.com/madsmobilegg/" target="_blank" rel="noopener noreferrer">Instagram</a> <a href="https://x.com/MADSmobile" target="_blank" rel="noopener noreferrer">X</a> <a href="https://www.threads.com/@madsmobilegg" target="_blank" rel="noopener noreferrer">Threads</a></p>
+  <p class="footer-copyright">&copy; 2026 MADS Mobile &mdash; All rights reserved.</p>
+</footer>
+<script src="/madsmobile/assets/app.js"></script>
+</body>
+</html>

@@ -30,17 +30,17 @@
 <body>
 <header class="site-header">
   <a class="brand" href="/madsmobile/hi/"><img src="/madsmobile/assets/img/brand/logo.png" alt="MADS Mobile" class="brand-logo" width="32" height="32"><span class="brand-text">MADS Mobile</span></a>
-  <nav class="site-nav" aria-label="होम">
-    <a href="/madsmobile/hi/">होम</a>
-    <a href="/madsmobile/hi/blog/">ब्लॉग</a>
-  </nav>
   <nav class="crumbs"><a href="/madsmobile/hi/">&larr; सभी गेम पर वापस जाएं</a><span class="tabs">
     <a href="/madsmobile/hi/freefire/">मेटा / हथियार</a>
     <a href="/madsmobile/hi/freefire/characters/">किरदार</a>
     <a href="/madsmobile/hi/freefire/builds/">बिल्ड्स</a>
     <a href="/madsmobile/hi/freefire/blog/">ब्लॉग</a>
     </span></nav>
-  <nav class="lang-switch" aria-label="भाषा"><a class="" href="/madsmobile/en/freefire/">English</a><a class="" href="/madsmobile/zh/freefire/">中文</a><a class="" href="/madsmobile/fr/freefire/">Français</a><a class="" href="/madsmobile/it/freefire/">Italiano</a><a class="" href="/madsmobile/pt/freefire/">Português</a><a class="active" href="/madsmobile/hi/freefire/">हिन्दी</a><a class="" href="/madsmobile/es/freefire/">Español</a></nav>
+  <nav class="lang-switch" aria-label="भाषा">
+    <a class="blog-nav-link" href="/madsmobile/hi/blog/">ब्लॉग</a>
+    <span class="nav-divider" aria-hidden="true"></span>
+    <a class="" href="/madsmobile/en/freefire/">English</a><a class="" href="/madsmobile/zh/freefire/">中文</a><a class="" href="/madsmobile/fr/freefire/">Français</a><a class="" href="/madsmobile/it/freefire/">Italiano</a><a class="" href="/madsmobile/pt/freefire/">Português</a><a class="active" href="/madsmobile/hi/freefire/">हिन्दी</a><a class="" href="/madsmobile/es/freefire/">Español</a>
+  </nav>
 </header>
 <main>
 
@@ -58,26 +58,26 @@
       <p class="also-known-as">इसे इन नामों से भी जाना जाता है: Garena Free Fire, FF, Free Fire MAX</p>
     </section>
     <section class="dev-info-row"><span class="dev-info-item"><strong>डेवलपर:</strong> 111dots Studio</span><span class="dev-info-item"><strong>पब्लिशर:</strong> Garena</span><span class="dev-info-item"><strong>आधिकारिक वेबसाइट:</strong> <a href="https://ff.garena.com/en" target="_blank" rel="noopener nofollow">ff.garena.com/en</a></span></section>
-    <section class="meta-about-row">
-      <div class="meta-col">
-        <h2>वर्तमान मेटा</h2>
+    <div class="weapons-tabs meta-about-tabs">
+      <button type="button" class="tab-btn active" data-tab-target="panel-meta-freefire">वर्तमान मेटा</button>
+      <button type="button" class="tab-btn" data-tab-target="panel-about-freefire">फ्री फायर के बारे में</button>
+    </div>
+    <div class="weapon-tab-panels">
+      <div class="weapon-tab-panel active" id="panel-meta-freefire">
         <p class="verified">अंतिम सत्यापन: 2026-07-12</p>
         <p>फ़िलहाल के टॉप विकल्प: नज़दीकी दूरी पर एलिमिनेशन के लिए <a href="#weapon-freefire-m1887">M1887</a> सभी हथियारों में सबसे आगे है, और <a href="#weapon-freefire-mp40">MP40</a> सबसे ज़्यादा DPS वाली रश SMG के तौर पर ठीक पीछे है। <a href="#weapon-freefire-groza">Groza</a> किसी भी दूरी पर अब भी सबसे बेहतरीन ऑल-राउंड असॉल्ट राइफल है, और <a href="#weapon-freefire-woodpecker">Woodpecker</a> आर्मर-पेनिट्रेटिंग हेडशॉट के लिए सबसे बेहतरीन प्रिसिजन राइफल है। किरदारों की बात करें तो Alok, Chrono और K अपनी एक्टिव एबिलिटी की वजह से लगभग हर कॉम्पिटिटिव लाइनअप का मुख्य हिस्सा हैं, जबकि आक्रामक रश स्क्वाड के लिए Jota और Hayato लगभग ज़रूरी पैसिव विकल्प हैं।</p>
-        
       </div>
-      <div class="about-col">
-        <details class="about-details">
-          <summary class="about-toggle-btn">फ्री फायर के बारे में</summary>
-          <div class="about-details-body"><p>Garena Free Fire एक बैटल रॉयल शूटर है जो 2017 में दुनिया भर में लॉन्च हुआ और दुनिया के सबसे ज़्यादा डाउनलोड किए जाने वाले मोबाइल गेम्स में से एक बन गया, खासकर लैटिन अमेरिका, भारत (Free Fire MAX के रूप में) और दक्षिण-पूर्व एशिया में इसके बड़े समुदाय हैं। हर मैच में 50 खिलाड़ी सिकुड़ते हुए द्वीप पर उतरते हैं, और गेम ज़्यादातर मोबाइल शूटर्स से छोटे और तेज़ हथियार सिस्टम के ऊपर एबिलिटी-आधारित किरदारों (एक्टिव और पैसिव स्किल) पर टिका है। नए किरदार, हथियार और बैलेंस पैच आने पर यह पेज अपडेट किया जाता है।</p></div>
-        </details>
+      <div class="weapon-tab-panel" id="panel-about-freefire">
+        <p>Garena Free Fire एक बैटल रॉयल शूटर है जो 2017 में दुनिया भर में लॉन्च हुआ और दुनिया के सबसे ज़्यादा डाउनलोड किए जाने वाले मोबाइल गेम्स में से एक बन गया, खासकर लैटिन अमेरिका, भारत (Free Fire MAX के रूप में) और दक्षिण-पूर्व एशिया में इसके बड़े समुदाय हैं। हर मैच में 50 खिलाड़ी सिकुड़ते हुए द्वीप पर उतरते हैं, और गेम ज़्यादातर मोबाइल शूटर्स से छोटे और तेज़ हथियार सिस्टम के ऊपर एबिलिटी-आधारित किरदारों (एक्टिव और पैसिव स्किल) पर टिका है। नए किरदार, हथियार और बैलेंस पैच आने पर यह पेज अपडेट किया जाता है।</p>
       </div>
-    </section>
+    </div>
     <section class="weapons-section">
       
       
     <div class="weapons-tabs">
       <button type="button" class="tab-btn active" data-tab-target="panel-best-freefire">बेस्ट हथियार</button>
       <button type="button" class="tab-btn" data-tab-target="panel-complete-freefire">संपूर्ण हथियार</button>
+      
       
     </div>
     <div class="weapon-tab-panels">
@@ -231,7 +231,7 @@
       </div>
       <div class="table-scroll">
         <table class="weapons-table complete-table">
-          <thead><tr><th data-sort="name">नाम <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">श्रेणी <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">टियर <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">रेंज</th><th data-sort="none">रोल</th><th data-sort="none">बॉडी डैमेज</th><th data-sort="rpm">RPM <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">फायर रेट</th><th data-sort="none">TTK</th><th data-sort="none">ADS स्पीड</th><th data-sort="none">एक्यूरेसी</th><th data-sort="none">रीकॉइल</th><th data-sort="none">मोबिलिटी</th><th data-sort="none">आर्मर पेनिट्रेशन</th><th data-sort="magazine">मैगज़ीन <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">बेस्ट डैमेज बिल्ड</th><th data-sort="none">नोट्स</th></tr></thead>
+          <thead><tr><th data-sort="name">नाम <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">श्रेणी <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">टियर <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">रेंज</th><th data-sort="none">रोल</th><th data-sort="none">बॉडी डैमेज</th><th data-sort="none">फायर रेट</th><th data-sort="none">एक्यूरेसी</th><th data-sort="none">रीकॉइल</th><th data-sort="none">मोबिलिटी</th><th data-sort="none">आर्मर पेनिट्रेशन</th><th data-sort="magazine">मैगज़ीन <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">नोट्स</th></tr></thead>
           <tbody>
     <tr id="weapon-freefire-mp40" data-name="mp40" data-class="एसएमजी (smg)"
         data-tier-rank="4" data-rpm="-1" data-magazine="20">
@@ -239,18 +239,7 @@
       <td>एसएमजी (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>नज़दीकी रेंज</td>
-      <td>Rush Slayer</td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>बहुत ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td>मध्यम</td>
-      <td>बेहतरीन</td>
-      <td>मध्यम</td>
-      <td>20</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Rush Slayer</td><td>ज़्यादा</td><td>बहुत ज़्यादा</td><td>मध्यम</td><td>मध्यम</td><td>बेहतरीन</td><td>मध्यम</td><td>20</td>
       <td class="cell-notes">Rush Slayer: यह नज़दीकी दूरी पर सबसे ज़्यादा DPS देती है, लेकिन दूरी पर कमज़ोर पड़ जाती है। फ़िलहाल Free Fire मेटा में इसे एक META विकल्प माना जाता है।</td>
     </tr>
     
@@ -260,18 +249,7 @@
       <td>एसएमजी (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>नज़दीकी-मध्यम रेंज</td>
-      <td>Balanced SMG</td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td>कम</td>
-      <td>बेहतरीन</td>
-      <td>ज़्यादा</td>
-      <td>48</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Balanced SMG</td><td>ज़्यादा</td><td>ज़्यादा</td><td>ज़्यादा</td><td>कम</td><td>बेहतरीन</td><td>ज़्यादा</td><td>48</td>
       <td class="cell-notes">Balanced SMG: यह अच्छी आर्मर पेनिट्रेशन और आसान नियंत्रण देती है, लेकिन बर्स्ट डैमेज दूसरे टॉप हथियारों से कम है। फ़िलहाल Free Fire मेटा में इसे एक META विकल्प माना जाता है।</td>
     </tr>
     
@@ -281,18 +259,7 @@
       <td>एसएमजी (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>नज़दीकी रेंज</td>
-      <td>Aggressive Rush</td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>बेहद ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td>ज़्यादा</td>
-      <td>ज़्यादा</td>
-      <td>मध्यम</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Aggressive Rush</td><td>ज़्यादा</td><td>बेहद ज़्यादा</td><td>मध्यम</td><td>ज़्यादा</td><td>ज़्यादा</td><td>मध्यम</td><td>30</td>
       <td class="cell-notes">Aggressive Rush: यह बहुत ज़्यादा DPS देती है, लेकिन रीकॉइल संभालना मुश्किल है। फ़िलहाल Free Fire मेटा में इसे एक उपयोगी विकल्प माना जाता है।</td>
     </tr>
     
@@ -302,18 +269,7 @@
       <td>एसएमजी (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>नज़दीकी-मध्यम रेंज</td>
-      <td>Sustained Fighter</td>
-      <td>मध्यम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td>कम</td>
-      <td>मध्यम</td>
-      <td>मध्यम</td>
-      <td>50</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Sustained Fighter</td><td>मध्यम</td><td>ज़्यादा</td><td>ज़्यादा</td><td>कम</td><td>मध्यम</td><td>मध्यम</td><td>50</td>
       <td class="cell-notes">Sustained Fighter: यह बड़ी मैगज़ीन देती है, लेकिन डैमेज दूसरे मिलते-जुलते हथियारों से कम है। फ़िलहाल Free Fire मेटा में इसे एक उपयोगी विकल्प माना जाता है।</td>
     </tr>
     
@@ -323,18 +279,7 @@
       <td>एसएमजी (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>नज़दीकी-मध्यम रेंज</td>
-      <td>Beginner</td>
-      <td>मध्यम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td>कम</td>
-      <td>ज़्यादा</td>
-      <td>कम</td>
-      <td>48</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Beginner</td><td>मध्यम</td><td>ज़्यादा</td><td>ज़्यादा</td><td>कम</td><td>ज़्यादा</td><td>कम</td><td>48</td>
       <td class="cell-notes">Beginner: यह इस्तेमाल में आसान हथियार देती है, लेकिन अपनी क्लास के दूसरे हथियारों से पीछे रह जाती है। फ़िलहाल Free Fire मेटा में इसे एक स्थिति-विशेष विकल्प माना जाता है।</td>
     </tr>
     
@@ -344,18 +289,7 @@
       <td>शॉटगन</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>नज़दीकी रेंज</td>
-      <td>Entry Fragger</td>
-      <td>अधिकतम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td>ज़्यादा</td>
-      <td>ज़्यादा</td>
-      <td>ज़्यादा</td>
-      <td>2</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Entry Fragger</td><td>अधिकतम</td><td>मध्यम</td><td>ज़्यादा</td><td>ज़्यादा</td><td>ज़्यादा</td><td>ज़्यादा</td><td>2</td>
       <td class="cell-notes">Entry Fragger: यह एक ही शॉट में खत्म करने की क्षमता देती है, लेकिन सटीकता की मांग करती है। फ़िलहाल Free Fire मेटा में इसे एक META विकल्प माना जाता है।</td>
     </tr>
     
@@ -365,18 +299,7 @@
       <td>शॉटगन</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>नज़दीकी रेंज</td>
-      <td>Burst Shotgun</td>
-      <td>बहुत ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td>मध्यम</td>
-      <td>मध्यम</td>
-      <td>ज़्यादा</td>
-      <td>3</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Burst Shotgun</td><td>बहुत ज़्यादा</td><td>मध्यम</td><td>मध्यम</td><td>मध्यम</td><td>मध्यम</td><td>ज़्यादा</td><td>3</td>
       <td class="cell-notes">Burst Shotgun: यह मज़बूत बर्स्ट डैमेज देती है, लेकिन गलतियों को कम माफ करती है। फ़िलहाल Free Fire मेटा में इसे एक META विकल्प माना जाता है।</td>
     </tr>
     
@@ -386,18 +309,7 @@
       <td>शॉटगन</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>नज़दीकी रेंज</td>
-      <td>Beginner Shotgun</td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td>कम</td>
-      <td>मध्यम</td>
-      <td>मध्यम</td>
-      <td>6</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Beginner Shotgun</td><td>ज़्यादा</td><td>ज़्यादा</td><td>मध्यम</td><td>कम</td><td>मध्यम</td><td>मध्यम</td><td>6</td>
       <td class="cell-notes">Beginner Shotgun: यह आसान फॉलो-अप शॉट्स देती है, लेकिन बर्स्ट डैमेज दूसरे टॉप हथियारों से कम है। फ़िलहाल Free Fire मेटा में इसे एक उपयोगी विकल्प माना जाता है।</td>
     </tr>
     
@@ -407,18 +319,7 @@
       <td>शॉटगन</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>नज़दीकी रेंज</td>
-      <td>Fast Combat</td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td>मध्यम</td>
-      <td>ज़्यादा</td>
-      <td>मध्यम</td>
-      <td>8</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Fast Combat</td><td>ज़्यादा</td><td>ज़्यादा</td><td>ज़्यादा</td><td>मध्यम</td><td>ज़्यादा</td><td>मध्यम</td><td>8</td>
       <td class="cell-notes">Fast Combat: यह तेज़ हैंडलिंग देती है, लेकिन डैमेज दूसरे मिलते-जुलते हथियारों से कम है। फ़िलहाल Free Fire मेटा में इसे एक उपयोगी विकल्प माना जाता है।</td>
     </tr>
     
@@ -428,18 +329,7 @@
       <td>शॉटगन</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>नज़दीकी-मध्यम रेंज</td>
-      <td>Situational</td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>कम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td>मध्यम</td>
-      <td>मध्यम</td>
-      <td>मध्यम</td>
-      <td>5</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Situational</td><td>ज़्यादा</td><td>कम</td><td>मध्यम</td><td>मध्यम</td><td>मध्यम</td><td>मध्यम</td><td>5</td>
       <td class="cell-notes">Situational: यह रेंज का फायदा देती है, लेकिन धीमी है। फ़िलहाल Free Fire मेटा में इसे एक खास स्थितियों वाला विकल्प माना जाता है।</td>
     </tr>
     
@@ -449,18 +339,7 @@
       <td>असॉल्ट राइफल</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>मध्यम-लंबी रेंज</td>
-      <td>Universal AR</td>
-      <td>बहुत ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td>कम</td>
-      <td>मध्यम</td>
-      <td>ज़्यादा</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Universal AR</td><td>बहुत ज़्यादा</td><td>ज़्यादा</td><td>ज़्यादा</td><td>कम</td><td>मध्यम</td><td>ज़्यादा</td><td>30</td>
       <td class="cell-notes">Universal AR: यह सबसे बेहतरीन ऑल-राउंड असॉल्ट राइफल देती है, लेकिन मोबिलिटी कम हो जाती है। फ़िलहाल Free Fire मेटा में इसे एक META विकल्प माना जाता है।</td>
     </tr>
     
@@ -470,18 +349,7 @@
       <td>असॉल्ट राइफल</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>मध्यम-लंबी रेंज</td>
-      <td>Mid Range</td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>बेहतरीन</td>
-      <td>कम</td>
-      <td>ज़्यादा</td>
-      <td>मध्यम</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Mid Range</td><td>ज़्यादा</td><td>ज़्यादा</td><td>बेहतरीन</td><td>कम</td><td>ज़्यादा</td><td>मध्यम</td><td>30</td>
       <td class="cell-notes">Mid Range: यह आसान नियंत्रण देती है, लेकिन बर्स्ट डैमेज दूसरे टॉप हथियारों से कम है। फ़िलहाल Free Fire मेटा में इसे एक META विकल्प माना जाता है।</td>
     </tr>
     
@@ -491,18 +359,7 @@
       <td>असॉल्ट राइफल</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>मध्यम-लंबी रेंज</td>
-      <td>Balanced</td>
-      <td>मध्यम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td>कम</td>
-      <td>मध्यम</td>
-      <td>मध्यम</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Balanced</td><td>मध्यम</td><td>मध्यम</td><td>ज़्यादा</td><td>कम</td><td>मध्यम</td><td>मध्यम</td><td>30</td>
       <td class="cell-notes">Balanced: यह भरोसेमंद प्रदर्शन देती है, लेकिन इसका कुल DPS कम है। फ़िलहाल Free Fire मेटा में इसे एक उपयोगी विकल्प माना जाता है।</td>
     </tr>
     
@@ -512,18 +369,7 @@
       <td>असॉल्ट राइफल</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>नज़दीकी-मध्यम रेंज</td>
-      <td>Beginner AR</td>
-      <td>मध्यम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td>कम</td>
-      <td>ज़्यादा</td>
-      <td>कम</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Beginner AR</td><td>मध्यम</td><td>ज़्यादा</td><td>ज़्यादा</td><td>कम</td><td>ज़्यादा</td><td>कम</td><td>30</td>
       <td class="cell-notes">Beginner AR: यह बहुत आसान इस्तेमाल देती है, लेकिन आर्मर के खिलाफ कमज़ोर है। फ़िलहाल Free Fire मेटा में इसे एक उपयोगी विकल्प माना जाता है।</td>
     </tr>
     
@@ -533,18 +379,7 @@
       <td>असॉल्ट राइफल</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>मध्यम-लंबी रेंज</td>
-      <td>Damage AR</td>
-      <td>बहुत ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td>ज़्यादा</td>
-      <td>मध्यम</td>
-      <td>ज़्यादा</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Damage AR</td><td>बहुत ज़्यादा</td><td>मध्यम</td><td>मध्यम</td><td>ज़्यादा</td><td>मध्यम</td><td>ज़्यादा</td><td>30</td>
       <td class="cell-notes">Damage AR: यह भारी डैमेज देती है, लेकिन इसका रीकॉइल तेज़ है। फ़िलहाल Free Fire मेटा में इसे एक ज़्यादा कौशल वाला विकल्प माना जाता है।</td>
     </tr>
     
@@ -554,18 +389,7 @@
       <td>असॉल्ट राइफल</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>मध्यम-लंबी रेंज</td>
-      <td>Burst AR</td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td>मध्यम</td>
-      <td>मध्यम</td>
-      <td>मध्यम</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Burst AR</td><td>ज़्यादा</td><td>मध्यम</td><td>ज़्यादा</td><td>मध्यम</td><td>मध्यम</td><td>मध्यम</td><td>30</td>
       <td class="cell-notes">Burst AR: यह बर्स्ट में अच्छी सटीकता देती है, लेकिन गलतियों को कम माफ करती है। फ़िलहाल Free Fire मेटा में इसे एक स्थिति-विशेष विकल्प माना जाता है।</td>
     </tr>
     
@@ -575,18 +399,7 @@
       <td>असॉल्ट राइफल</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>मध्यम-लंबी रेंज</td>
-      <td>High Skill</td>
-      <td>बहुत ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td>ज़्यादा</td>
-      <td>मध्यम</td>
-      <td>ज़्यादा</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>High Skill</td><td>बहुत ज़्यादा</td><td>मध्यम</td><td>मध्यम</td><td>ज़्यादा</td><td>मध्यम</td><td>ज़्यादा</td><td>30</td>
       <td class="cell-notes">High Skill: यह ज़्यादा डैमेज देती है, लेकिन इसे नियंत्रित करना मुश्किल है। फ़िलहाल Free Fire मेटा में इसे एक खास स्थितियों वाला विकल्प माना जाता है।</td>
     </tr>
     
@@ -596,18 +409,7 @@
       <td>स्नाइपर राइफल</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>लंबी रेंज</td>
-      <td>One Shot</td>
-      <td>अधिकतम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>कम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td>ज़्यादा</td>
-      <td>कम</td>
-      <td>ज़्यादा</td>
-      <td>5</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>One Shot</td><td>अधिकतम</td><td>कम</td><td>ज़्यादा</td><td>ज़्यादा</td><td>कम</td><td>ज़्यादा</td><td>5</td>
       <td class="cell-notes">One Shot: यह स्नाइपर राइफलों में सबसे ज़्यादा डैमेज देती है, लेकिन धीमी है। फ़िलहाल Free Fire मेटा में इसे एक META विकल्प माना जाता है।</td>
     </tr>
     
@@ -617,18 +419,7 @@
       <td>मार्क्समैन राइफल</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>मध्यम-लंबी रेंज</td>
-      <td>Armor Killer</td>
-      <td>बहुत ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td>मध्यम</td>
-      <td>मध्यम</td>
-      <td>अधिकतम</td>
-      <td>12</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Armor Killer</td><td>बहुत ज़्यादा</td><td>मध्यम</td><td>ज़्यादा</td><td>मध्यम</td><td>मध्यम</td><td>अधिकतम</td><td>12</td>
       <td class="cell-notes">Armor Killer: यह हेडशॉट की बेहतरीन क्षमता देती है, लेकिन अच्छे निशाने की ज़रूरत होती है। फ़िलहाल Free Fire मेटा में इसे एक META विकल्प माना जाता है।</td>
     </tr>
     
@@ -638,18 +429,7 @@
       <td>स्नाइपर राइफल</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>लंबी रेंज</td>
-      <td>Anti Gloo Wall</td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>कम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>ज़्यादा</td>
-      <td>मध्यम</td>
-      <td>कम</td>
-      <td>ज़्यादा</td>
-      <td>5</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Anti Gloo Wall</td><td>ज़्यादा</td><td>कम</td><td>ज़्यादा</td><td>मध्यम</td><td>कम</td><td>ज़्यादा</td><td>5</td>
       <td class="cell-notes">Anti Gloo Wall: यह उपयोगिता और कवर को भेदने की क्षमता देती है, लेकिन मोबिलिटी कम है। फ़िलहाल Free Fire मेटा में इसे एक उपयोगी विकल्प माना जाता है।</td>
     </tr>
     
@@ -659,18 +439,7 @@
       <td>मार्क्समैन राइफल</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>मध्यम-लंबी रेंज</td>
-      <td>Semi Auto</td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td>मध्यम</td>
-      <td>मध्यम</td>
-      <td>ज़्यादा</td>
-      <td>10</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Semi Auto</td><td>ज़्यादा</td><td>मध्यम</td><td>मध्यम</td><td>मध्यम</td><td>मध्यम</td><td>ज़्यादा</td><td>10</td>
       <td class="cell-notes">Semi Auto: यह तेज़ फॉलो-अप शॉट्स देती है, लेकिन बर्स्ट डैमेज कम है। फ़िलहाल Free Fire मेटा में इसे एक उपयोगी विकल्प माना जाता है।</td>
     </tr>
     
@@ -680,18 +449,7 @@
       <td>मार्क्समैन राइफल</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>मध्यम-लंबी रेंज</td>
-      <td>Precision</td>
-      <td>ज़्यादा</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>मध्यम</td>
-      <td>ज़्यादा</td>
-      <td>मध्यम</td>
-      <td>मध्यम</td>
-      <td>10</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Precision</td><td>ज़्यादा</td><td>मध्यम</td><td>मध्यम</td><td>ज़्यादा</td><td>मध्यम</td><td>मध्यम</td><td>10</td>
       <td class="cell-notes">Precision: यह अच्छी रेंज देती है, लेकिन खिलाड़ी के कौशल पर बहुत निर्भर करती है। फ़िलहाल Free Fire मेटा में इसे एक कौशल पर निर्भर विकल्प माना जाता है।</td>
     </tr>
     </tbody>
@@ -705,7 +463,7 @@
     
     </section>
     <section class="teaser-section">
-      <h2>किरदार और स्किन</h2>
+      <h2>किरदार</h2>
       <a class="see-all" href="/madsmobile/hi/freefire/characters/">किरदार &rarr;</a>
     </section>
     <section class="teaser-section">
@@ -723,10 +481,8 @@
 </main>
 <footer class="site-footer">
   <p class="footer-description">MADS Mobile दुनिया के प्रमुख मोबाइल शूटर गेम्स के लिए हथियारों, किरदारों और मेटा रैंकिंग का तथ्य-जांचा हुआ डेटाबेस है।</p>
-  <p class="footer-disclaimer">MADS Mobile पर प्रकाशित जानकारी उपलब्ध गेम डेटा के शोध, विश्लेषण और मूल्यांकन पर आधारित है। अपडेट और बैलेंस परिवर्तन आँकड़ों और सिफारिशों को बदल सकते हैं। यदि आपको कोई विसंगति मिले, तो कृपया हमारी टीम से संपर्क करें।</p>
-  <p>तथ्य-जांचित मोबाइल FPS डेटाबेस। डेटा हर महीने अपडेट होता है।</p>
+  <p class="footer-disclaimer">MADS Mobile पर प्रकाशित जानकारी उपलब्ध गेम डेटा के शोध, विश्लेषण और मूल्यांकन पर आधारित है। अपडेट और बैलेंस परिवर्तन आँकड़ों और सिफारिशों को बदल सकते हैं। यदि आपको कोई विसंगति मिले, तो कृपया हमारी टीम से संपर्क करें। संपर्क करें: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
   <p class="footer-social"><span class="footer-social-label">हमें फॉलो करें:</span> <a href="https://www.instagram.com/madsmobilegg/" target="_blank" rel="noopener noreferrer">Instagram</a> <a href="https://x.com/MADSmobile" target="_blank" rel="noopener noreferrer">X</a> <a href="https://www.threads.com/@madsmobilegg" target="_blank" rel="noopener noreferrer">Threads</a></p>
-  <p class="footer-contact">संपर्क करें: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
   <p class="footer-copyright">&copy; 2026 MADS Mobile &mdash; सर्वाधिकार सुरक्षित।</p>
 </footer>
 <script src="/madsmobile/assets/app.js"></script>
