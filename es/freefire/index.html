@@ -30,17 +30,17 @@
 <body>
 <header class="site-header">
   <a class="brand" href="/madsmobile/es/"><img src="/madsmobile/assets/img/brand/logo.png" alt="MADS Mobile" class="brand-logo" width="32" height="32"><span class="brand-text">MADS Mobile</span></a>
-  <nav class="site-nav" aria-label="Inicio">
-    <a href="/madsmobile/es/">Inicio</a>
-    <a href="/madsmobile/es/blog/">Blog</a>
-  </nav>
   <nav class="crumbs"><a href="/madsmobile/es/">&larr; Volver a todos los juegos</a><span class="tabs">
     <a href="/madsmobile/es/freefire/">Meta / Armas</a>
     <a href="/madsmobile/es/freefire/characters/">Personajes</a>
     <a href="/madsmobile/es/freefire/builds/">Builds</a>
     <a href="/madsmobile/es/freefire/blog/">Blog</a>
     </span></nav>
-  <nav class="lang-switch" aria-label="Idioma"><a class="" href="/madsmobile/en/freefire/">English</a><a class="" href="/madsmobile/zh/freefire/">中文</a><a class="" href="/madsmobile/fr/freefire/">Français</a><a class="" href="/madsmobile/it/freefire/">Italiano</a><a class="" href="/madsmobile/pt/freefire/">Português</a><a class="" href="/madsmobile/hi/freefire/">हिन्दी</a><a class="active" href="/madsmobile/es/freefire/">Español</a></nav>
+  <nav class="lang-switch" aria-label="Idioma">
+    <a class="blog-nav-link" href="/madsmobile/es/blog/">Blog</a>
+    <span class="nav-divider" aria-hidden="true"></span>
+    <a class="" href="/madsmobile/en/freefire/">English</a><a class="" href="/madsmobile/zh/freefire/">中文</a><a class="" href="/madsmobile/fr/freefire/">Français</a><a class="" href="/madsmobile/it/freefire/">Italiano</a><a class="" href="/madsmobile/pt/freefire/">Português</a><a class="" href="/madsmobile/hi/freefire/">हिन्दी</a><a class="active" href="/madsmobile/es/freefire/">Español</a>
+  </nav>
 </header>
 <main>
 
@@ -58,26 +58,26 @@
       <p class="also-known-as">También conocido como: Garena Free Fire, FF, Free Fire MAX</p>
     </section>
     <section class="dev-info-row"><span class="dev-info-item"><strong>Desarrollador:</strong> 111dots Studio</span><span class="dev-info-item"><strong>Editor:</strong> Garena</span><span class="dev-info-item"><strong>Sitio Oficial:</strong> <a href="https://ff.garena.com/en" target="_blank" rel="noopener nofollow">ff.garena.com/en</a></span></section>
-    <section class="meta-about-row">
-      <div class="meta-col">
-        <h2>Meta Actual</h2>
+    <div class="weapons-tabs meta-about-tabs">
+      <button type="button" class="tab-btn active" data-tab-target="panel-meta-freefire">Meta Actual</button>
+      <button type="button" class="tab-btn" data-tab-target="panel-about-freefire">Acerca de Free Fire</button>
+    </div>
+    <div class="weapon-tab-panels">
+      <div class="weapon-tab-panel active" id="panel-meta-freefire">
         <p class="verified">Última verificación: 2026-07-12</p>
         <p>Mejores opciones actuales: <a href="#weapon-freefire-m1887">M1887</a> lidera todas las armas para eliminaciones a corta distancia, con <a href="#weapon-freefire-mp40">MP40</a> justo detrás como el subfusil de rush con mayor DPS. <a href="#weapon-freefire-groza">Groza</a> sigue siendo el mejor fusil de asalto en general a cualquier distancia, y <a href="#weapon-freefire-woodpecker">Woodpecker</a> es el mejor rifle de precisión para headshots que perforan armadura. En cuanto a personajes, Alok, Chrono y K forman el núcleo de casi cualquier equipo competitivo gracias a sus habilidades activas, mientras que Jota y Hayato son prácticamente obligatorios como pasivos para escuadras agresivas de rush.</p>
-        
       </div>
-      <div class="about-col">
-        <details class="about-details">
-          <summary class="about-toggle-btn">Acerca de Free Fire</summary>
-          <div class="about-details-body"><p>Garena Free Fire es un shooter battle royale lanzado mundialmente en 2017 que se convirtió en uno de los juegos móviles más descargados del mundo, con comunidades especialmente grandes en Latinoamérica, India (como Free Fire MAX) y el sudeste asiático. Las partidas enfrentan a 50 jugadores en una isla que se reduce con el tiempo, y el juego se apoya en personajes con habilidades (activas y pasivas) sobre un arsenal de armas más reducido y rápido que el de otros shooters móviles. Esta página se actualiza a medida que llegan nuevos personajes, armas y parches de balance.</p></div>
-        </details>
+      <div class="weapon-tab-panel" id="panel-about-freefire">
+        <p>Garena Free Fire es un shooter battle royale lanzado mundialmente en 2017 que se convirtió en uno de los juegos móviles más descargados del mundo, con comunidades especialmente grandes en Latinoamérica, India (como Free Fire MAX) y el sudeste asiático. Las partidas enfrentan a 50 jugadores en una isla que se reduce con el tiempo, y el juego se apoya en personajes con habilidades (activas y pasivas) sobre un arsenal de armas más reducido y rápido que el de otros shooters móviles. Esta página se actualiza a medida que llegan nuevos personajes, armas y parches de balance.</p>
       </div>
-    </section>
+    </div>
     <section class="weapons-section">
       
       
     <div class="weapons-tabs">
       <button type="button" class="tab-btn active" data-tab-target="panel-best-freefire">Mejores Armas</button>
       <button type="button" class="tab-btn" data-tab-target="panel-complete-freefire">Armas Completas</button>
+      
       
     </div>
     <div class="weapon-tab-panels">
@@ -231,7 +231,7 @@
       </div>
       <div class="table-scroll">
         <table class="weapons-table complete-table">
-          <thead><tr><th data-sort="name">Nombre <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">Clase <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">Nivel <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Alcance</th><th data-sort="none">Rol</th><th data-sort="none">Daño cuerpo</th><th data-sort="rpm">RPM <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Cadencia de tiro</th><th data-sort="none">TTK</th><th data-sort="none">Velocidad ADS</th><th data-sort="none">Precisión</th><th data-sort="none">Retroceso</th><th data-sort="none">Movilidad</th><th data-sort="none">Penet. Armadura</th><th data-sort="magazine">Cargador <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Mejor build de daño</th><th data-sort="none">Notas</th></tr></thead>
+          <thead><tr><th data-sort="name">Nombre <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">Clase <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">Nivel <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Alcance</th><th data-sort="none">Rol</th><th data-sort="none">Daño cuerpo</th><th data-sort="none">Cadencia de tiro</th><th data-sort="none">Precisión</th><th data-sort="none">Retroceso</th><th data-sort="none">Movilidad</th><th data-sort="none">Penet. Armadura</th><th data-sort="magazine">Cargador <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Notas</th></tr></thead>
           <tbody>
     <tr id="weapon-freefire-mp40" data-name="mp40" data-class="subfusil (smg)"
         data-tier-rank="4" data-rpm="-1" data-magazine="20">
@@ -239,18 +239,7 @@
       <td>Subfusil (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Corto alcance</td>
-      <td>Rush Slayer</td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Muy alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td>Medio</td>
-      <td>Excelente</td>
-      <td>Medio</td>
-      <td>20</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Rush Slayer</td><td>Alto</td><td>Muy alto</td><td>Medio</td><td>Medio</td><td>Excelente</td><td>Medio</td><td>20</td>
       <td class="cell-notes">Rush Slayer: aporta el mayor daño por segundo a corta distancia, pero pierde efectividad a distancia. Actualmente se considera una opción META en el meta de Free Fire.</td>
     </tr>
     
@@ -260,18 +249,7 @@
       <td>Subfusil (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Corto-medio alcance</td>
-      <td>Balanced SMG</td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td>Bajo</td>
-      <td>Excelente</td>
-      <td>Alto</td>
-      <td>48</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Balanced SMG</td><td>Alto</td><td>Alto</td><td>Alto</td><td>Bajo</td><td>Excelente</td><td>Alto</td><td>48</td>
       <td class="cell-notes">Balanced SMG: aporta buena penetración de armadura y fácil control, pero tiene un daño de ráfaga menor que las mejores opciones. Actualmente se considera una opción META en el meta de Free Fire.</td>
     </tr>
     
@@ -281,18 +259,7 @@
       <td>Subfusil (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Corto alcance</td>
-      <td>Aggressive Rush</td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Extremo</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td>Alto</td>
-      <td>Alto</td>
-      <td>Medio</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Aggressive Rush</td><td>Alto</td><td>Extremo</td><td>Medio</td><td>Alto</td><td>Alto</td><td>Medio</td><td>30</td>
       <td class="cell-notes">Aggressive Rush: aporta un DPS muy alto, pero tiene un retroceso difícil de controlar. Actualmente se considera una opción viable en el meta de Free Fire.</td>
     </tr>
     
@@ -302,18 +269,7 @@
       <td>Subfusil (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Corto-medio alcance</td>
-      <td>Sustained Fighter</td>
-      <td>Medio</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td>Bajo</td>
-      <td>Medio</td>
-      <td>Medio</td>
-      <td>50</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Sustained Fighter</td><td>Medio</td><td>Alto</td><td>Alto</td><td>Bajo</td><td>Medio</td><td>Medio</td><td>50</td>
       <td class="cell-notes">Sustained Fighter: aporta un cargador grande, pero tiene menos daño que opciones similares. Actualmente se considera una opción viable en el meta de Free Fire.</td>
     </tr>
     
@@ -323,18 +279,7 @@
       <td>Subfusil (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Corto-medio alcance</td>
-      <td>Beginner</td>
-      <td>Medio</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td>Bajo</td>
-      <td>Alto</td>
-      <td>Bajo</td>
-      <td>48</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Beginner</td><td>Medio</td><td>Alto</td><td>Alto</td><td>Bajo</td><td>Alto</td><td>Bajo</td><td>48</td>
       <td class="cell-notes">Beginner: aporta un arma fácil de usar, pero queda por debajo de otras opciones de su clase. Actualmente se considera una opción situacional en el meta de Free Fire.</td>
     </tr>
     
@@ -344,18 +289,7 @@
       <td>Escopeta</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Corto alcance</td>
-      <td>Entry Fragger</td>
-      <td>Máximo</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td>Alto</td>
-      <td>Alto</td>
-      <td>Alto</td>
-      <td>2</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Entry Fragger</td><td>Máximo</td><td>Medio</td><td>Alto</td><td>Alto</td><td>Alto</td><td>Alto</td><td>2</td>
       <td class="cell-notes">Entry Fragger: aporta potencial de eliminación de un solo disparo, pero exige precisión. Actualmente se considera una opción META en el meta de Free Fire.</td>
     </tr>
     
@@ -365,18 +299,7 @@
       <td>Escopeta</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Corto alcance</td>
-      <td>Burst Shotgun</td>
-      <td>Muy alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td>Medio</td>
-      <td>Medio</td>
-      <td>Alto</td>
-      <td>3</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Burst Shotgun</td><td>Muy alto</td><td>Medio</td><td>Medio</td><td>Medio</td><td>Medio</td><td>Alto</td><td>3</td>
       <td class="cell-notes">Burst Shotgun: aporta un daño de ráfaga fuerte, pero perdona menos los disparos fallados. Actualmente se considera una opción META en el meta de Free Fire.</td>
     </tr>
     
@@ -386,18 +309,7 @@
       <td>Escopeta</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Corto alcance</td>
-      <td>Beginner Shotgun</td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td>Bajo</td>
-      <td>Medio</td>
-      <td>Medio</td>
-      <td>6</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Beginner Shotgun</td><td>Alto</td><td>Alto</td><td>Medio</td><td>Bajo</td><td>Medio</td><td>Medio</td><td>6</td>
       <td class="cell-notes">Beginner Shotgun: aporta disparos de seguimiento fáciles, pero tiene un daño de ráfaga menor que las mejores opciones. Actualmente se considera una opción viable en el meta de Free Fire.</td>
     </tr>
     
@@ -407,18 +319,7 @@
       <td>Escopeta</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Corto alcance</td>
-      <td>Fast Combat</td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td>Medio</td>
-      <td>Alto</td>
-      <td>Medio</td>
-      <td>8</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Fast Combat</td><td>Alto</td><td>Alto</td><td>Alto</td><td>Medio</td><td>Alto</td><td>Medio</td><td>8</td>
       <td class="cell-notes">Fast Combat: aporta un manejo rápido, pero tiene menos daño que opciones similares. Actualmente se considera una opción viable en el meta de Free Fire.</td>
     </tr>
     
@@ -428,18 +329,7 @@
       <td>Escopeta</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Corto-medio alcance</td>
-      <td>Situational</td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Bajo</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td>Medio</td>
-      <td>Medio</td>
-      <td>Medio</td>
-      <td>5</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Situational</td><td>Alto</td><td>Bajo</td><td>Medio</td><td>Medio</td><td>Medio</td><td>Medio</td><td>5</td>
       <td class="cell-notes">Situational: aporta ventaja de alcance, pero es lenta de manejar. Actualmente se considera una opción de nicho en el meta de Free Fire.</td>
     </tr>
     
@@ -449,18 +339,7 @@
       <td>Fusil de Asalto</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Medio-largo alcance</td>
-      <td>Universal AR</td>
-      <td>Muy alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td>Bajo</td>
-      <td>Medio</td>
-      <td>Alto</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Universal AR</td><td>Muy alto</td><td>Alto</td><td>Alto</td><td>Bajo</td><td>Medio</td><td>Alto</td><td>30</td>
       <td class="cell-notes">Universal AR: aporta el mejor fusil de asalto en general, pero reduce la movilidad. Actualmente se considera una opción META en el meta de Free Fire.</td>
     </tr>
     
@@ -470,18 +349,7 @@
       <td>Fusil de Asalto</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Medio-largo alcance</td>
-      <td>Mid Range</td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Excelente</td>
-      <td>Bajo</td>
-      <td>Alto</td>
-      <td>Medio</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Mid Range</td><td>Alto</td><td>Alto</td><td>Excelente</td><td>Bajo</td><td>Alto</td><td>Medio</td><td>30</td>
       <td class="cell-notes">Mid Range: aporta un control fácil, pero tiene un daño de ráfaga menor que las mejores opciones. Actualmente se considera una opción META en el meta de Free Fire.</td>
     </tr>
     
@@ -491,18 +359,7 @@
       <td>Fusil de Asalto</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Medio-largo alcance</td>
-      <td>Balanced</td>
-      <td>Medio</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td>Bajo</td>
-      <td>Medio</td>
-      <td>Medio</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Balanced</td><td>Medio</td><td>Medio</td><td>Alto</td><td>Bajo</td><td>Medio</td><td>Medio</td><td>30</td>
       <td class="cell-notes">Balanced: aporta fiabilidad, pero tiene un DPS más bajo en general. Actualmente se considera una opción viable en el meta de Free Fire.</td>
     </tr>
     
@@ -512,18 +369,7 @@
       <td>Fusil de Asalto</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Corto-medio alcance</td>
-      <td>Beginner AR</td>
-      <td>Medio</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td>Bajo</td>
-      <td>Alto</td>
-      <td>Bajo</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Beginner AR</td><td>Medio</td><td>Alto</td><td>Alto</td><td>Bajo</td><td>Alto</td><td>Bajo</td><td>30</td>
       <td class="cell-notes">Beginner AR: aporta un manejo muy fácil, pero es débil contra la armadura. Actualmente se considera una opción viable en el meta de Free Fire.</td>
     </tr>
     
@@ -533,18 +379,7 @@
       <td>Fusil de Asalto</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Medio-largo alcance</td>
-      <td>Damage AR</td>
-      <td>Muy alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td>Alto</td>
-      <td>Medio</td>
-      <td>Alto</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Damage AR</td><td>Muy alto</td><td>Medio</td><td>Medio</td><td>Alto</td><td>Medio</td><td>Alto</td><td>30</td>
       <td class="cell-notes">Damage AR: aporta un daño enorme, pero tiene un retroceso considerable. Actualmente se considera una opción de alta habilidad en el meta de Free Fire.</td>
     </tr>
     
@@ -554,18 +389,7 @@
       <td>Fusil de Asalto</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Medio-largo alcance</td>
-      <td>Burst AR</td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td>Medio</td>
-      <td>Medio</td>
-      <td>Medio</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Burst AR</td><td>Alto</td><td>Medio</td><td>Alto</td><td>Medio</td><td>Medio</td><td>Medio</td><td>30</td>
       <td class="cell-notes">Burst AR: aporta buena precisión en ráfaga, pero perdona menos los disparos fallados. Actualmente se considera una opción situacional en el meta de Free Fire.</td>
     </tr>
     
@@ -575,18 +399,7 @@
       <td>Fusil de Asalto</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Medio-largo alcance</td>
-      <td>High Skill</td>
-      <td>Muy alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td>Alto</td>
-      <td>Medio</td>
-      <td>Alto</td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>High Skill</td><td>Muy alto</td><td>Medio</td><td>Medio</td><td>Alto</td><td>Medio</td><td>Alto</td><td>30</td>
       <td class="cell-notes">High Skill: aporta un daño alto, pero es difícil de controlar. Actualmente se considera una opción de nicho en el meta de Free Fire.</td>
     </tr>
     
@@ -596,18 +409,7 @@
       <td>Rifle de Francotirador</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Largo alcance</td>
-      <td>One Shot</td>
-      <td>Máximo</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Bajo</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td>Alto</td>
-      <td>Bajo</td>
-      <td>Alto</td>
-      <td>5</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>One Shot</td><td>Máximo</td><td>Bajo</td><td>Alto</td><td>Alto</td><td>Bajo</td><td>Alto</td><td>5</td>
       <td class="cell-notes">One Shot: aporta el mayor daño entre los francotiradores, pero es lenta de manejar. Actualmente se considera una opción META en el meta de Free Fire.</td>
     </tr>
     
@@ -617,18 +419,7 @@
       <td>Fusil de Precisión</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Medio-largo alcance</td>
-      <td>Armor Killer</td>
-      <td>Muy alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td>Medio</td>
-      <td>Medio</td>
-      <td>Máximo</td>
-      <td>12</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Armor Killer</td><td>Muy alto</td><td>Medio</td><td>Alto</td><td>Medio</td><td>Medio</td><td>Máximo</td><td>12</td>
       <td class="cell-notes">Armor Killer: aporta gran potencial de disparo a la cabeza, pero exige buena puntería. Actualmente se considera una opción META en el meta de Free Fire.</td>
     </tr>
     
@@ -638,18 +429,7 @@
       <td>Rifle de Francotirador</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Largo alcance</td>
-      <td>Anti Gloo Wall</td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Bajo</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Alto</td>
-      <td>Medio</td>
-      <td>Bajo</td>
-      <td>Alto</td>
-      <td>5</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Anti Gloo Wall</td><td>Alto</td><td>Bajo</td><td>Alto</td><td>Medio</td><td>Bajo</td><td>Alto</td><td>5</td>
       <td class="cell-notes">Anti Gloo Wall: aporta utilidad y penetración a través de coberturas, pero tiene menos movilidad. Actualmente se considera una opción viable en el meta de Free Fire.</td>
     </tr>
     
@@ -659,18 +439,7 @@
       <td>Fusil de Precisión</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Medio-largo alcance</td>
-      <td>Semi Auto</td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td>Medio</td>
-      <td>Medio</td>
-      <td>Alto</td>
-      <td>10</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Semi Auto</td><td>Alto</td><td>Medio</td><td>Medio</td><td>Medio</td><td>Medio</td><td>Alto</td><td>10</td>
       <td class="cell-notes">Semi Auto: aporta disparos de seguimiento rápidos, pero tiene menos daño de ráfaga. Actualmente se considera una opción viable en el meta de Free Fire.</td>
     </tr>
     
@@ -680,18 +449,7 @@
       <td>Fusil de Precisión</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Medio-largo alcance</td>
-      <td>Precision</td>
-      <td>Alto</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medio</td>
-      <td>Alto</td>
-      <td>Medio</td>
-      <td>Medio</td>
-      <td>10</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Precision</td><td>Alto</td><td>Medio</td><td>Medio</td><td>Alto</td><td>Medio</td><td>Medio</td><td>10</td>
       <td class="cell-notes">Precision: aporta buen alcance, pero depende mucho de la habilidad del jugador. Actualmente se considera una opción muy dependiente de la habilidad en el meta de Free Fire.</td>
     </tr>
     </tbody>
@@ -705,7 +463,7 @@
     
     </section>
     <section class="teaser-section">
-      <h2>Personajes y Skins</h2>
+      <h2>Personajes</h2>
       <a class="see-all" href="/madsmobile/es/freefire/characters/">Personajes &rarr;</a>
     </section>
     <section class="teaser-section">
@@ -723,10 +481,8 @@
 </main>
 <footer class="site-footer">
   <p class="footer-description">MADS Mobile es una base de datos verificada de armas, personajes y rankings de meta para los shooters móviles más importantes del mundo.</p>
-  <p class="footer-disclaimer">La información publicada en MADS Mobile se basa en investigación, análisis y evaluación de los datos disponibles del juego. Las actualizaciones y cambios de balance pueden modificar las estadísticas y recomendaciones. Si encuentras discrepancias, por favor contacta a nuestro equipo.</p>
-  <p>Base de datos de shooters móviles verificada. Datos actualizados mensualmente.</p>
+  <p class="footer-disclaimer">La información publicada en MADS Mobile se basa en investigación, análisis y evaluación de los datos disponibles del juego. Las actualizaciones y cambios de balance pueden modificar las estadísticas y recomendaciones. Si encuentras discrepancias, por favor contacta a nuestro equipo. Contacto: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
   <p class="footer-social"><span class="footer-social-label">Síguenos:</span> <a href="https://www.instagram.com/madsmobilegg/" target="_blank" rel="noopener noreferrer">Instagram</a> <a href="https://x.com/MADSmobile" target="_blank" rel="noopener noreferrer">X</a> <a href="https://www.threads.com/@madsmobilegg" target="_blank" rel="noopener noreferrer">Threads</a></p>
-  <p class="footer-contact">Contacto: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
   <p class="footer-copyright">&copy; 2026 MADS Mobile &mdash; Todos los derechos reservados.</p>
 </footer>
 <script src="/madsmobile/assets/app.js"></script>
