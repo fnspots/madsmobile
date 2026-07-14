@@ -30,17 +30,17 @@
 <body>
 <header class="site-header">
   <a class="brand" href="/madsmobile/fr/"><img src="/madsmobile/assets/img/brand/logo.png" alt="MADS Mobile" class="brand-logo" width="32" height="32"><span class="brand-text">MADS Mobile</span></a>
-  <nav class="site-nav" aria-label="Accueil">
-    <a href="/madsmobile/fr/">Accueil</a>
-    <a href="/madsmobile/fr/blog/">Blog</a>
-  </nav>
   <nav class="crumbs"><a href="/madsmobile/fr/">&larr; Retour à tous les jeux</a><span class="tabs">
     <a href="/madsmobile/fr/bloodstrike/">Méta / Armes</a>
     <a href="/madsmobile/fr/bloodstrike/characters/">Personnages</a>
     
     <a href="/madsmobile/fr/bloodstrike/blog/">Blog</a>
     </span></nav>
-  <nav class="lang-switch" aria-label="Langue"><a class="" href="/madsmobile/en/bloodstrike/">English</a><a class="" href="/madsmobile/zh/bloodstrike/">中文</a><a class="active" href="/madsmobile/fr/bloodstrike/">Français</a><a class="" href="/madsmobile/it/bloodstrike/">Italiano</a><a class="" href="/madsmobile/pt/bloodstrike/">Português</a><a class="" href="/madsmobile/hi/bloodstrike/">हिन्दी</a><a class="" href="/madsmobile/es/bloodstrike/">Español</a></nav>
+  <nav class="lang-switch" aria-label="Langue">
+    <a class="blog-nav-link" href="/madsmobile/fr/blog/">Blog</a>
+    <span class="nav-divider" aria-hidden="true"></span>
+    <a class="" href="/madsmobile/en/bloodstrike/">English</a><a class="" href="/madsmobile/zh/bloodstrike/">中文</a><a class="active" href="/madsmobile/fr/bloodstrike/">Français</a><a class="" href="/madsmobile/it/bloodstrike/">Italiano</a><a class="" href="/madsmobile/pt/bloodstrike/">Português</a><a class="" href="/madsmobile/hi/bloodstrike/">हिन्दी</a><a class="" href="/madsmobile/es/bloodstrike/">Español</a>
+  </nav>
 </header>
 <main>
 
@@ -64,26 +64,26 @@
       
     </section>
     <section class="dev-info-row"><span class="dev-info-item"><strong>Développeur:</strong> NetEase Games</span><span class="dev-info-item"><strong>Éditeur:</strong> NetEase Games</span><span class="dev-info-item"><strong>Site Officiel:</strong> <a href="https://www.blood-strike.com/" target="_blank" rel="noopener nofollow">www.blood-strike.com</a></span></section>
-    <section class="meta-about-row">
-      <div class="meta-col">
-        <h2>Méta actuelle</h2>
+    <div class="weapons-tabs meta-about-tabs">
+      <button type="button" class="tab-btn active" data-tab-target="panel-meta-bloodstrike">Méta actuelle</button>
+      <button type="button" class="tab-btn" data-tab-target="panel-about-bloodstrike">À propos de Blood Strike</button>
+    </div>
+    <div class="weapon-tab-panels">
+      <div class="weapon-tab-panel active" id="panel-meta-bloodstrike">
         <p class="verified">Dernière vérification: 2026-07-12</p>
         <p>À la mi-2026, les Top Kingpins confirmés dans la base de données d'armes sont l'<a href="#weapon-bloodstrike-bs-smg1">UMP</a>, la <a href="#weapon-bloodstrike-bs-ar01">Spear</a> et le <a href="#weapon-bloodstrike-bs-ar02">HK416</a>, appréciés pour leur excellent ratio temps d'élimination/recul à courte-moyenne portée. Le <a href="#weapon-bloodstrike-bs-smg2">MP7</a> est un choix méta en pleine ascension grâce à son calibre 4,6x30 mm qui détruit les armures à courte portée, le <a href="#weapon-bloodstrike-bs-lmg1">PKM</a> ancre la suppression au niveau de l'escouade après une amélioration du recul et des dégâts, le <a href="#weapon-bloodstrike-bs-sg01">M1887</a> conserve son cher potentiel d'élimination en un coup malgré des nerfs historiques, et le <a href="#weapon-bloodstrike-bs-smg3">P90</a> reste le choix de référence pour nettoyer des escouades sans recharger grâce à son chargeur de base profond.</p>
-        <details class="sources"><summary>Sources</summary><ul><li><a href="https://news.bittopup.com/news/blood-strike-season-13-2026-new-operators-weapons" rel="nofollow noopener" target="_blank">Blood Strike Weapons Database (community-sourced, 2026)</a></li><li><a href="https://www.lootbar.com/blog/en/blood-strike-best-weapons-guide-top-guns-and-how-to-upgrade-them.html" rel="nofollow noopener" target="_blank">Blood Strike Best Guns Tier List (Season 16) - 2026</a></li><li><a href="https://gamemarket.gg/news/blood-strike/blood-strike-best-loadouts-june-2026-meta-weapons-attachments-strike-skills" rel="nofollow noopener" target="_blank">Blood Strike Best Loadouts June 2026 - GameMarket.gg</a></li></ul></details>
       </div>
-      <div class="about-col">
-        <details class="about-details">
-          <summary class="about-toggle-btn">À propos de Blood Strike</summary>
-          <div class="about-details-body"><p>Blood Strike est un jeu de tir battle royale gratuit sur mobile développé par NetEase Games. Sorti en test en Asie du Sud-Est en octobre 2023, puis mondialement en mars 2024, il a rapidement dépassé les 50 millions d'installations en environ un an. Une version PC est arrivée sur Steam en mars 2025. Le jeu suit un cycle de contenu saisonnier, avec de nouveaux Strikers (opérateurs), des armes et des événements de collaboration à durée limitée environ tous les deux mois.</p></div>
-        </details>
+      <div class="weapon-tab-panel" id="panel-about-bloodstrike">
+        <p>Blood Strike est un jeu de tir battle royale gratuit sur mobile développé par NetEase Games. Sorti en test en Asie du Sud-Est en octobre 2023, puis mondialement en mars 2024, il a rapidement dépassé les 50 millions d'installations en environ un an. Une version PC est arrivée sur Steam en mars 2025. Le jeu suit un cycle de contenu saisonnier, avec de nouveaux Strikers (opérateurs), des armes et des événements de collaboration à durée limitée environ tous les deux mois.</p>
       </div>
-    </section>
+    </div>
     <section class="weapons-section">
       
       
     <div class="weapons-tabs">
       <button type="button" class="tab-btn active" data-tab-target="panel-best-bloodstrike">Meilleures Armes</button>
       <button type="button" class="tab-btn" data-tab-target="panel-complete-bloodstrike">Armes Complètes</button>
+      
       
     </div>
     <div class="weapon-tab-panels">
@@ -198,7 +198,7 @@
       </div>
       <div class="table-scroll">
         <table class="weapons-table complete-table">
-          <thead><tr><th data-sort="name">Nom <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">Classe <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">Niveau <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Portée</th><th data-sort="none">Rôle</th><th data-sort="none">Dégâts corps</th><th data-sort="rpm">CPM <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Cadence de tir</th><th data-sort="none">TTK</th><th data-sort="none">Vitesse ADS</th><th data-sort="none">Précision</th><th data-sort="none">Recul</th><th data-sort="none">Mobilité</th><th data-sort="none">Pénét. Armure</th><th data-sort="magazine">Chargeur <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Meilleur build dégâts</th><th data-sort="none">Notes</th></tr></thead>
+          <thead><tr><th data-sort="name">Nom <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">Classe <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">Niveau <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Portée</th><th data-sort="none">Vitesse ADS</th><th data-sort="none">Recul</th><th data-sort="none">Mobilité</th><th data-sort="magazine">Chargeur <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Notes</th></tr></thead>
           <tbody>
     <tr id="weapon-bloodstrike-bs-ar01" data-name="spear" data-class="fusil d'assaut"
         data-tier-rank="0" data-rpm="-1" data-magazine="30">
@@ -206,18 +206,7 @@
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-S+">S+</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Very Snappy</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Highly Controllable</td>
-      <td>High</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Very Snappy</td><td>Highly Controllable</td><td>High</td><td>30</td>
       <td class="cell-notes">Extrêmement fiable sur toutes les cartes du patch actuel, mais elle manque du burst hyper rapproché des SMG dédiées.</td>
     </tr>
     
@@ -227,18 +216,7 @@
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Buffed / Ultra Fast</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Predictable Vertical</td>
-      <td>High</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Buffed / Ultra Fast</td><td>Predictable Vertical</td><td>High</td><td>30</td>
       <td class="cell-notes">Polyvalence extrême et excellent choix pour les duels 50/50 après une amélioration de la vitesse d'ADS, mais elle exige un suivi très précis à longue portée.</td>
     </tr>
     
@@ -248,18 +226,7 @@
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Standard</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Heavy Horizontal</td>
-      <td>Medium</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Standard</td><td>Heavy Horizontal</td><td>Medium</td><td>30</td>
       <td class="cell-notes">Son multiplicateur de dégâts au premier tir dévastateur en fait un choix exigeant mais très récompensé, malgré un recul difficile à maîtriser.</td>
     </tr>
     
@@ -269,18 +236,7 @@
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-C">C</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Slow</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Moderate Bounding</td>
-      <td>Medium</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Slow</td><td>Moderate Bounding</td><td>Medium</td><td>30</td>
       <td class="cell-notes">Bon profil de dégâts structurels, mais sa maniabilité plus lente la désavantage dans les combats rapides.</td>
     </tr>
     
@@ -290,18 +246,7 @@
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-S+">S+</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Instant</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Laser Tight</td>
-      <td>Exceptional</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Instant</td><td>Laser Tight</td><td>Exceptional</td><td>30</td>
       <td class="cell-notes">31 dégâts au torse / 39 à la tête en font actuellement une arme cassée, dominant totalement le combat rapproché, mais elle subit une chute de dégâts sévère au-delà.</td>
     </tr>
     
@@ -311,18 +256,7 @@
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Ultra Fast</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Mild Horizontal</td>
-      <td>Exceptional</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Ultra Fast</td><td>Mild Horizontal</td><td>Exceptional</td><td>40</td>
       <td class="cell-notes">Un ajout méta très rapide : son calibre 4,6x30 mm détruit les armures à courte portée avec une grande mobilité, mais consomme les munitions très vite.</td>
     </tr>
     
@@ -332,18 +266,7 @@
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Fast</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Slight Diagonal</td>
-      <td>High</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>50</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Fast</td><td>Slight Diagonal</td><td>High</td><td>50</td>
       <td class="cell-notes">Son chargeur de base, le plus grand de sa catégorie, la rend parfaite pour éliminer des escouades entières sans recharger, mais elle exige un lourd investissement en XP pour être pleinement optimisée.</td>
     </tr>
     
@@ -353,18 +276,7 @@
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Snappy</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Vertical Bounce</td>
-      <td>High</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Snappy</td><td>Vertical Bounce</td><td>High</td><td>30</td>
       <td class="cell-notes">Contre facilement les mécaniques de bouclier des Wildcard grâce à ses munitions perforantes, mais perd en efficacité si vous manquez le haut du torse de la cible.</td>
     </tr>
     
@@ -374,18 +286,7 @@
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-C">C</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Moderate</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Unpredictable</td>
-      <td>Medium</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>50</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Moderate</td><td>Unpredictable</td><td>Medium</td><td>50</td>
       <td class="cell-notes">Offre une pression de secours correcte au corps à corps, freinée par des mires métalliques horribles et très peu d'emplacements d'accessoires.</td>
     </tr>
     
@@ -395,18 +296,7 @@
       <td>Mitrailleuse Légère (LMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Slow</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Buffed / Butter Smooth</td>
-      <td>Low</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>100</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Slow</td><td>Buffed / Butter Smooth</td><td>Low</td><td>100</td>
       <td class="cell-notes">Maintenez la gâchette enfoncée pour un tir continu et précis comme un laser qui ancre la position de l'escouade, mais elle impose un positionnement passif et très lent.</td>
     </tr>
     
@@ -416,18 +306,7 @@
       <td>Fusil à Pompe</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Instant</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>High Jump</td>
-      <td>Very High</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>2</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Instant</td><td>High Jump</td><td>Very High</td><td>2</td>
       <td class="cell-notes">Conserve son légendaire potentiel d'élimination en un tir même après d'importants ajustements d'équilibrage, mais elle pardonne très peu si vous manquez le premier tir.</td>
     </tr>
     
@@ -437,18 +316,7 @@
       <td>Fusil de Sniper</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Snappy</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Bolt Reset</td>
-      <td>High</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>5</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Snappy</td><td>Bolt Reset</td><td>High</td><td>5</td>
       <td class="cell-notes">Ses multiplicateurs de dégâts élevés récompensent le quickscope agressif, mais elle exige de viser précisément le haut du torse pour une élimination nette.</td>
     </tr>
     
@@ -458,18 +326,7 @@
       <td>Fusil de Sniper</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Very Slow</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Heavy Kick</td>
-      <td>Very Low</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>5</td>
-      <td><span class="cell-dash">&mdash;</span></td>
+      <td>Very Slow</td><td>Heavy Kick</td><td>Very Low</td><td>5</td>
       <td class="cell-notes">Traverse sans effort les couvertures défensives et les véhicules, mais sa mobilité désastreuse fait de vous une cible fixe facile.</td>
     </tr>
     </tbody>
@@ -483,7 +340,7 @@
     
     </section>
     <section class="teaser-section">
-      <h2>Personnages et Skins</h2>
+      <h2>Personnages</h2>
       <a class="see-all" href="/madsmobile/fr/bloodstrike/characters/">Personnages &rarr;</a>
     </section>
     <section class="teaser-section">
@@ -507,10 +364,8 @@
 </main>
 <footer class="site-footer">
   <p class="footer-description">MADS Mobile est une base de données vérifiée d'armes, de personnages et de classements méta pour les meilleurs jeux de tir mobiles au monde.</p>
-  <p class="footer-disclaimer">Les informations publiées sur MADS Mobile reposent sur la recherche, l'analyse et l'évaluation des données de jeu disponibles. Les mises à jour et les changements d'équilibrage peuvent modifier les statistiques et les recommandations. Si vous constatez des divergences, veuillez contacter notre équipe.</p>
-  <p>Base de données de FPS mobiles vérifiée. Données actualisées mensuellement.</p>
+  <p class="footer-disclaimer">Les informations publiées sur MADS Mobile reposent sur la recherche, l'analyse et l'évaluation des données de jeu disponibles. Les mises à jour et les changements d'équilibrage peuvent modifier les statistiques et les recommandations. Si vous constatez des divergences, veuillez contacter notre équipe. Contact: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
   <p class="footer-social"><span class="footer-social-label">Suivez-nous:</span> <a href="https://www.instagram.com/madsmobilegg/" target="_blank" rel="noopener noreferrer">Instagram</a> <a href="https://x.com/MADSmobile" target="_blank" rel="noopener noreferrer">X</a> <a href="https://www.threads.com/@madsmobilegg" target="_blank" rel="noopener noreferrer">Threads</a></p>
-  <p class="footer-contact">Contact: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
   <p class="footer-copyright">&copy; 2026 MADS Mobile &mdash; Tous droits réservés.</p>
 </footer>
 <script src="/madsmobile/assets/app.js"></script>

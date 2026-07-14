@@ -30,17 +30,17 @@
 <body>
 <header class="site-header">
   <a class="brand" href="/madsmobile/zh/"><img src="/madsmobile/assets/img/brand/logo.png" alt="MADS Mobile" class="brand-logo" width="32" height="32"><span class="brand-text">MADS Mobile</span></a>
-  <nav class="site-nav" aria-label="首页">
-    <a href="/madsmobile/zh/">首页</a>
-    <a href="/madsmobile/zh/blog/">资讯</a>
-  </nav>
   <nav class="crumbs"><a href="/madsmobile/zh/">&larr; 返回全部游戏</a><span class="tabs">
     <a href="/madsmobile/zh/codm/">版本强势 / 武器</a>
     <a href="/madsmobile/zh/codm/characters/">角色</a>
     
     <a href="/madsmobile/zh/codm/blog/">资讯</a>
     </span></nav>
-  <nav class="lang-switch" aria-label="语言"><a class="" href="/madsmobile/en/codm/">English</a><a class="active" href="/madsmobile/zh/codm/">中文</a><a class="" href="/madsmobile/fr/codm/">Français</a><a class="" href="/madsmobile/it/codm/">Italiano</a><a class="" href="/madsmobile/pt/codm/">Português</a><a class="" href="/madsmobile/hi/codm/">हिन्दी</a><a class="" href="/madsmobile/es/codm/">Español</a></nav>
+  <nav class="lang-switch" aria-label="语言">
+    <a class="blog-nav-link" href="/madsmobile/zh/blog/">资讯</a>
+    <span class="nav-divider" aria-hidden="true"></span>
+    <a class="" href="/madsmobile/en/codm/">English</a><a class="active" href="/madsmobile/zh/codm/">中文</a><a class="" href="/madsmobile/fr/codm/">Français</a><a class="" href="/madsmobile/it/codm/">Italiano</a><a class="" href="/madsmobile/pt/codm/">Português</a><a class="" href="/madsmobile/hi/codm/">हिन्दी</a><a class="" href="/madsmobile/es/codm/">Español</a>
+  </nav>
 </header>
 <main>
 
@@ -68,20 +68,19 @@
       <p class="also-known-as">也称为: COD Mobile, CODM, Call of Duty Mobile</p>
     </section>
     <section class="dev-info-row"><span class="dev-info-item"><strong>开发商:</strong> TiMi Studio Group (Tencent)</span><span class="dev-info-item"><strong>发行商:</strong> <a href="https://www.activision.com" target="_blank" rel="noopener">Activision</a> / <a href="https://www.garena.com" target="_blank" rel="noopener">Garena</a> / <a href="https://www.tencent.com" target="_blank" rel="noopener">Tencent</a> (<a href="https://timi.qq.com" target="_blank" rel="noopener">TiMi Studios</a>)</span><span class="dev-info-item"><strong>官方网站:</strong> <a href="https://www.callofduty.com/mobile" target="_blank" rel="noopener nofollow">www.callofduty.com/mobile</a></span></section>
-    <section class="meta-about-row">
-      <div class="meta-col">
-        <h2>当前版本强势</h2>
+    <div class="weapons-tabs meta-about-tabs">
+      <button type="button" class="tab-btn active" data-tab-target="panel-meta-codm">当前版本强势</button>
+      <button type="button" class="tab-btn" data-tab-target="panel-about-codm">关于使命召唤手游</button>
+    </div>
+    <div class="weapon-tab-panels">
+      <div class="weapon-tab-panel active" id="panel-meta-codm">
         <p class="verified">最后核实时间: 2026-07-12</p>
         <p>截至2026年7月,第6赛季“Take Your Heart”(与《女神异闻录5 皇家版》联动)已上线。当前各类别领跑武器:<a href="#weapon-codm-switchblade-x9">Switchblade X9</a> 在第6赛季获得强化后登顶冲锋枪榜首,<a href="#weapon-codm-vmp">VMP</a> 与 <a href="#weapon-codm-qq9">QQ9</a> 紧随其后;<a href="#weapon-codm-bal-27">BAL-27</a> 在中远距离突击步枪中领先;<a href="#weapon-codm-type-63">Type 63</a> 仍是最强两枪点射狙击步枪;<a href="#weapon-codm-hs0405">HS0405</a> 与新加入的 <a href="#weapon-codm-vlk-rogue">VLK Rogue</a> 是霰弹枪首选;<a href="#weapon-codm-locus">Locus</a> 则是本赛季最强狙击枪。此前长期称霸的 <a href="#weapon-codm-so-14">SO-14</a> 本次更新遭到明显削弱。</p>
-        <details class="sources"><summary>来源</summary><ul><li><a href="https://zilliongamer.com/call-of-duty-mobile/c/cod-mobile/best-guns-cod-mobile-2026" rel="nofollow noopener" target="_blank">Best Guns in COD Mobile 2026 - zilliongamer</a></li><li><a href="https://frvr.com/blog/cod-mobile-best-guns/" rel="nofollow noopener" target="_blank">COD Mobile Best Guns (2026): Top Meta Weapons Ranked - FRVR</a></li><li><a href="https://zilliongamer.com/call-of-duty-mobile/c/weapon-guide/call-of-duty-mobile-weapon-tier-list" rel="nofollow noopener" target="_blank">Call of Duty: Mobile Weapon Tier List - zilliongamer</a></li></ul></details>
       </div>
-      <div class="about-col">
-        <details class="about-details">
-          <summary class="about-toggle-btn">关于使命召唤手游</summary>
-          <div class="about-details-body"><p>《使命召唤手游》于2019年10月全球上线,由动视发行、天美工作室群(腾讯)开发。游戏将主机版《使命召唤》的多人对战与大逃杀体验带到手机平台,融合了系列作品中的地图、武器与干员。游戏采用赛季更新机制(大约每4-6周一次),带来新武器、干员皮肤与联动活动。</p></div>
-        </details>
+      <div class="weapon-tab-panel" id="panel-about-codm">
+        <p>《使命召唤手游》于2019年10月全球上线,由动视发行、天美工作室群(腾讯)开发。游戏将主机版《使命召唤》的多人对战与大逃杀体验带到手机平台,融合了系列作品中的地图、武器与干员。游戏采用赛季更新机制(大约每4-6周一次),带来新武器、干员皮肤与联动活动。</p>
       </div>
-    </section>
+    </div>
     <section class="weapons-section">
       
       
@@ -89,6 +88,7 @@
       <button type="button" class="tab-btn active" data-tab-target="panel-best-codm">最佳武器</button>
       <button type="button" class="tab-btn" data-tab-target="panel-complete-codm">全部武器</button>
       <button type="button" class="tab-btn" data-tab-target="panel-ranked-codm">排位Meta</button>
+      <a class="tab-btn compare-tab-link" href="/madsmobile/zh/codm/compare/">对比</a>
     </div>
     <div class="weapon-tab-panels">
       
@@ -105,7 +105,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">Switchblade X9 <span class="badge meta">热门</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/zh/codm/compare/?w=switchblade-x9">Switchblade X9</a> <span class="badge meta">热门</span></div>
           <div class="weapon-card-line">冲锋枪 (SMG) &middot; <span class="tier-badge tier-S">S</span> &middot; 近-中距离</div>
         </div>
       </div>
@@ -118,7 +118,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">VMP <span class="badge meta">热门</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/zh/codm/compare/?w=vmp">VMP</a> <span class="badge meta">热门</span></div>
           <div class="weapon-card-line">冲锋枪 (SMG) &middot; <span class="tier-badge tier-A">A</span> &middot; 近-中距离</div>
         </div>
       </div>
@@ -131,7 +131,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">QQ9 <span class="badge meta">热门</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/zh/codm/compare/?w=qq9">QQ9</a> <span class="badge meta">热门</span></div>
           <div class="weapon-card-line">冲锋枪 (SMG) &middot; <span class="tier-badge tier-A">A</span> &middot; 近距离</div>
         </div>
       </div>
@@ -144,7 +144,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">SO-14 </div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/zh/codm/compare/?w=so-14">SO-14</a> </div>
           <div class="weapon-card-line">突击步枪 &middot; <span class="tier-badge tier-B">B</span> &middot; 中-远距离</div>
         </div>
       </div>
@@ -157,7 +157,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">BAL-27 <span class="badge meta">热门</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/zh/codm/compare/?w=bal-27">BAL-27</a> <span class="badge meta">热门</span></div>
           <div class="weapon-card-line">突击步枪 &middot; <span class="tier-badge tier-S">S</span> &middot; 中-远距离</div>
         </div>
       </div>
@@ -170,7 +170,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">Type 63 <span class="badge meta">热门</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/zh/codm/compare/?w=type-63">Type 63</a> <span class="badge meta">热门</span></div>
           <div class="weapon-card-line">点射步枪 &middot; <span class="tier-badge tier-S">S</span> &middot; 中-远距离</div>
         </div>
       </div>
@@ -183,7 +183,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">HS0405 <span class="badge meta">热门</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/zh/codm/compare/?w=hs0405">HS0405</a> <span class="badge meta">热门</span></div>
           <div class="weapon-card-line">霰弹枪 &middot; <span class="tier-badge tier-S">S</span> &middot; 近距离</div>
         </div>
       </div>
@@ -196,7 +196,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">VLK Rogue <span class="badge meta">热门</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/zh/codm/compare/?w=vlk-rogue">VLK Rogue</a> <span class="badge meta">热门</span></div>
           <div class="weapon-card-line">霰弹枪 &middot; <span class="tier-badge tier-S">S</span> &middot; 近距离</div>
         </div>
       </div>
@@ -209,7 +209,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">Locus <span class="badge meta">热门</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/zh/codm/compare/?w=locus">Locus</a> <span class="badge meta">热门</span></div>
           <div class="weapon-card-line">狙击步枪 &middot; <span class="tier-badge tier-S">S</span> &middot; 远距离</div>
         </div>
       </div>
@@ -222,7 +222,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">L-CAR 9 <span class="badge meta">热门</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/zh/codm/compare/?w=l-car-9">L-CAR 9</a> <span class="badge meta">热门</span></div>
           <div class="weapon-card-line">副武器 &middot; <span class="tier-badge tier-A">A</span> &middot; 近-中距离</div>
         </div>
       </div>
@@ -235,7 +235,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">FSS Hurricane </div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/zh/codm/compare/?w=fss-hurricane">FSS Hurricane</a> </div>
           <div class="weapon-card-line">冲锋枪 (SMG) &middot; <span class="tier-badge tier-B">B</span> &middot; 近距离</div>
         </div>
       </div>
@@ -254,2021 +254,965 @@
       </div>
       <div class="table-scroll">
         <table class="weapons-table complete-table">
-          <thead><tr><th data-sort="name">名称 <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">类别 <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">梯度 <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">射程</th><th data-sort="none">定位</th><th data-sort="none">躯干伤害</th><th data-sort="rpm">射速(RPM) <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">射速</th><th data-sort="none">击杀时间(TTK)</th><th data-sort="none">瞄准速度</th><th data-sort="none">精准度</th><th data-sort="none">后坐力</th><th data-sort="none">机动性</th><th data-sort="none">护甲穿透</th><th data-sort="magazine">弹匣容量 <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">最佳伤害配装</th><th data-sort="none">备注</th></tr></thead>
+          <thead><tr><th data-sort="name">名称 <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">类别 <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">梯度 <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">射程</th><th data-sort="none">躯干伤害</th><th data-sort="rpm">射速(RPM) <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">击杀时间(TTK)</th><th data-sort="none">瞄准速度</th><th data-sort="none">后坐力</th><th data-sort="magazine">弹匣容量 <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">最佳伤害配装</th><th data-sort="none">备注</th></tr></thead>
           <tbody>
     <tr id="weapon-codm-switchblade-x9" data-name="switchblade x9" data-class="冲锋枪 (smg)"
         data-tier-rank="4" data-rpm="850" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Switchblade X9</span> <span class="badge meta">热门</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=switchblade-x9">Switchblade X9</a></span> <span class="badge meta">热门</span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>27-24-20</td>
-      <td>850</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280 ms</td>
-      <td>极快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>MIP Light Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Agile Stock</td>
+      <td>27-24-20</td><td>850</td><td>~280 ms</td><td>极快</td><td>★★★</td><td>30</td><td class="cell-notes">MIP Light Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Agile Stock</td>
       <td class="cell-notes">出色的机动性和精准度使其成为本赛季近中距离交火中最强的冲锋枪。</td>
     </tr>
     
     <tr id="weapon-codm-vmp" data-name="vmp" data-class="冲锋枪 (smg)"
         data-tier-rank="3" data-rpm="~900" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>VMP</span> <span class="badge meta">热门</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=vmp">VMP</a></span> <span class="badge meta">热门</span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medium-High (27-32)</td>
-      <td>~900</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>Long Barrel + Suppressor + Extended Mag + Laser + Grip</td>
+      <td>Medium-High (27-32)</td><td>~900</td><td>~280ms</td><td>快</td><td>低</td><td>40</td><td class="cell-notes">Long Barrel + Suppressor + Extended Mag + Laser + Grip</td>
       <td class="cell-notes">近中距离作战中均衡性极佳的第二强冲锋枪。</td>
     </tr>
     
     <tr id="weapon-codm-qq9" data-name="qq9" data-class="冲锋枪 (smg)"
         data-tier-rank="3" data-rpm="830" data-magazine="45">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>QQ9</span> <span class="badge meta">热门</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=qq9">QQ9</a></span> <span class="badge meta">热门</span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25-20</td>
-      <td>830</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~290 ms</td>
-      <td>极快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>45</td>
-      <td>Monolithic Integral Suppressor + No Stock + 45 Round Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td>25-20</td><td>830</td><td>~290 ms</td><td>极快</td><td>★★★</td><td>45</td><td class="cell-notes">Monolithic Integral Suppressor + No Stock + 45 Round Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes">适合正面刚枪的可靠冲锋枪,伤害很高,机动性快。</td>
     </tr>
     
     <tr id="weapon-codm-so-14" data-name="so-14" data-class="突击步枪"
         data-tier-rank="2" data-rpm="~500" data-magazine="20">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>SO-14</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=so-14">SO-14</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>High (30-40)</td>
-      <td>~500</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~350ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>20</td>
-      <td>Marksman Barrel + Monolithic Suppressor + Extended Mag + Laser + Granulated Grip</td>
+      <td>High (30-40)</td><td>~500</td><td>~350ms</td><td>中等</td><td>中等</td><td>20</td><td class="cell-notes">Marksman Barrel + Monolithic Suppressor + Extended Mag + Laser + Granulated Grip</td>
       <td class="cell-notes">这把长期称霸的突击步枪在连续统治数个赛季后,本次更新遭到明显削弱。</td>
     </tr>
     
     <tr id="weapon-codm-bal-27" data-name="bal-27" data-class="突击步枪"
         data-tier-rank="4" data-rpm="~800" data-magazine="45">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>BAL-27</span> <span class="badge meta">热门</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=bal-27">BAL-27</a></span> <span class="badge meta">热门</span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>High (28-34)</td>
-      <td>~800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>45</td>
-      <td>Monolithic Suppressor + Extended Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>High (28-34)</td><td>~800</td><td>~300ms</td><td>快</td><td>低</td><td>45</td><td class="cell-notes">Monolithic Suppressor + Extended Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">目前最强的突击步枪,适合中远距离交火,操作简单。</td>
     </tr>
     
     <tr id="weapon-codm-type-63" data-name="type 63" data-class="点射步枪"
         data-tier-rank="4" data-rpm="~350" data-magazine="25">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Type 63</span> <span class="badge meta">热门</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=type-63">Type 63</a></span> <span class="badge meta">热门</span></td>
       <td>点射步枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Very High (55-60)</td>
-      <td>~350</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25</td>
-      <td>Taskforce Barrel + Agency Suppressor + Extended Mag + Laser + Field Agent Grip</td>
+      <td>Very High (55-60)</td><td>~350</td><td>~280ms</td><td>快</td><td>低</td><td>25</td><td class="cell-notes">Taskforce Barrel + Agency Suppressor + Extended Mag + Laser + Field Agent Grip</td>
       <td class="cell-notes">强力的两枪点射步枪,子弹速度快,任何距离后坐力都很低。</td>
     </tr>
     
     <tr id="weapon-codm-hs0405" data-name="hs0405" data-class="霰弹枪"
         data-tier-rank="4" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>HS0405</span> <span class="badge meta">热门</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=hs0405">HS0405</a></span> <span class="badge meta">热门</span></td>
       <td>霰弹枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + Sleight of Hand + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + Sleight of Hand + Stock</td>
       <td class="cell-notes">游戏中最强的霰弹枪——近距离伤害极高且容易控制。</td>
     </tr>
     
     <tr id="weapon-codm-vlk-rogue" data-name="vlk rogue" data-class="霰弹枪"
         data-tier-rank="4" data-rpm="Pump" data-magazine="12">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>VLK Rogue</span> <span class="badge meta">热门</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=vlk-rogue">VLK Rogue</a></span> <span class="badge meta">热门</span></td>
       <td>霰弹枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Extreme (100+)</td>
-      <td>Pump</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Instant (1-shot)</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>12</td>
-      <td>Marauder Suppressor + Extended Barrel + Laser + Mobility Stock + Sleight of Hand</td>
+      <td>Extreme (100+)</td><td>Pump</td><td>Instant (1-shot)</td><td>快</td><td>低</td><td>12</td><td class="cell-notes">Marauder Suppressor + Extended Barrel + Laser + Mobility Stock + Sleight of Hand</td>
       <td class="cell-notes">机动性极高的霰弹枪,弹匣容量大,伤害和控制俱佳。</td>
     </tr>
     
     <tr id="weapon-codm-locus" data-name="locus" data-class="狙击步枪"
         data-tier-rank="4" data-rpm="~60" data-magazine="10">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Locus</span> <span class="badge meta">热门</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=locus">Locus</a></span> <span class="badge meta">热门</span></td>
       <td>狙击步枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>One-Shot High (120+)</td>
-      <td>~60</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Instant</td>
-      <td>极快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>10</td>
-      <td>Skeleton Stock + OWC Laser Tactical + Stippled Grip Tape + Extended Mag + Tactical Suppressor</td>
+      <td>One-Shot High (120+)</td><td>~60</td><td>Instant</td><td>极快</td><td>低</td><td>10</td><td class="cell-notes">Skeleton Stock + OWC Laser Tactical + Stippled Grip Tape + Extended Mag + Tactical Suppressor</td>
       <td class="cell-notes">本赛季最强的狙击步枪。</td>
     </tr>
     
     <tr id="weapon-codm-l-car-9" data-name="l-car 9" data-class="副武器"
         data-tier-rank="3" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>L-CAR 9</span> <span class="badge meta">热门</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=l-car-9">L-CAR 9</a></span> <span class="badge meta">热门</span></td>
       <td>副武器</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Akimbo + OWC Laser Tactical + Extended Mag + Monolithic Suppressor + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Akimbo + OWC Laser Tactical + Extended Mag + Monolithic Suppressor + Granulated Grip Tape</td>
       <td class="cell-notes">全自动副武器,伤害高、射速快,是狙击手的强力辅助武器。</td>
     </tr>
     
     <tr id="weapon-codm-fss-hurricane" data-name="fss hurricane" data-class="冲锋枪 (smg)"
         data-tier-rank="2" data-rpm="~1100" data-magazine="50">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>FSS Hurricane</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=fss-hurricane">FSS Hurricane</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medium-High (25-30)</td>
-      <td>~1100</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~270ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>50</td>
-      <td>Monolithic Suppressor + Demo Quicksilver Stock + Laser + Extended Mag + Granulated Grip</td>
+      <td>Medium-High (25-30)</td><td>~1100</td><td>~270ms</td><td>快</td><td>中等</td><td>50</td><td class="cell-notes">Monolithic Suppressor + Demo Quicksilver Stock + Laser + Extended Mag + Granulated Grip</td>
       <td class="cell-notes">赛季6推出的新冲锋枪,附带神话抽取皮肤,社区仍在评估其强度。</td>
     </tr>
     
     <tr id="weapon-codm-xm4" data-name="xm4" data-class="突击步枪"
         data-tier-rank="3" data-rpm="~800" data-magazine="45">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>XM4</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=xm4">XM4</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>近-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>High (29-33)</td>
-      <td>~800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~290ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>45</td>
-      <td>Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag + Laser</td>
+      <td>High (29-33)</td><td>~800</td><td>~290ms</td><td>快</td><td>低</td><td>45</td><td class="cell-notes">Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag + Laser</td>
       <td class="cell-notes">账号等级解锁的突击步枪,以高伤害、极快射速和大部分距离下的低后坐力著称。</td>
     </tr>
     
     <tr id="weapon-codm-dr-h" data-name="dr-h" data-class="突击步枪"
         data-tier-rank="4" data-rpm="605" data-magazine="25">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>DR-H</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=dr-h">DR-H</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>32-28-24</td>
-      <td>605</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25</td>
-      <td>OTM Mag + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
+      <td>32-28-24</td><td>605</td><td>~300 ms</td><td>中等</td><td>★★★★</td><td>25</td><td class="cell-notes">OTM Mag + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
       <td class="cell-notes">传统的&quot;伤害之王&quot;突击步枪——单挑能力极强,在据点模式和目标玩法中很受欢迎,但25发弹匣要求精准的枪法。</td>
     </tr>
     
     <tr id="weapon-codm-oden" data-name="oden" data-class="突击步枪"
         data-tier-rank="2" data-rpm="500" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>ODEN</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=oden">ODEN</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>48-32-25</td>
-      <td>500</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>慢</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>Colossus Suppressor + RTC Heavy Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>48-32-25</td><td>500</td><td>~300 ms</td><td>慢</td><td>★★★</td><td>30</td><td class="cell-notes">Colossus Suppressor + RTC Heavy Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">射速较慢但伤害沉重,擅长远距离精准点射;一旦被迫近身战斗则表现吃力。</td>
     </tr>
     
     <tr id="weapon-codm-as-val" data-name="as val" data-class="突击步枪"
         data-tier-rank="3" data-rpm="800" data-magazine="25">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>AS VAL</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=as-val">AS VAL</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>35-30-24</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~270-300 ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25</td>
-      <td>MIP 200mm Mid Range Barrel + Large Extended Mag + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
+      <td>35-30-24</td><td>800</td><td>~270-300 ms</td><td>快</td><td>★★★</td><td>25</td><td class="cell-notes">MIP 200mm Mid Range Barrel + Large Extended Mag + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
       <td class="cell-notes">凭借高射速和高伤害拥有极快的击杀时间,在Shipment、Nuketown、Summit等小型地图上占据统治地位,但弹匣容量小、射程较短是其短板。</td>
     </tr>
     
     <tr id="weapon-codm-cr-56-amax" data-name="cr-56 amax" data-class="突击步枪"
         data-tier-rank="3" data-rpm="625" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>CR-56 AMAX</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=cr-56-amax">CR-56 AMAX</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>34-30-25</td>
-      <td>625</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>MIP Custom Long Barrel + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>34-30-25</td><td>625</td><td>~300 ms</td><td>中等</td><td>★★★</td><td>30</td><td class="cell-notes">MIP Custom Long Barrel + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">均衡型低后坐力突击步枪,无需重型配件即可提供扎实的伤害和控制力——是中远距离交战中可靠的全能选择。</td>
     </tr>
     
     <tr id="weapon-codm-ak-47" data-name="ak-47" data-class="突击步枪"
         data-tier-rank="3" data-rpm="600" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>AK-47</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=ak-47">AK-47</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>33-30</td>
-      <td>600</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>高</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>Monolithic Suppressor + OWC Marksman + Granulated Grip Tape + OWC Laser Tactical + Extended Mag</td>
+      <td>33-30</td><td>600</td><td>~300 ms</td><td>中等</td><td>高</td><td>30</td><td class="cell-notes">Monolithic Suppressor + OWC Marksman + Granulated Grip Tape + OWC Laser Tactical + Extended Mag</td>
       <td class="cell-notes">经典高伤害突击步枪,后坐力较大但射程出色,擅长控制点射。在Crossfire、Firing Range和Terminal等地图中是常见之选。</td>
     </tr>
     
     <tr id="weapon-codm-man-o-war" data-name="man-o-war" data-class="突击步枪"
         data-tier-rank="2" data-rpm="550" data-magazine="25">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Man-O-War</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=man-o-war">Man-O-War</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>37-30</td>
-      <td>550</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>慢</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25</td>
-      <td>Monolithic Suppressor + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>37-30</td><td>550</td><td>~300 ms</td><td>慢</td><td>中等</td><td>25</td><td class="cell-notes">Monolithic Suppressor + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">点射式突击步枪,以单发高伤害和长射程著称;操控较慢,在激进快攻中效果稍逊。</td>
     </tr>
     
     <tr id="weapon-codm-type-25" data-name="type 25" data-class="突击步枪"
         data-tier-rank="2" data-rpm="900" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Type 25</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=type-25">Type 25</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>24-20</td>
-      <td>900</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>高</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>RTC Steady Stock + Stopping Power Reload + OWC Laser Tactical + Granulated Grip Tape + MIP Light Barrel</td>
+      <td>24-20</td><td>900</td><td>~300 ms</td><td>快</td><td>高</td><td>30</td><td class="cell-notes">RTC Steady Stock + Stopping Power Reload + OWC Laser Tactical + Granulated Grip Tape + MIP Light Barrel</td>
       <td class="cell-notes">专为快攻打造的高射速突击步枪,单发伤害较低,适合近中距离的激进交战。</td>
     </tr>
     
     <tr id="weapon-codm-uss9" data-name="uss9" data-class="冲锋枪 (smg)"
         data-tier-rank="3" data-rpm="~750" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>USS9</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=uss9">USS9</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>High (30+)</td>
-      <td>~750</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>极低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>Suppressor + Long Barrel + Extended Mag + Laser + Granulated Grip</td>
+      <td>High (30+)</td><td>~750</td><td>~300ms</td><td>快</td><td>极低</td><td>40</td><td class="cell-notes">Suppressor + Long Barrel + Extended Mag + Laser + Granulated Grip</td>
       <td class="cell-notes">表现稳定的冲锋枪,伤害高、精准度强、后坐力极低。</td>
     </tr>
     
     <tr id="weapon-codm-cbr4" data-name="cbr4" data-class="冲锋枪 (smg)"
         data-tier-rank="4" data-rpm="800" data-magazine="50">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>CBR4</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=cbr4">CBR4</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>24-21-18</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>50</td>
-      <td>OWC Marksman Barrel + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>24-21-18</td><td>800</td><td>~300 ms</td><td>快</td><td>★★★★★</td><td>50</td><td class="cell-notes">OWC Marksman Barrel + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">全能型meta冲锋枪,后坐力极低、弹匣容量不错,射程在近距离之外依然可靠——是最容易上手的S级选择之一,在排位赛中尤为强势。</td>
     </tr>
     
     <tr id="weapon-codm-ppsh-41" data-name="ppsh-41" data-class="冲锋枪 (smg)"
         data-tier-rank="3" data-rpm="900" data-magazine="35/55">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>PPSh-41</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=ppsh-41">PPSh-41</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>24-20</td>
-      <td>900</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280 ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>35/55</td>
-      <td>Reinforced Heavy Barrel + 55 Round Drum Mag + Field Agent Grip + OWC Laser Tactical + No Stock</td>
+      <td>24-20</td><td>900</td><td>~280 ms</td><td>快</td><td>★★★</td><td>35/55</td><td class="cell-notes">Reinforced Heavy Barrel + 55 Round Drum Mag + Field Agent Grip + OWC Laser Tactical + No Stock</td>
       <td class="cell-notes">高容量激进型冲锋枪,弹匣容量大(35或55发)——非常适合在据点模式中持续施压,但精准度不及CBR4。</td>
     </tr>
     
     <tr id="weapon-codm-pp19-bizon" data-name="pp19 bizon" data-class="冲锋枪 (smg)"
         data-tier-rank="2" data-rpm="650" data-magazine="64">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>PP19 Bizon</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=pp19-bizon">PP19 Bizon</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>26-23</td>
-      <td>650</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~330 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>64</td>
-      <td>Monolithic Suppressor + Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td>26-23</td><td>650</td><td>~330 ms</td><td>中等</td><td>★★★★★</td><td>64</td><td class="cell-notes">Monolithic Suppressor + Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes">弹匣容量高达64发、后坐力极低、易于控制的冲锋枪,但击杀时间比顶级冲锋枪慢——对新手玩家很友好的选择。</td>
     </tr>
     
     <tr id="weapon-codm-qxr" data-name="qxr" data-class="冲锋枪 (smg)"
         data-tier-rank="3" data-rpm="~850" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>QXR</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=qxr">QXR</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medium (24-28)</td>
-      <td>~850</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~290ms</td>
-      <td>极快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>Enhanced Bolt + Monolithic Suppressor + Extended Mag + Laser + Granulated Grip</td>
+      <td>Medium (24-28)</td><td>~850</td><td>~290ms</td><td>极快</td><td>低</td><td>40</td><td class="cell-notes">Enhanced Bolt + Monolithic Suppressor + Extended Mag + Laser + Granulated Grip</td>
       <td class="cell-notes">近距离手感灵活的冲锋枪,搭配合适配件很有竞争力。</td>
     </tr>
     
     <tr id="weapon-codm-holger-26" data-name="holger 26" data-class="轻机枪 (lmg)"
         data-tier-rank="4" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Holger 26</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=holger-26">Holger 26</a></span> </td>
       <td>轻机枪 (LMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>MIP Light Barrel (Short) + Large Extended Mag + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">MIP Light Barrel (Short) + Large Extended Mag + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
       <td class="cell-notes">综合表现最佳的轻机枪,弹药容量与操控手感兼顾。</td>
     </tr>
     
     <tr id="weapon-codm-chopper" data-name="chopper" data-class="轻机枪 (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Chopper</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=chopper">Chopper</a></span> </td>
       <td>轻机枪 (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Heavy Handle + RTC Light Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Heavy Handle + RTC Light Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape</td>
       <td class="cell-notes">弹药容量大的轻机枪,适合持续压制掩护。</td>
     </tr>
     
     <tr id="weapon-codm-sks" data-name="sks" data-class="点射步枪"
         data-tier-rank="3" data-rpm="~400" data-magazine="20">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>SKS</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=sks">SKS</a></span> </td>
       <td>点射步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Very High (60+)</td>
-      <td>~400</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>20</td>
-      <td>RTC Steady Stock + OWC Laser Tactical + Extended Mag + Granulated Grip + Tactical Suppressor</td>
+      <td>Very High (60+)</td><td>~400</td><td>~300ms</td><td>快</td><td>低</td><td>20</td><td class="cell-notes">RTC Steady Stock + OWC Laser Tactical + Extended Mag + Granulated Grip + Tactical Suppressor</td>
       <td class="cell-notes">半自动点射步枪,适合中远距离灵活作战。</td>
     </tr>
     
     <tr id="weapon-codm-dl-q33" data-name="dl q33" data-class="狙击步枪"
         data-tier-rank="4" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>DL Q33</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=dl-q33">DL Q33</a></span> </td>
       <td>狙击步枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Tactical Suppressor + Combat Stock + OWC Laser Tactical + Stippled Grip Tape + FMJ</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Tactical Suppressor + Combat Stock + OWC Laser Tactical + Stippled Grip Tape + FMJ</td>
       <td class="cell-notes">循环速度快的狙击步枪,深受快速甩狙玩家喜爱。</td>
     </tr>
     
     <tr id="weapon-codm-sp-r-208" data-name="sp-r 208" data-class="狙击步枪"
         data-tier-rank="3" data-rpm="~55" data-magazine="5">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>SP-R 208</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=sp-r-208">SP-R 208</a></span> </td>
       <td>狙击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>One-Shot High (120+)</td>
-      <td>~55</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Instant</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>5</td>
-      <td>Lapua Mag + Laser Tactical + Light Barrel + Stippled Grip Tape + Skeleton Stock</td>
+      <td>One-Shot High (120+)</td><td>~55</td><td>Instant</td><td>快</td><td>低</td><td>5</td><td class="cell-notes">Lapua Mag + Laser Tactical + Light Barrel + Stippled Grip Tape + Skeleton Stock</td>
       <td class="cell-notes">栓动式狙击步枪,以一击必杀的潜力著称。</td>
     </tr>
     
     <tr id="weapon-codm-mk2" data-name="mk2" data-class="狙击步枪"
         data-tier-rank="3" data-rpm="~55" data-magazine="6">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>MK2</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=mk2">MK2</a></span> </td>
       <td>狙击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>One-Shot High (120+)</td>
-      <td>~55</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Instant</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>6</td>
-      <td>Sport Barrel + Laser + Stippled Grip + Sleight of Hand + Stock</td>
+      <td>One-Shot High (120+)</td><td>~55</td><td>Instant</td><td>快</td><td>低</td><td>6</td><td class="cell-notes">Sport Barrel + Laser + Stippled Grip + Sleight of Hand + Stock</td>
       <td class="cell-notes">精准的狙击步枪,补全该武器类别。</td>
     </tr>
     
     <tr id="weapon-codm-krm-262" data-name="krm-262" data-class="霰弹枪"
         data-tier-rank="4" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>KRM-262</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=krm-262">KRM-262</a></span> </td>
       <td>霰弹枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + No Stock + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + No Stock + Granulated Grip Tape</td>
       <td class="cell-notes">近距离火力强劲,是常被推荐的霰弹枪。</td>
     </tr>
     
     <tr id="weapon-codm-r9-0" data-name="r9-0" data-class="霰弹枪"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>R9-0</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=r9-0">R9-0</a></span> </td>
       <td>霰弹枪</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>RTC Extended Barrel + Marauder Suppressor + OWC Laser Tactical + Granulated Grip Tape + Speed Up Kill</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">RTC Extended Barrel + Marauder Suppressor + OWC Laser Tactical + Granulated Grip Tape + Speed Up Kill</td>
       <td class="cell-notes">射速快的霰弹枪,深受激进近战玩家喜爱。</td>
     </tr>
     
     <tr id="weapon-codm-striker" data-name="striker" data-class="霰弹枪"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Striker</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=striker">Striker</a></span> </td>
       <td>霰弹枪</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Long Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Long Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape + Stock</td>
       <td class="cell-notes">全自动霰弹枪,补全近距离武器库。</td>
     </tr>
     
     <tr id="weapon-codm-m4" data-name="m4" data-class="突击步枪"
         data-tier-rank="2" data-rpm="680" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>M4</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=m4">M4</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>24-19</td>
-      <td>680</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~350 ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>极低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>Monolithic Suppressor + MIP Extended Light Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>24-19</td><td>680</td><td>~350 ms</td><td>快</td><td>极低</td><td>30</td><td class="cell-notes">Monolithic Suppressor + MIP Extended Light Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">新手友好型突击步枪,后坐力极低、精准度出色,但在中型地图上的击杀时间落后于当前meta。</td>
     </tr>
     
     <tr id="weapon-codm-m16" data-name="m16" data-class="突击步枪"
         data-tier-rank="2" data-rpm="550" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>M16</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=m16">M16</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30x3 burst</td>
-      <td>550</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>OWC Marksman + Tactical Suppressor + OWC Laser Tactical + Granulated Grip Tape + Strike Stock</td>
+      <td>30x3 burst</td><td>550</td><td>~300 ms</td><td>中等</td><td>低</td><td>30</td><td class="cell-notes">OWC Marksman + Tactical Suppressor + OWC Laser Tactical + Granulated Grip Tape + Strike Stock</td>
       <td class="cell-notes">三发点射式突击步枪,远距离精准度出色且后坐力低,擅长干净利落的可控点射。</td>
     </tr>
     
     <tr id="weapon-codm-asm10" data-name="asm10" data-class="突击步枪"
         data-tier-rank="2" data-rpm="550" data-magazine="25">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>ASM10</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=asm10">ASM10</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>34-28</td>
-      <td>550</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~330 ms</td>
-      <td>慢</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>高</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25</td>
-      <td>OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>34-28</td><td>550</td><td>~330 ms</td><td>慢</td><td>高</td><td>25</td><td class="cell-notes">OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">单发伤害很高的重型突击步枪,但机动性差、射速低限制了发挥;目前需要机动性增强才能具备竞争力。</td>
     </tr>
     
     <tr id="weapon-codm-hbra3" data-name="hbra3" data-class="突击步枪"
         data-tier-rank="2" data-rpm="670" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>HBRa3</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=hbra3">HBRa3</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>29-24</td>
-      <td>670</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~350 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>29-24</td><td>670</td><td>~350 ms</td><td>中等</td><td>低</td><td>30</td><td class="cell-notes">OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">全面均衡的突击步枪,后坐力适中——是中距离交战中稳妥的多面手选择。</td>
     </tr>
     
     <tr id="weapon-codm-ak117" data-name="ak117" data-class="突击步枪"
         data-tier-rank="2" data-rpm="800" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>AK117</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=ak117">AK117</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25-20</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>极快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>Monolithic Suppressor + OWC Marksman + No Stock + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td>25-20</td><td>800</td><td>~300 ms</td><td>极快</td><td>中等</td><td>40</td><td class="cell-notes">Monolithic Suppressor + OWC Marksman + No Stock + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes">弹匣容量40发的高射速激进型突击步枪——尽管后坐力中等,仍是快攻打法的最佳选择之一。</td>
     </tr>
     
     <tr id="weapon-codm-lk24" data-name="lk24" data-class="突击步枪"
         data-tier-rank="2" data-rpm="630" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>LK24</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=lk24">LK24</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>27-24</td>
-      <td>630</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~330 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>极低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>Monolithic Suppressor + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>27-24</td><td>630</td><td>~330 ms</td><td>中等</td><td>极低</td><td>30</td><td class="cell-notes">Monolithic Suppressor + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">主打精准度的突击步枪,后坐力极低,在中远距离表现出色。</td>
     </tr>
     
     <tr id="weapon-codm-kn-44" data-name="kn-44" data-class="突击步枪"
         data-tier-rank="2" data-rpm="620" data-magazine="38">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>KN-44</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=kn-44">KN-44</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25</td>
-      <td>620</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~320 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>低</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>38</td>
-      <td>OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>30-25</td><td>620</td><td>~320 ms</td><td>中等</td><td>低</td><td>38</td><td class="cell-notes">OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">多面手型均衡突击步枪,后坐力低、弹匣容量高达38发——适用于大多数交战距离的稳健之选。</td>
     </tr>
     
     <tr id="weapon-codm-icr-1" data-name="icr-1" data-class="突击步枪"
         data-tier-rank="2" data-rpm="600" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>ICR-1</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=icr-1">ICR-1</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25-22</td>
-      <td>600</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~350 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>30-25-22</td><td>600</td><td>~350 ms</td><td>中等</td><td>★★★★★</td><td>40</td><td class="cell-notes">OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">主打控制力的突击步枪,拥有大容量40发弹匣和很强的后坐力抗性,适合持久的中远距离交战。</td>
     </tr>
     
     <tr id="weapon-codm-bk57" data-name="bk57" data-class="突击步枪"
         data-tier-rank="2" data-rpm="630" data-magazine="36">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>BK57</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=bk57">BK57</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>32-28-24</td>
-      <td>630</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~320 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>36</td>
-      <td>OWC Marksman + Tactical Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>32-28-24</td><td>630</td><td>~320 ms</td><td>中等</td><td>★★★★</td><td>36</td><td class="cell-notes">OWC Marksman + Tactical Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">均衡型突击步枪,伤害稳定、后坐力适中,适合中距离交战。</td>
     </tr>
     
     <tr id="weapon-codm-peacekeeper-mk2" data-name="peacekeeper mk2" data-class="突击步枪"
         data-tier-rank="3" data-rpm="800" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Peacekeeper MK2</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=peacekeeper-mk2">Peacekeeper MK2</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>32-27-24</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>Taskforce Barrel + Agency Suppressor + Double Stack Mag + Field Agent Grip + OWC Laser Tactical</td>
+      <td>32-27-24</td><td>800</td><td>~300 ms</td><td>快</td><td>★★★</td><td>30</td><td class="cell-notes">Taskforce Barrel + Agency Suppressor + Double Stack Mag + Field Agent Grip + OWC Laser Tactical</td>
       <td class="cell-notes">AR/SMG混合型武器,射速快、后坐力低,在中距离几乎可以当冲锋枪使用。</td>
     </tr>
     
     <tr id="weapon-codm-fr-556" data-name="fr .556" data-class="突击步枪"
         data-tier-rank="2" data-rpm="670" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>FR .556</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=fr-556">FR .556</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25</td>
-      <td>670</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~320 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>MIP Light Barrel + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>30-25</td><td>670</td><td>~320 ms</td><td>中等</td><td>★★★★</td><td>30</td><td class="cell-notes">MIP Light Barrel + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">点射式突击步枪,远距离潜力出色,但后坐力需要谨慎控制。</td>
     </tr>
     
     <tr id="weapon-codm-m13" data-name="m13" data-class="突击步枪"
         data-tier-rank="3" data-rpm="900" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>M13</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=m13">M13</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>24-20</td>
-      <td>900</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>极快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>RTC Heavy Long Barrel + Large Extended Mag B + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
+      <td>24-20</td><td>900</td><td>~300 ms</td><td>极快</td><td>★★★★</td><td>30</td><td class="cell-notes">RTC Heavy Long Barrel + Large Extended Mag B + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
       <td class="cell-notes">射速极高、后坐力极低的突击步枪,注重机动性和快速的后续射击。</td>
     </tr>
     
     <tr id="weapon-codm-kilo-141" data-name="kilo 141" data-class="突击步枪"
         data-tier-rank="4" data-rpm="680" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Kilo 141</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=kilo-141">Kilo 141</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>29-25-23</td>
-      <td>680</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~350 ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>Monolithic Suppressor + OWC Marksman + OWC Laser Tactical + Extended Mag + Granulated Grip Tape</td>
+      <td>29-25-23</td><td>680</td><td>~350 ms</td><td>快</td><td>★★★★★</td><td>30</td><td class="cell-notes">Monolithic Suppressor + OWC Marksman + OWC Laser Tactical + Extended Mag + Granulated Grip Tape</td>
       <td class="cell-notes">全能型S级突击步枪,兼具高伤害、高射速和极低后坐力,适用于从近距离到远距离的各种交战。</td>
     </tr>
     
     <tr id="weapon-codm-swordfish" data-name="swordfish" data-class="突击步枪"
         data-tier-rank="2" data-rpm="620" data-magazine="36">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Swordfish</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=swordfish">Swordfish</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>4-round burst</td>
-      <td>620</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>36</td>
-      <td>Halberd Mag + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
+      <td>4-round burst</td><td>620</td><td>~300 ms</td><td>中等</td><td>★★★★★</td><td>36</td><td class="cell-notes">Halberd Mag + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
       <td class="cell-notes">四发点射精准突击步枪,后坐力抗性强、射程远,擅长精准的点射节奏。</td>
     </tr>
     
     <tr id="weapon-codm-krig-6" data-name="krig 6" data-class="突击步枪"
         data-tier-rank="3" data-rpm="650" data-magazine="50">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Krig 6</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=krig-6">Krig 6</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25-22</td>
-      <td>650</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~320 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>50</td>
-      <td>Agency Suppressor + Ranger Barrel + OWC Laser Tactical + Field Agent Grip + Extended Mag</td>
+      <td>30-25-22</td><td>650</td><td>~320 ms</td><td>中等</td><td>★★★★★</td><td>50</td><td class="cell-notes">Agency Suppressor + Ranger Barrel + OWC Laser Tactical + Field Agent Grip + Extended Mag</td>
       <td class="cell-notes">竞技级突击步枪,拥有高达50发的超大弹匣、极低的后坐力,以及出色的远距离控制力。</td>
     </tr>
     
     <tr id="weapon-codm-ffar-1" data-name="ffar 1" data-class="突击步枪"
         data-tier-rank="4" data-rpm="850" data-magazine="44">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>FFAR 1</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=ffar-1">FFAR 1</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25-22</td>
-      <td>850</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280-300 ms</td>
-      <td>极快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>44</td>
-      <td>Taskforce Barrel + Agency Suppressor + Field Agent Grip + STANAG 50 Round + Raider Stock</td>
+      <td>30-25-22</td><td>850</td><td>~280-300 ms</td><td>极快</td><td>★★★</td><td>44</td><td class="cell-notes">Taskforce Barrel + Agency Suppressor + Field Agent Grip + STANAG 50 Round + Raider Stock</td>
       <td class="cell-notes">操作灵活、类似冲锋枪的突击步枪,专为近中距离的激进压制而生;在远距离会被更强力但较慢的突击步枪压制。</td>
     </tr>
     
     <tr id="weapon-codm-grau-5-56" data-name="grau 5.56" data-class="突击步枪"
         data-tier-rank="4" data-rpm="800" data-magazine="60">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Grau 5.56</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=grau-5-56">Grau 5.56</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>28-24-20</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>60</td>
-      <td>Tempus 26.4 Archangel + Monolithic Suppressor + 60 Round Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td>28-24-20</td><td>800</td><td>~300 ms</td><td>快</td><td>★★★★★</td><td>60</td><td class="cell-notes">Tempus 26.4 Archangel + Monolithic Suppressor + 60 Round Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes">后坐力几乎为零,射程出色,配备高达60发的超大弹匣——是大型地图上精准型玩家钟爱的&quot;稳定性之王&quot;。</td>
     </tr>
     
     <tr id="weapon-codm-em2" data-name="em2" data-class="突击步枪"
         data-tier-rank="3" data-rpm="600" data-magazine="35">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>EM2</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=em2">EM2</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>35-30-25</td>
-      <td>600</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>35</td>
-      <td>Agency Suppressor + Ranger Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>35-30-25</td><td>600</td><td>~300 ms</td><td>中等</td><td>★★★★</td><td>35</td><td class="cell-notes">Agency Suppressor + Ranger Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">高伤害突击步枪,后坐力适中,在中远距离效果显著。</td>
     </tr>
     
     <tr id="weapon-codm-maddox" data-name="maddox" data-class="突击步枪"
         data-tier-rank="3" data-rpm="850" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Maddox</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=maddox">Maddox</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25-22</td>
-      <td>850</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280-300 ms</td>
-      <td>极快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>Echo Fire Mod + Long Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>30-25-22</td><td>850</td><td>~280-300 ms</td><td>极快</td><td>★★★</td><td>40</td><td class="cell-notes">Echo Fire Mod + Long Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">射速极高的灵活型突击步枪,以牺牲射程为代价换取快速的连续伤害。</td>
     </tr>
     
     <tr id="weapon-codm-hvk-30" data-name="hvk-30" data-class="突击步枪"
         data-tier-rank="4" data-rpm="700+" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>HVK-30</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=hvk-30">HVK-30</a></span> </td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>非常高</td>
-      <td>700+</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>名列前茅</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Large Caliber Ammo + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
+      <td>非常高</td><td>700+</td><td>名列前茅</td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Large Caliber Ammo + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
       <td class="cell-notes">AR武器类别中因配件而变化最大的武器之一——搭配Large Caliber枪管后,伤害和射速大幅提升,成为游戏中最强的突击步枪之一。</td>
     </tr>
     
     <tr id="weapon-codm-lapa" data-name="lapa" data-class="冲锋枪 (smg)"
         data-tier-rank="3" data-rpm="800" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>LAPA</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=lapa">LAPA</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-26-22</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280 ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>Agency Suppressor + Rifled Barrel + Raider Stock + Field Agent Grip + Extended Mag</td>
+      <td>30-26-22</td><td>800</td><td>~280 ms</td><td>快</td><td>★★★★</td><td>40</td><td class="cell-notes">Agency Suppressor + Rifled Barrel + Raider Stock + Field Agent Grip + Extended Mag</td>
       <td class="cell-notes">均衡型冲锋枪,伤害、射程和控制力都不错——不在任何单一方面称霸,但也没有明显短板。</td>
     </tr>
     
     <tr id="weapon-codm-ksp-45" data-name="ksp 45" data-class="冲锋枪 (smg)"
         data-tier-rank="2" data-rpm="800" data-magazine="33">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>KSP 45</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=ksp-45">KSP 45</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>点射</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~270 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>33</td>
-      <td>Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag + OWC Laser Tactical</td>
+      <td>点射</td><td>800</td><td>~270 ms</td><td>中等</td><td>★★★★</td><td>33</td><td class="cell-notes">Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag + OWC Laser Tactical</td>
       <td class="cell-notes">点射式冲锋枪,奖励精准的扳机控制,以其类别而言拥有不错的后坐力抗性。</td>
     </tr>
     
     <tr id="weapon-codm-tec-9" data-name="tec-9" data-class="冲锋枪 (smg)"
         data-tier-rank="2" data-rpm="半自动/全自动(视模式而定)" data-magazine="48">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>TEC-9</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=tec-9">TEC-9</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>34-28</td>
-      <td>半自动/全自动(视模式而定)</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>不固定</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>48</td>
-      <td>Full Auto Repeater + Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag</td>
+      <td>34-28</td><td>半自动/全自动(视模式而定)</td><td>不固定</td><td>中等</td><td>★★★★</td><td>48</td><td class="cell-notes">Full Auto Repeater + Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag</td>
       <td class="cell-notes">主打伤害的冲锋枪,根据射击模式表现差异很大——半自动模式下更慢更精准,而搭配Full Auto Repeater配件后则变为激进的近距离武器。</td>
     </tr>
     
     <tr id="weapon-codm-gks" data-name="gks" data-class="冲锋枪 (smg)"
         data-tier-rank="2" data-rpm="600" data-magazine="36">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>GKS</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=gks">GKS</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>28-24</td>
-      <td>600</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~350 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>36</td>
-      <td>OWC Marksman Barrel + Monolithic Suppressor + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td>28-24</td><td>600</td><td>~350 ms</td><td>中等</td><td>★★★★★</td><td>36</td><td class="cell-notes">OWC Marksman Barrel + Monolithic Suppressor + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes">主打精准度的冲锋枪,拥有该类别中最远的有效射程和极低的后坐力,但代价是射速较慢。</td>
     </tr>
     
     <tr id="weapon-codm-rus-79u" data-name="rus-79u" data-class="冲锋枪 (smg)"
         data-tier-rank="2" data-rpm="770" data-magazine="38">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>RUS-79U</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=rus-79u">RUS-79U</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>28-24</td>
-      <td>770</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>38</td>
-      <td>OWC Marksman Barrel + Monolithic Suppressor + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td>28-24</td><td>770</td><td>~300 ms</td><td>快</td><td>★★★★</td><td>38</td><td class="cell-notes">OWC Marksman Barrel + Monolithic Suppressor + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes">AR/SMG混合武器,射程优于该类别平均水平,后坐力可控,比大多数纯冲锋枪更具灵活性。</td>
     </tr>
     
     <tr id="weapon-codm-pharo" data-name="pharo" data-class="冲锋枪 (smg)"
         data-tier-rank="2" data-rpm="900" data-magazine="36">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Pharo</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=pharo">Pharo</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>点射</td>
-      <td>900</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>不固定</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>36</td>
-      <td>OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
+      <td>点射</td><td>900</td><td>不固定</td><td>快</td><td>★★★</td><td>36</td><td class="cell-notes">OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
       <td class="cell-notes">点射式冲锋枪,伤害因情况而异——奖励精准的点射节奏,而非盲目扫射。</td>
     </tr>
     
     <tr id="weapon-codm-agr-556" data-name="agr 556" data-class="冲锋枪 (smg)"
         data-tier-rank="2" data-rpm="700" data-magazine="60">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>AGR 556</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=agr-556">AGR 556</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25</td>
-      <td>700</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>60</td>
-      <td>5.56 Ammo / 60 Round Mag + Marksman Barrel + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
+      <td>30-25</td><td>700</td><td>~300 ms</td><td>中等</td><td>★★★★</td><td>60</td><td class="cell-notes">5.56 Ammo / 60 Round Mag + Marksman Barrel + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
       <td class="cell-notes">围绕5.56弹药打造的AR/SMG混合武器,射程和弹匣容量更出色,使用起来几乎像一把轻型突击步枪。</td>
     </tr>
     
     <tr id="weapon-codm-msmc" data-name="msmc" data-class="冲锋枪 (smg)"
         data-tier-rank="2" data-rpm="850" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>MSMC</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=msmc">MSMC</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>34-27</td>
-      <td>850</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280 ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>Extended Mag + OWC Laser Tactical + No Stock + Granulated Grip Tape + Monolithic Suppressor</td>
+      <td>34-27</td><td>850</td><td>~280 ms</td><td>快</td><td>★★</td><td>30</td><td class="cell-notes">Extended Mag + OWC Laser Tactical + No Stock + Granulated Grip Tape + Monolithic Suppressor</td>
       <td class="cell-notes">老派快攻型冲锋枪,射速快、操控灵活,但持续射击时后坐力上升很快。</td>
     </tr>
     
     <tr id="weapon-codm-pdw-57" data-name="pdw-57" data-class="冲锋枪 (smg)"
         data-tier-rank="1" data-rpm="650" data-magazine="50">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>PDW-57</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=pdw-57">PDW-57</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-C">C</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>27-22</td>
-      <td>650</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~350 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>50</td>
-      <td>Long Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
+      <td>27-22</td><td>650</td><td>~350 ms</td><td>中等</td><td>★★★★</td><td>50</td><td class="cell-notes">Long Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
       <td class="cell-notes">新手友好型冲锋枪,拥有大容量50发弹匣和可控的后坐力,但落后于当前冲锋枪meta。</td>
     </tr>
     
     <tr id="weapon-codm-mx9" data-name="mx9" data-class="冲锋枪 (smg)"
         data-tier-rank="3" data-rpm="900" data-magazine="45">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>MX9</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=mx9">MX9</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-24-20</td>
-      <td>900</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~270 ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>45</td>
-      <td>Agency Suppressor + Taskforce Barrel + Raider Stock + Field Agent Grip + Extended Mag</td>
+      <td>30-24-20</td><td>900</td><td>~270 ms</td><td>快</td><td>★★★</td><td>45</td><td class="cell-notes">Agency Suppressor + Taskforce Barrel + Raider Stock + Field Agent Grip + Extended Mag</td>
       <td class="cell-notes">专为快攻目标点打造的高机动性冲锋枪,瞄准速度极快,伤害与机动性平衡出色,但射程不及CBR4,长时间扫射时后坐力会上升。</td>
     </tr>
     
     <tr id="weapon-codm-mac-10" data-name="mac-10" data-class="冲锋枪 (smg)"
         data-tier-rank="3" data-rpm="1200" data-magazine="53">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>MAC-10</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=mac-10">MAC-10</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>24-21-18</td>
-      <td>1200</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~250 ms</td>
-      <td>极快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>53</td>
-      <td>Reinforced Heavy Barrel + STANAG 53 Round Drum + Field Agent Grip + OWC Laser Tactical + No Stock</td>
+      <td>24-21-18</td><td>1200</td><td>~250 ms</td><td>极快</td><td>★★</td><td>53</td><td class="cell-notes">Reinforced Heavy Barrel + STANAG 53 Round Drum + Field Agent Grip + OWC Laser Tactical + No Stock</td>
       <td class="cell-notes">射速极高、专为速度打造的冲锋枪——近距离威力惊人,但弹匣小,远距离后坐力明显。</td>
     </tr>
     
     <tr id="weapon-codm-ots-9" data-name="ots 9" data-class="冲锋枪 (smg)"
         data-tier-rank="4" data-rpm="850" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>OTs 9</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=ots-9">OTs 9</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25-22</td>
-      <td>850</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280 ms</td>
-      <td>快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag + OWC Laser Tactical</td>
+      <td>30-25-22</td><td>850</td><td>~280 ms</td><td>快</td><td>★★★★</td><td>40</td><td class="cell-notes">Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag + OWC Laser Tactical</td>
       <td class="cell-notes">竞技级冲锋枪,兼顾快速击杀时间和出色的后坐力控制——与CBR4并列为最佳全能选择之一。</td>
     </tr>
     
     <tr id="weapon-codm-cordite" data-name="cordite" data-class="冲锋枪 (smg)"
         data-tier-rank="2" data-rpm="800" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Cordite</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=cordite">Cordite</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>28-24</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Monolithic Suppressor</td>
+      <td>28-24</td><td>800</td><td>~300 ms</td><td>中等</td><td>★★★</td><td>40</td><td class="cell-notes">OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Monolithic Suppressor</td>
       <td class="cell-notes">多面手型中等水平冲锋枪,伤害稳定、后坐力适中——表现扎实,但被更快的meta武器超越。</td>
     </tr>
     
     <tr id="weapon-codm-striker-45" data-name="striker 45" data-class="冲锋枪 (smg)"
         data-tier-rank="2" data-rpm="600" data-magazine="25">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Striker 45</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=striker-45">Striker 45</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>34-30-25</td>
-      <td>600</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~330 ms</td>
-      <td>中等</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25</td>
-      <td>Monolithic Suppressor + Long Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td>34-30-25</td><td>600</td><td>~330 ms</td><td>中等</td><td>★★★★★</td><td>25</td><td class="cell-notes">Monolithic Suppressor + Long Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes">伤害沉重的混合型冲锋枪,单发伤害高于该类别大多数武器,以较慢的射速和小弹匣作为平衡。</td>
     </tr>
     
     <tr id="weapon-codm-fennec" data-name="fennec" data-class="冲锋枪 (smg)"
         data-tier-rank="3" data-rpm="1110" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Fennec</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=fennec">Fennec</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>23-19</td>
-      <td>1110</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~250 ms</td>
-      <td>极快</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>MIP Extended Light Barrel + Large Extended Mag + OWC Laser Tactical + No Stock + Granulated Grip Tape</td>
+      <td>23-19</td><td>1110</td><td>~250 ms</td><td>极快</td><td>★★</td><td>40</td><td class="cell-notes">MIP Extended Light Barrel + Large Extended Mag + OWC Laser Tactical + No Stock + Granulated Grip Tape</td>
       <td class="cell-notes">凭借极高射速拥有SMG类别中最高的DPS,但伤害在远距离迅速衰减,小弹匣也需要频繁装弹——在Shipment、Nuketown等狭小地图上表现最佳。</td>
     </tr>
     
     <tr id="weapon-codm-cx-9" data-name="cx-9" data-class="冲锋枪 (smg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>CX-9</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=cx-9">CX-9</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>CX-38S Barrel + 50 Round Mag + OWC Laser Tactical + No Stock + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">CX-38S Barrel + 50 Round Mag + OWC Laser Tactical + No Stock + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-chicom" data-name="chicom" data-class="冲锋枪 (smg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Chicom</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=chicom">Chicom</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>OWC Marksman Barrel + Monolithic Suppressor + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">OWC Marksman Barrel + Monolithic Suppressor + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-hg-40" data-name="hg 40" data-class="冲锋枪 (smg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>HG 40</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=hg-40">HG 40</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Monolithic Suppressor + OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Monolithic Suppressor + OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-aks-74u" data-name="aks-74u" data-class="冲锋枪 (smg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>AKS-74U</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=aks-74u">AKS-74U</a></span> </td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Monolithic Suppressor + Marksman Barrel + Extended Mag + Laser Tactical + Granulated Grip</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Monolithic Suppressor + Marksman Barrel + Extended Mag + Laser Tactical + Granulated Grip</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-pkm" data-name="pkm" data-class="轻机枪 (lmg)"
         data-tier-rank="3" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>PKM</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=pkm">PKM</a></span> </td>
       <td>轻机枪 (LMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Monolithic Suppressor + Heavy Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Monolithic Suppressor + Heavy Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-rpd" data-name="rpd" data-class="轻机枪 (lmg)"
         data-tier-rank="3" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>RPD</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=rpd">RPD</a></span> </td>
       <td>轻机枪 (LMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Cooling Compressor Barrel + OWC Laser Tactical + Granulated Grip Tape + Stock + FMJ</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Cooling Compressor Barrel + OWC Laser Tactical + Granulated Grip Tape + Stock + FMJ</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-bruen-mk9" data-name="bruen mk9" data-class="轻机枪 (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Bruen MK9</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=bruen-mk9">Bruen MK9</a></span> </td>
       <td>轻机枪 (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Summit Barrel + Monolithic Suppressor + No Stock + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Summit Barrel + Monolithic Suppressor + No Stock + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-s36" data-name="s36" data-class="轻机枪 (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>S36</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=s36">S36</a></span> </td>
       <td>轻机枪 (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Long Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Long Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag + Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-ul736" data-name="ul736" data-class="轻机枪 (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>UL736</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=ul736">UL736</a></span> </td>
       <td>轻机枪 (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Heavy Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Heavy Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape + Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-hades" data-name="hades" data-class="轻机枪 (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Hades</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=hades">Hades</a></span> </td>
       <td>轻机枪 (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Rapid Fire Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Rapid Fire Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape + Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-dingo" data-name="dingo" data-class="轻机枪 (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Dingo</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=dingo">Dingo</a></span> </td>
       <td>轻机枪 (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Rapid Fire Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Rapid Fire Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-mg42" data-name="mg42" data-class="轻机枪 (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>MG42</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=mg42">MG42</a></span> </td>
       <td>轻机枪 (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Reinforced Heavy Barrel + Extended Mag + Field Agent Grip + OWC Laser Tactical + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Reinforced Heavy Barrel + Extended Mag + Field Agent Grip + OWC Laser Tactical + Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-m4lmg" data-name="m4lmg" data-class="轻机枪 (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>M4LMG</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=m4lmg">M4LMG</a></span> </td>
       <td>轻机枪 (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>中-远距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Monolithic Suppressor + OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Monolithic Suppressor + OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-by15" data-name="by15" data-class="霰弹枪"
         data-tier-rank="4" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>BY15</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=by15">BY15</a></span> </td>
       <td>霰弹枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + No Stock + Sleight of Hand</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + No Stock + Sleight of Hand</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-echo" data-name="echo" data-class="霰弹枪"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Echo</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=echo">Echo</a></span> </td>
       <td>霰弹枪</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>RTC Extended Barrel + Marauder Suppressor + OWC Laser Tactical + Extended Mag + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">RTC Extended Barrel + Marauder Suppressor + OWC Laser Tactical + Extended Mag + Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-jak-12" data-name="jak-12" data-class="霰弹枪"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>JAK-12</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=jak-12">JAK-12</a></span> </td>
       <td>霰弹枪</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Marauder Suppressor + RTC Extended Barrel + Large Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Marauder Suppressor + RTC Extended Barrel + Large Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-argus" data-name="argus" data-class="霰弹枪"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Argus</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=argus">Argus</a></span> </td>
       <td>霰弹枪</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Long Barrel + OWC Laser Tactical + No Stock + ADS attachments + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Long Barrel + OWC Laser Tactical + No Stock + ADS attachments + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-hs2126" data-name="hs2126" data-class="霰弹枪"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>HS2126</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=hs2126">HS2126</a></span> </td>
       <td>霰弹枪</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Extended Barrel + OWC Laser Tactical + Extended Mag + Stock + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Extended Barrel + OWC Laser Tactical + Extended Mag + Stock + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-shorty" data-name="shorty" data-class="霰弹枪"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Shorty</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=shorty">Shorty</a></span> </td>
       <td>霰弹枪</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + Sleight of Hand + Mobility Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + Sleight of Hand + Mobility Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-renetti" data-name="renetti" data-class="副武器"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Renetti</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=renetti">Renetti</a></span> </td>
       <td>副武器</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Akimbo + MIP Light Barrel + OWC Laser Tactical + Lightweight Trigger + Extended Mag</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Akimbo + MIP Light Barrel + OWC Laser Tactical + Lightweight Trigger + Extended Mag</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-gs-50" data-name=".50 gs" data-class="副武器"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>.50 GS</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=gs-50">.50 GS</a></span> </td>
       <td>副武器</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Lightweight Trigger + OWC Laser Tactical + Extended Mag + Stippled Grip Tape + Monolithic Suppressor</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Lightweight Trigger + OWC Laser Tactical + Extended Mag + Stippled Grip Tape + Monolithic Suppressor</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-j358" data-name="j358" data-class="副武器"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>J358</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=j358">J358</a></span> </td>
       <td>副武器</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Stopping Power Reload + Lightweight Trigger + OWC Laser Tactical + Long Barrel + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Stopping Power Reload + Lightweight Trigger + OWC Laser Tactical + Long Barrel + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-mw11" data-name="mw11" data-class="副武器"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>MW11</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=mw11">MW11</a></span> </td>
       <td>副武器</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>OWC Laser Tactical + Lightweight Trigger + Extended Mag + Long Barrel + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">OWC Laser Tactical + Lightweight Trigger + Extended Mag + Long Barrel + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-crossbow" data-name="crossbow" data-class="副武器"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Crossbow</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=crossbow">Crossbow</a></span> </td>
       <td>副武器</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>近-中距离</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Thermite Bolt + OWC Laser Tactical + Sleight of Hand + Marksman Barrel + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Thermite Bolt + OWC Laser Tactical + Sleight of Hand + Marksman Barrel + Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-fhj-18" data-name="fhj-18" data-class="发射器"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>FHJ-18</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=fhj-18">FHJ-18</a></span> </td>
       <td>发射器</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Launcher + Amped Perk + Fast Swap Secondary</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Launcher + Amped Perk + Fast Swap Secondary</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-smrs" data-name="smrs" data-class="发射器"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>SMRS</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=smrs">SMRS</a></span> </td>
       <td>发射器</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Launcher + Amped Perk + Fast Swap Secondary</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Launcher + Amped Perk + Fast Swap Secondary</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-thumper" data-name="thumper" data-class="发射器"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Thumper</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=thumper">Thumper</a></span> </td>
       <td>发射器</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Launcher + Amped Perk + Fast Swap Secondary</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Launcher + Amped Perk + Fast Swap Secondary</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-d13-sector" data-name="d13 sector" data-class="发射器"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>D13 Sector</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=d13-sector">D13 Sector</a></span> </td>
       <td>发射器</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Launcher + Amped Perk + Fast Swap Secondary</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Launcher + Amped Perk + Fast Swap Secondary</td>
       <td class="cell-notes"></td>
     </tr>
     </tbody>
@@ -2287,7 +1231,7 @@
           <thead><tr><th data-sort="name">名称 <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">类别 <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">排位梯队 <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">定位</th><th data-sort="none">最佳伤害配装</th></tr></thead>
           <tbody>
     <tr data-name="switchblade x9" data-class="冲锋枪 (smg)" data-tier-rank="5">
-      <td class="cell-weapon"><span>Switchblade X9</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=switchblade-x9">Switchblade X9</a></span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-S">S+</span></td>
       <td>Entry/Rush</td>
@@ -2295,7 +1239,7 @@
     </tr>
     
     <tr data-name="qq9" data-class="冲锋枪 (smg)" data-tier-rank="5">
-      <td class="cell-weapon"><span>QQ9</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=qq9">QQ9</a></span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-S">S+</span></td>
       <td>Aggressive</td>
@@ -2303,7 +1247,7 @@
     </tr>
     
     <tr data-name="dr-h" data-class="突击步枪" data-tier-rank="5">
-      <td class="cell-weapon"><span>DR-H</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=dr-h">DR-H</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-S">S+</span></td>
       <td>Slayer</td>
@@ -2311,7 +1255,7 @@
     </tr>
     
     <tr data-name="cbr4" data-class="冲锋枪 (smg)" data-tier-rank="5">
-      <td class="cell-weapon"><span>CBR4</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=cbr4">CBR4</a></span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-S">S+</span></td>
       <td>Flex</td>
@@ -2319,7 +1263,7 @@
     </tr>
     
     <tr data-name="dl q33" data-class="狙击步枪" data-tier-rank="5">
-      <td class="cell-weapon"><span>DL Q33</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=dl-q33">DL Q33</a></span></td>
       <td>狙击步枪</td>
       <td><span class="tier-badge tier-S">S+</span></td>
       <td>Quickscope</td>
@@ -2327,7 +1271,7 @@
     </tr>
     
     <tr data-name="grau 5.56" data-class="突击步枪" data-tier-rank="5">
-      <td class="cell-weapon"><span>Grau 5.56</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=grau-5-56">Grau 5.56</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-S">S+</span></td>
       <td>Anchor</td>
@@ -2335,7 +1279,7 @@
     </tr>
     
     <tr data-name="hvk-30" data-class="突击步枪" data-tier-rank="5">
-      <td class="cell-weapon"><span>HVK-30</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=hvk-30">HVK-30</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-S">S+</span></td>
       <td>Slayer</td>
@@ -2343,7 +1287,7 @@
     </tr>
     
     <tr data-name="bal-27" data-class="突击步枪" data-tier-rank="4">
-      <td class="cell-weapon"><span>BAL-27</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=bal-27">BAL-27</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Flex / Slayer</td>
@@ -2351,7 +1295,7 @@
     </tr>
     
     <tr data-name="type 63" data-class="点射步枪" data-tier-rank="4">
-      <td class="cell-weapon"><span>Type 63</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=type-63">Type 63</a></span></td>
       <td>点射步枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Mid-Range Slayer</td>
@@ -2359,7 +1303,7 @@
     </tr>
     
     <tr data-name="vlk rogue" data-class="霰弹枪" data-tier-rank="4">
-      <td class="cell-weapon"><span>VLK Rogue</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=vlk-rogue">VLK Rogue</a></span></td>
       <td>霰弹枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Entry / Objective Breaker</td>
@@ -2367,7 +1311,7 @@
     </tr>
     
     <tr data-name="locus" data-class="狙击步枪" data-tier-rank="4">
-      <td class="cell-weapon"><span>Locus</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=locus">Locus</a></span></td>
       <td>狙击步枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Aggressive Sniper</td>
@@ -2375,7 +1319,7 @@
     </tr>
     
     <tr data-name="holger 26" data-class="轻机枪 (lmg)" data-tier-rank="4">
-      <td class="cell-weapon"><span>Holger 26</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=holger-26">Holger 26</a></span></td>
       <td>轻机枪 (LMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Flex LMG</td>
@@ -2383,7 +1327,7 @@
     </tr>
     
     <tr data-name="krm-262" data-class="霰弹枪" data-tier-rank="4">
-      <td class="cell-weapon"><span>KRM-262</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=krm-262">KRM-262</a></span></td>
       <td>霰弹枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Objective Defense</td>
@@ -2391,7 +1335,7 @@
     </tr>
     
     <tr data-name="kilo 141" data-class="突击步枪" data-tier-rank="4">
-      <td class="cell-weapon"><span>Kilo 141</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=kilo-141">Kilo 141</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>All-round</td>
@@ -2399,7 +1343,7 @@
     </tr>
     
     <tr data-name="krig 6" data-class="突击步枪" data-tier-rank="4">
-      <td class="cell-weapon"><span>Krig 6</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=krig-6">Krig 6</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Map Control</td>
@@ -2407,7 +1351,7 @@
     </tr>
     
     <tr data-name="ffar 1" data-class="突击步枪" data-tier-rank="4">
-      <td class="cell-weapon"><span>FFAR 1</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=ffar-1">FFAR 1</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Aggressive</td>
@@ -2415,7 +1359,7 @@
     </tr>
     
     <tr data-name="ots 9" data-class="冲锋枪 (smg)" data-tier-rank="4">
-      <td class="cell-weapon"><span>OTs 9</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=ots-9">OTs 9</a></span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Close-Medium</td>
@@ -2423,7 +1367,7 @@
     </tr>
     
     <tr data-name="fennec" data-class="冲锋枪 (smg)" data-tier-rank="4">
-      <td class="cell-weapon"><span>Fennec</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=fennec">Fennec</a></span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Close Range</td>
@@ -2431,7 +1375,7 @@
     </tr>
     
     <tr data-name="by15" data-class="霰弹枪" data-tier-rank="4">
-      <td class="cell-weapon"><span>BY15</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=by15">BY15</a></span></td>
       <td>霰弹枪</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>One-Shot</td>
@@ -2439,7 +1383,7 @@
     </tr>
     
     <tr data-name="vmp" data-class="冲锋枪 (smg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>VMP</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=vmp">VMP</a></span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Slayer / Flex</td>
@@ -2447,7 +1391,7 @@
     </tr>
     
     <tr data-name="xm4" data-class="突击步枪" data-tier-rank="3">
-      <td class="cell-weapon"><span>XM4</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=xm4">XM4</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Slayer / Flex</td>
@@ -2455,7 +1399,7 @@
     </tr>
     
     <tr data-name="as val" data-class="突击步枪" data-tier-rank="3">
-      <td class="cell-weapon"><span>AS VAL</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=as-val">AS VAL</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Small Maps</td>
@@ -2463,7 +1407,7 @@
     </tr>
     
     <tr data-name="cr-56 amax" data-class="突击步枪" data-tier-rank="3">
-      <td class="cell-weapon"><span>CR-56 AMAX</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=cr-56-amax">CR-56 AMAX</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>High Damage</td>
@@ -2471,7 +1415,7 @@
     </tr>
     
     <tr data-name="ak-47" data-class="突击步枪" data-tier-rank="3">
-      <td class="cell-weapon"><span>AK-47</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=ak-47">AK-47</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Long Range</td>
@@ -2479,7 +1423,7 @@
     </tr>
     
     <tr data-name="uss9" data-class="冲锋枪 (smg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>USS9</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=uss9">USS9</a></span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Flex SMG</td>
@@ -2487,7 +1431,7 @@
     </tr>
     
     <tr data-name="ppsh-41" data-class="冲锋枪 (smg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>PPSh-41</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=ppsh-41">PPSh-41</a></span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Hardpoint</td>
@@ -2495,7 +1439,7 @@
     </tr>
     
     <tr data-name="qxr" data-class="冲锋枪 (smg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>QXR</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=qxr">QXR</a></span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Aggressive SMG</td>
@@ -2503,7 +1447,7 @@
     </tr>
     
     <tr data-name="sp-r 208" data-class="狙击步枪" data-tier-rank="3">
-      <td class="cell-weapon"><span>SP-R 208</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=sp-r-208">SP-R 208</a></span></td>
       <td>狙击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Aggressive Sniper</td>
@@ -2511,7 +1455,7 @@
     </tr>
     
     <tr data-name="peacekeeper mk2" data-class="突击步枪" data-tier-rank="3">
-      <td class="cell-weapon"><span>Peacekeeper MK2</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=peacekeeper-mk2">Peacekeeper MK2</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Mechanical Players</td>
@@ -2519,7 +1463,7 @@
     </tr>
     
     <tr data-name="m13" data-class="突击步枪" data-tier-rank="3">
-      <td class="cell-weapon"><span>M13</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=m13">M13</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Rush</td>
@@ -2527,7 +1471,7 @@
     </tr>
     
     <tr data-name="mx9" data-class="冲锋枪 (smg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>MX9</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=mx9">MX9</a></span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Rush</td>
@@ -2535,7 +1479,7 @@
     </tr>
     
     <tr data-name="mac-10" data-class="冲锋枪 (smg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>MAC-10</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=mac-10">MAC-10</a></span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Close Range</td>
@@ -2543,7 +1487,7 @@
     </tr>
     
     <tr data-name="pkm" data-class="轻机枪 (lmg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>PKM</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=pkm">PKM</a></span></td>
       <td>轻机枪 (LMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Long Range</td>
@@ -2551,7 +1495,7 @@
     </tr>
     
     <tr data-name="rpd" data-class="轻机枪 (lmg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>RPD</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=rpd">RPD</a></span></td>
       <td>轻机枪 (LMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Control</td>
@@ -2559,7 +1503,7 @@
     </tr>
     
     <tr data-name="so-14" data-class="突击步枪" data-tier-rank="2">
-      <td class="cell-weapon"><span>SO-14</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=so-14">SO-14</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Anchor / Long Range</td>
@@ -2567,7 +1511,7 @@
     </tr>
     
     <tr data-name="fss hurricane" data-class="冲锋枪 (smg)" data-tier-rank="2">
-      <td class="cell-weapon"><span>FSS Hurricane</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=fss-hurricane">FSS Hurricane</a></span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Rush / Entry</td>
@@ -2575,7 +1519,7 @@
     </tr>
     
     <tr data-name="oden" data-class="突击步枪" data-tier-rank="2">
-      <td class="cell-weapon"><span>ODEN</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=oden">ODEN</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2583,7 +1527,7 @@
     </tr>
     
     <tr data-name="pp19 bizon" data-class="冲锋枪 (smg)" data-tier-rank="2">
-      <td class="cell-weapon"><span>PP19 Bizon</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=pp19-bizon">PP19 Bizon</a></span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2591,7 +1535,7 @@
     </tr>
     
     <tr data-name="sks" data-class="点射步枪" data-tier-rank="2">
-      <td class="cell-weapon"><span>SKS</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=sks">SKS</a></span></td>
       <td>点射步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Precision Slayer</td>
@@ -2599,7 +1543,7 @@
     </tr>
     
     <tr data-name="mk2" data-class="狙击步枪" data-tier-rank="2">
-      <td class="cell-weapon"><span>MK2</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=mk2">MK2</a></span></td>
       <td>狙击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Precision Sniper</td>
@@ -2607,7 +1551,7 @@
     </tr>
     
     <tr data-name="m4" data-class="突击步枪" data-tier-rank="2">
-      <td class="cell-weapon"><span>M4</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=m4">M4</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2615,7 +1559,7 @@
     </tr>
     
     <tr data-name="kn-44" data-class="突击步枪" data-tier-rank="2">
-      <td class="cell-weapon"><span>KN-44</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=kn-44">KN-44</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2623,7 +1567,7 @@
     </tr>
     
     <tr data-name="icr-1" data-class="突击步枪" data-tier-rank="2">
-      <td class="cell-weapon"><span>ICR-1</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=icr-1">ICR-1</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2631,7 +1575,7 @@
     </tr>
     
     <tr data-name="bk57" data-class="突击步枪" data-tier-rank="2">
-      <td class="cell-weapon"><span>BK57</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=bk57">BK57</a></span></td>
       <td>突击步枪</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2639,7 +1583,7 @@
     </tr>
     
     <tr data-name="rus-79u" data-class="冲锋枪 (smg)" data-tier-rank="2">
-      <td class="cell-weapon"><span>RUS-79U</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=rus-79u">RUS-79U</a></span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2647,7 +1591,7 @@
     </tr>
     
     <tr data-name="cordite" data-class="冲锋枪 (smg)" data-tier-rank="2">
-      <td class="cell-weapon"><span>Cordite</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/zh/codm/compare/?w=cordite">Cordite</a></span></td>
       <td>冲锋枪 (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2663,7 +1607,7 @@
     
     </section>
     <section class="teaser-section">
-      <h2>角色与皮肤</h2>
+      <h2>角色</h2>
       <a class="see-all" href="/madsmobile/zh/codm/characters/">角色 &rarr;</a>
     </section>
     <section class="teaser-section">
@@ -2687,10 +1631,8 @@
 </main>
 <footer class="site-footer">
   <p class="footer-description">MADS Mobile 是一个经过事实核查的移动射击游戏武器、角色和版本强度排行数据库,覆盖全球顶级手游射击游戏。</p>
-  <p class="footer-disclaimer">MADS Mobile 上发布的信息基于对现有游戏数据的研究、分析与评估。版本更新和平衡性调整可能会改变相关数据与推荐。如发现信息有误,请联系我们的团队。</p>
-  <p>经过核实的手游射击数据库,每月更新。</p>
+  <p class="footer-disclaimer">MADS Mobile 上发布的信息基于对现有游戏数据的研究、分析与评估。版本更新和平衡性调整可能会改变相关数据与推荐。如发现信息有误,请联系我们的团队。 联系我们: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
   <p class="footer-social"><span class="footer-social-label">关注我们:</span> <a href="https://www.instagram.com/madsmobilegg/" target="_blank" rel="noopener noreferrer">Instagram</a> <a href="https://x.com/MADSmobile" target="_blank" rel="noopener noreferrer">X</a> <a href="https://www.threads.com/@madsmobilegg" target="_blank" rel="noopener noreferrer">Threads</a></p>
-  <p class="footer-contact">联系我们: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
   <p class="footer-copyright">&copy; 2026 MADS Mobile &mdash; 版权所有。</p>
 </footer>
 <script src="/madsmobile/assets/app.js"></script>

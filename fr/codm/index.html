@@ -30,17 +30,17 @@
 <body>
 <header class="site-header">
   <a class="brand" href="/madsmobile/fr/"><img src="/madsmobile/assets/img/brand/logo.png" alt="MADS Mobile" class="brand-logo" width="32" height="32"><span class="brand-text">MADS Mobile</span></a>
-  <nav class="site-nav" aria-label="Accueil">
-    <a href="/madsmobile/fr/">Accueil</a>
-    <a href="/madsmobile/fr/blog/">Blog</a>
-  </nav>
   <nav class="crumbs"><a href="/madsmobile/fr/">&larr; Retour à tous les jeux</a><span class="tabs">
     <a href="/madsmobile/fr/codm/">Méta / Armes</a>
     <a href="/madsmobile/fr/codm/characters/">Personnages</a>
     
     <a href="/madsmobile/fr/codm/blog/">Blog</a>
     </span></nav>
-  <nav class="lang-switch" aria-label="Langue"><a class="" href="/madsmobile/en/codm/">English</a><a class="" href="/madsmobile/zh/codm/">中文</a><a class="active" href="/madsmobile/fr/codm/">Français</a><a class="" href="/madsmobile/it/codm/">Italiano</a><a class="" href="/madsmobile/pt/codm/">Português</a><a class="" href="/madsmobile/hi/codm/">हिन्दी</a><a class="" href="/madsmobile/es/codm/">Español</a></nav>
+  <nav class="lang-switch" aria-label="Langue">
+    <a class="blog-nav-link" href="/madsmobile/fr/blog/">Blog</a>
+    <span class="nav-divider" aria-hidden="true"></span>
+    <a class="" href="/madsmobile/en/codm/">English</a><a class="" href="/madsmobile/zh/codm/">中文</a><a class="active" href="/madsmobile/fr/codm/">Français</a><a class="" href="/madsmobile/it/codm/">Italiano</a><a class="" href="/madsmobile/pt/codm/">Português</a><a class="" href="/madsmobile/hi/codm/">हिन्दी</a><a class="" href="/madsmobile/es/codm/">Español</a>
+  </nav>
 </header>
 <main>
 
@@ -68,20 +68,19 @@
       <p class="also-known-as">Aussi connu sous le nom de: COD Mobile, CODM, Call of Duty Mobile</p>
     </section>
     <section class="dev-info-row"><span class="dev-info-item"><strong>Développeur:</strong> TiMi Studio Group (Tencent)</span><span class="dev-info-item"><strong>Éditeur:</strong> <a href="https://www.activision.com" target="_blank" rel="noopener">Activision</a> / <a href="https://www.garena.com" target="_blank" rel="noopener">Garena</a> / <a href="https://www.tencent.com" target="_blank" rel="noopener">Tencent</a> (<a href="https://timi.qq.com" target="_blank" rel="noopener">TiMi Studios</a>)</span><span class="dev-info-item"><strong>Site Officiel:</strong> <a href="https://www.callofduty.com/mobile" target="_blank" rel="noopener nofollow">www.callofduty.com/mobile</a></span></section>
-    <section class="meta-about-row">
-      <div class="meta-col">
-        <h2>Méta actuelle</h2>
+    <div class="weapons-tabs meta-about-tabs">
+      <button type="button" class="tab-btn active" data-tab-target="panel-meta-codm">Méta actuelle</button>
+      <button type="button" class="tab-btn" data-tab-target="panel-about-codm">À propos de Call of Duty: Mobile</button>
+    </div>
+    <div class="weapon-tab-panels">
+      <div class="weapon-tab-panel active" id="panel-meta-codm">
         <p class="verified">Dernière vérification: 2026-07-12</p>
         <p>La Saison 6 — Take Your Heart (collaboration Persona 5 Royal) est disponible depuis juillet 2026. Leaders actuels par classe : le <a href="#weapon-codm-switchblade-x9">Switchblade X9</a> domine les SMG après un buff en Saison 6, suivi de près par le <a href="#weapon-codm-vmp">VMP</a> et le <a href="#weapon-codm-qq9">QQ9</a>. Le <a href="#weapon-codm-bal-27">BAL-27</a> domine les fusils d'assaut à moyenne-longue portée. Le <a href="#weapon-codm-type-63">Type 63</a> reste le meilleur fusil de précision à deux tirs. Le <a href="#weapon-codm-hs0405">HS0405</a> et le nouveau <a href="#weapon-codm-vlk-rogue">VLK Rogue</a> dominent les fusils à pompe, et le <a href="#weapon-codm-locus">Locus</a> est le meilleur sniper cette saison. Le <a href="#weapon-codm-so-14">SO-14</a> a reçu un nerf notable après avoir dominé les saisons précédentes.</p>
-        <details class="sources"><summary>Sources</summary><ul><li><a href="https://zilliongamer.com/call-of-duty-mobile/c/cod-mobile/best-guns-cod-mobile-2026" rel="nofollow noopener" target="_blank">Best Guns in COD Mobile 2026 - zilliongamer</a></li><li><a href="https://frvr.com/blog/cod-mobile-best-guns/" rel="nofollow noopener" target="_blank">COD Mobile Best Guns (2026): Top Meta Weapons Ranked - FRVR</a></li><li><a href="https://zilliongamer.com/call-of-duty-mobile/c/weapon-guide/call-of-duty-mobile-weapon-tier-list" rel="nofollow noopener" target="_blank">Call of Duty: Mobile Weapon Tier List - zilliongamer</a></li></ul></details>
       </div>
-      <div class="about-col">
-        <details class="about-details">
-          <summary class="about-toggle-btn">À propos de Call of Duty: Mobile</summary>
-          <div class="about-details-body"><p>Call of Duty: Mobile est sorti mondialement en octobre 2019, édité par Activision et développé par TiMi Studio Group (Tencent). Il transpose l'expérience multijoueur et Battle Royale de Call of Duty sur mobile, avec des cartes, armes et opérateurs issus de toute la franchise. Le jeu évolue par saisons (toutes les 4 à 6 semaines environ), avec de nouvelles armes, des skins d'opérateurs et des événements collaboratifs.</p></div>
-        </details>
+      <div class="weapon-tab-panel" id="panel-about-codm">
+        <p>Call of Duty: Mobile est sorti mondialement en octobre 2019, édité par Activision et développé par TiMi Studio Group (Tencent). Il transpose l'expérience multijoueur et Battle Royale de Call of Duty sur mobile, avec des cartes, armes et opérateurs issus de toute la franchise. Le jeu évolue par saisons (toutes les 4 à 6 semaines environ), avec de nouvelles armes, des skins d'opérateurs et des événements collaboratifs.</p>
       </div>
-    </section>
+    </div>
     <section class="weapons-section">
       
       
@@ -89,6 +88,7 @@
       <button type="button" class="tab-btn active" data-tab-target="panel-best-codm">Meilleures Armes</button>
       <button type="button" class="tab-btn" data-tab-target="panel-complete-codm">Armes Complètes</button>
       <button type="button" class="tab-btn" data-tab-target="panel-ranked-codm">Meta Ranked</button>
+      <a class="tab-btn compare-tab-link" href="/madsmobile/fr/codm/compare/">Comparaison</a>
     </div>
     <div class="weapon-tab-panels">
       
@@ -105,7 +105,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">Switchblade X9 <span class="badge meta">META</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/fr/codm/compare/?w=switchblade-x9">Switchblade X9</a> <span class="badge meta">META</span></div>
           <div class="weapon-card-line">PM (SMG) &middot; <span class="tier-badge tier-S">S</span> &middot; Courte-moyenne portée</div>
         </div>
       </div>
@@ -118,7 +118,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">VMP <span class="badge meta">META</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/fr/codm/compare/?w=vmp">VMP</a> <span class="badge meta">META</span></div>
           <div class="weapon-card-line">PM (SMG) &middot; <span class="tier-badge tier-A">A</span> &middot; Courte-moyenne portée</div>
         </div>
       </div>
@@ -131,7 +131,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">QQ9 <span class="badge meta">META</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/fr/codm/compare/?w=qq9">QQ9</a> <span class="badge meta">META</span></div>
           <div class="weapon-card-line">PM (SMG) &middot; <span class="tier-badge tier-A">A</span> &middot; Courte portée</div>
         </div>
       </div>
@@ -144,7 +144,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">SO-14 </div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/fr/codm/compare/?w=so-14">SO-14</a> </div>
           <div class="weapon-card-line">Fusil d'Assaut &middot; <span class="tier-badge tier-B">B</span> &middot; Moyenne-longue portée</div>
         </div>
       </div>
@@ -157,7 +157,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">BAL-27 <span class="badge meta">META</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/fr/codm/compare/?w=bal-27">BAL-27</a> <span class="badge meta">META</span></div>
           <div class="weapon-card-line">Fusil d'Assaut &middot; <span class="tier-badge tier-S">S</span> &middot; Moyenne-longue portée</div>
         </div>
       </div>
@@ -170,7 +170,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">Type 63 <span class="badge meta">META</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/fr/codm/compare/?w=type-63">Type 63</a> <span class="badge meta">META</span></div>
           <div class="weapon-card-line">Fusil de Précision &middot; <span class="tier-badge tier-S">S</span> &middot; Moyenne-longue portée</div>
         </div>
       </div>
@@ -183,7 +183,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">HS0405 <span class="badge meta">META</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/fr/codm/compare/?w=hs0405">HS0405</a> <span class="badge meta">META</span></div>
           <div class="weapon-card-line">Fusil à Pompe &middot; <span class="tier-badge tier-S">S</span> &middot; Courte portée</div>
         </div>
       </div>
@@ -196,7 +196,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">VLK Rogue <span class="badge meta">META</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/fr/codm/compare/?w=vlk-rogue">VLK Rogue</a> <span class="badge meta">META</span></div>
           <div class="weapon-card-line">Fusil à Pompe &middot; <span class="tier-badge tier-S">S</span> &middot; Courte portée</div>
         </div>
       </div>
@@ -209,7 +209,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">Locus <span class="badge meta">META</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/fr/codm/compare/?w=locus">Locus</a> <span class="badge meta">META</span></div>
           <div class="weapon-card-line">Fusil de Sniper &middot; <span class="tier-badge tier-S">S</span> &middot; Longue portée</div>
         </div>
       </div>
@@ -222,7 +222,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">L-CAR 9 <span class="badge meta">META</span></div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/fr/codm/compare/?w=l-car-9">L-CAR 9</a> <span class="badge meta">META</span></div>
           <div class="weapon-card-line">Arme Secondaire &middot; <span class="tier-badge tier-A">A</span> &middot; Courte-moyenne portée</div>
         </div>
       </div>
@@ -235,7 +235,7 @@
       <div class="weapon-card-head">
         <span class="weapon-card-icon" aria-hidden="true"></span>
         <div>
-          <div class="weapon-card-name">FSS Hurricane </div>
+          <div class="weapon-card-name"><a class="weapon-card-name-link" href="/madsmobile/fr/codm/compare/?w=fss-hurricane">FSS Hurricane</a> </div>
           <div class="weapon-card-line">PM (SMG) &middot; <span class="tier-badge tier-B">B</span> &middot; Courte portée</div>
         </div>
       </div>
@@ -254,2021 +254,965 @@
       </div>
       <div class="table-scroll">
         <table class="weapons-table complete-table">
-          <thead><tr><th data-sort="name">Nom <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">Classe <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">Niveau <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Portée</th><th data-sort="none">Rôle</th><th data-sort="none">Dégâts corps</th><th data-sort="rpm">CPM <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Cadence de tir</th><th data-sort="none">TTK</th><th data-sort="none">Vitesse ADS</th><th data-sort="none">Précision</th><th data-sort="none">Recul</th><th data-sort="none">Mobilité</th><th data-sort="none">Pénét. Armure</th><th data-sort="magazine">Chargeur <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Meilleur build dégâts</th><th data-sort="none">Notes</th></tr></thead>
+          <thead><tr><th data-sort="name">Nom <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">Classe <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">Niveau <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Portée</th><th data-sort="none">Dégâts corps</th><th data-sort="rpm">CPM <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">TTK</th><th data-sort="none">Vitesse ADS</th><th data-sort="none">Recul</th><th data-sort="magazine">Chargeur <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Meilleur build dégâts</th><th data-sort="none">Notes</th></tr></thead>
           <tbody>
     <tr id="weapon-codm-switchblade-x9" data-name="switchblade x9" data-class="pm (smg)"
         data-tier-rank="4" data-rpm="850" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Switchblade X9</span> <span class="badge meta">META</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=switchblade-x9">Switchblade X9</a></span> <span class="badge meta">META</span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>27-24-20</td>
-      <td>850</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280 ms</td>
-      <td>Très rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>MIP Light Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Agile Stock</td>
+      <td>27-24-20</td><td>850</td><td>~280 ms</td><td>Très rapide</td><td>★★★</td><td>30</td><td class="cell-notes">MIP Light Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Agile Stock</td>
       <td class="cell-notes">Sa grande mobilité et sa précision en font le meilleur SMG de la saison pour les combats de courte à moyenne portée.</td>
     </tr>
     
     <tr id="weapon-codm-vmp" data-name="vmp" data-class="pm (smg)"
         data-tier-rank="3" data-rpm="~900" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>VMP</span> <span class="badge meta">META</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=vmp">VMP</a></span> <span class="badge meta">META</span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medium-High (27-32)</td>
-      <td>~900</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>Long Barrel + Suppressor + Extended Mag + Laser + Grip</td>
+      <td>Medium-High (27-32)</td><td>~900</td><td>~280ms</td><td>Rapide</td><td>Faible</td><td>40</td><td class="cell-notes">Long Barrel + Suppressor + Extended Mag + Laser + Grip</td>
       <td class="cell-notes">SMG bien équilibré, deuxième meilleur choix pour le combat à courte et moyenne portée.</td>
     </tr>
     
     <tr id="weapon-codm-qq9" data-name="qq9" data-class="pm (smg)"
         data-tier-rank="3" data-rpm="830" data-magazine="45">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>QQ9</span> <span class="badge meta">META</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=qq9">QQ9</a></span> <span class="badge meta">META</span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25-20</td>
-      <td>830</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~290 ms</td>
-      <td>Très rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>45</td>
-      <td>Monolithic Integral Suppressor + No Stock + 45 Round Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td>25-20</td><td>830</td><td>~290 ms</td><td>Très rapide</td><td>★★★</td><td>45</td><td class="cell-notes">Monolithic Integral Suppressor + No Stock + 45 Round Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes">SMG fiable pour jouer agressif, avec des dégâts très élevés et une mobilité rapide.</td>
     </tr>
     
     <tr id="weapon-codm-so-14" data-name="so-14" data-class="fusil d'assaut"
         data-tier-rank="2" data-rpm="~500" data-magazine="20">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>SO-14</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=so-14">SO-14</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>High (30-40)</td>
-      <td>~500</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~350ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>20</td>
-      <td>Marksman Barrel + Monolithic Suppressor + Extended Mag + Laser + Granulated Grip</td>
+      <td>High (30-40)</td><td>~500</td><td>~350ms</td><td>Moyen</td><td>Moyen</td><td>20</td><td class="cell-notes">Marksman Barrel + Monolithic Suppressor + Extended Mag + Laser + Granulated Grip</td>
       <td class="cell-notes">Ce fusil d'assaut longtemps dominant a reçu un nerf notable après plusieurs saisons au sommet.</td>
     </tr>
     
     <tr id="weapon-codm-bal-27" data-name="bal-27" data-class="fusil d'assaut"
         data-tier-rank="4" data-rpm="~800" data-magazine="45">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>BAL-27</span> <span class="badge meta">META</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=bal-27">BAL-27</a></span> <span class="badge meta">META</span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>High (28-34)</td>
-      <td>~800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>45</td>
-      <td>Monolithic Suppressor + Extended Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>High (28-34)</td><td>~800</td><td>~300ms</td><td>Rapide</td><td>Faible</td><td>45</td><td class="cell-notes">Monolithic Suppressor + Extended Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">Actuellement le meilleur fusil d'assaut, facile à utiliser pour les engagements moyenne à longue portée.</td>
     </tr>
     
     <tr id="weapon-codm-type-63" data-name="type 63" data-class="fusil de précision"
         data-tier-rank="4" data-rpm="~350" data-magazine="25">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Type 63</span> <span class="badge meta">META</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=type-63">Type 63</a></span> <span class="badge meta">META</span></td>
       <td>Fusil de Précision</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Very High (55-60)</td>
-      <td>~350</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25</td>
-      <td>Taskforce Barrel + Agency Suppressor + Extended Mag + Laser + Field Agent Grip</td>
+      <td>Very High (55-60)</td><td>~350</td><td>~280ms</td><td>Rapide</td><td>Faible</td><td>25</td><td class="cell-notes">Taskforce Barrel + Agency Suppressor + Extended Mag + Laser + Field Agent Grip</td>
       <td class="cell-notes">Fusil de précision à deux tirs puissant, avec une vitesse de balle rapide et peu de recul à toute distance.</td>
     </tr>
     
     <tr id="weapon-codm-hs0405" data-name="hs0405" data-class="fusil à pompe"
         data-tier-rank="4" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>HS0405</span> <span class="badge meta">META</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=hs0405">HS0405</a></span> <span class="badge meta">META</span></td>
       <td>Fusil à Pompe</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + Sleight of Hand + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + Sleight of Hand + Stock</td>
       <td class="cell-notes">Le meilleur fusil à pompe du jeu — dégâts très élevés à courte portée et facile à contrôler.</td>
     </tr>
     
     <tr id="weapon-codm-vlk-rogue" data-name="vlk rogue" data-class="fusil à pompe"
         data-tier-rank="4" data-rpm="Pump" data-magazine="12">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>VLK Rogue</span> <span class="badge meta">META</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=vlk-rogue">VLK Rogue</a></span> <span class="badge meta">META</span></td>
       <td>Fusil à Pompe</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Extreme (100+)</td>
-      <td>Pump</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Instant (1-shot)</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>12</td>
-      <td>Marauder Suppressor + Extended Barrel + Laser + Mobility Stock + Sleight of Hand</td>
+      <td>Extreme (100+)</td><td>Pump</td><td>Instant (1-shot)</td><td>Rapide</td><td>Faible</td><td>12</td><td class="cell-notes">Marauder Suppressor + Extended Barrel + Laser + Mobility Stock + Sleight of Hand</td>
       <td class="cell-notes">Fusil à pompe très mobile avec un grand chargeur, de bons dégâts et un bon contrôle.</td>
     </tr>
     
     <tr id="weapon-codm-locus" data-name="locus" data-class="fusil de sniper"
         data-tier-rank="4" data-rpm="~60" data-magazine="10">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Locus</span> <span class="badge meta">META</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=locus">Locus</a></span> <span class="badge meta">META</span></td>
       <td>Fusil de Sniper</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>One-Shot High (120+)</td>
-      <td>~60</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Instant</td>
-      <td>Très rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>10</td>
-      <td>Skeleton Stock + OWC Laser Tactical + Stippled Grip Tape + Extended Mag + Tactical Suppressor</td>
+      <td>One-Shot High (120+)</td><td>~60</td><td>Instant</td><td>Très rapide</td><td>Faible</td><td>10</td><td class="cell-notes">Skeleton Stock + OWC Laser Tactical + Stippled Grip Tape + Extended Mag + Tactical Suppressor</td>
       <td class="cell-notes">Le meilleur fusil de sniper à utiliser cette saison.</td>
     </tr>
     
     <tr id="weapon-codm-l-car-9" data-name="l-car 9" data-class="arme secondaire"
         data-tier-rank="3" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>L-CAR 9</span> <span class="badge meta">META</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=l-car-9">L-CAR 9</a></span> <span class="badge meta">META</span></td>
       <td>Arme Secondaire</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Akimbo + OWC Laser Tactical + Extended Mag + Monolithic Suppressor + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Akimbo + OWC Laser Tactical + Extended Mag + Monolithic Suppressor + Granulated Grip Tape</td>
       <td class="cell-notes">Arme secondaire entièrement automatique avec des dégâts élevés et une cadence rapide ; excellent soutien pour les snipers.</td>
     </tr>
     
     <tr id="weapon-codm-fss-hurricane" data-name="fss hurricane" data-class="pm (smg)"
         data-tier-rank="2" data-rpm="~1100" data-magazine="50">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>FSS Hurricane</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=fss-hurricane">FSS Hurricane</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medium-High (25-30)</td>
-      <td>~1100</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~270ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>50</td>
-      <td>Monolithic Suppressor + Demo Quicksilver Stock + Laser + Extended Mag + Granulated Grip</td>
+      <td>Medium-High (25-30)</td><td>~1100</td><td>~270ms</td><td>Rapide</td><td>Moyen</td><td>50</td><td class="cell-notes">Monolithic Suppressor + Demo Quicksilver Stock + Laser + Extended Mag + Granulated Grip</td>
       <td class="cell-notes">Nouveau SMG introduit en Saison 6 avec une variante Mythique ; encore en cours d'évaluation par la communauté.</td>
     </tr>
     
     <tr id="weapon-codm-xm4" data-name="xm4" data-class="fusil d'assaut"
         data-tier-rank="3" data-rpm="~800" data-magazine="45">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>XM4</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=xm4">XM4</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Courte-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>High (29-33)</td>
-      <td>~800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~290ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>45</td>
-      <td>Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag + Laser</td>
+      <td>High (29-33)</td><td>~800</td><td>~290ms</td><td>Rapide</td><td>Faible</td><td>45</td><td class="cell-notes">Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag + Laser</td>
       <td class="cell-notes">Fusil d'assaut déverrouillable au niveau du compte, reconnu pour ses dégâts élevés, sa cadence très rapide et son faible recul à la plupart des distances.</td>
     </tr>
     
     <tr id="weapon-codm-dr-h" data-name="dr-h" data-class="fusil d'assaut"
         data-tier-rank="4" data-rpm="605" data-magazine="25">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>DR-H</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=dr-h">DR-H</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>32-28-24</td>
-      <td>605</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25</td>
-      <td>OTM Mag + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
+      <td>32-28-24</td><td>605</td><td>~300 ms</td><td>Moyen</td><td>★★★★</td><td>25</td><td class="cell-notes">OTM Mag + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
       <td class="cell-notes">Le fusil d'assaut classique « roi des dégâts » : un excellent duelliste en 1 contre 1, prisé en Hardpoint et sur les modes objectif, bien que son chargeur de 25 balles exige une visée précise.</td>
     </tr>
     
     <tr id="weapon-codm-oden" data-name="oden" data-class="fusil d'assaut"
         data-tier-rank="2" data-rpm="500" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>ODEN</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=oden">ODEN</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>48-32-25</td>
-      <td>500</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Lent</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>Colossus Suppressor + RTC Heavy Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>48-32-25</td><td>500</td><td>~300 ms</td><td>Lent</td><td>★★★</td><td>30</td><td class="cell-notes">Colossus Suppressor + RTC Heavy Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">Fusil d'assaut puissant à cadence lente qui récompense les rafales précises à longue portée ; peine lorsqu'il est forcé au combat rapproché.</td>
     </tr>
     
     <tr id="weapon-codm-as-val" data-name="as val" data-class="fusil d'assaut"
         data-tier-rank="3" data-rpm="800" data-magazine="25">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>AS VAL</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=as-val">AS VAL</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>35-30-24</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~270-300 ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25</td>
-      <td>MIP 200mm Mid Range Barrel + Large Extended Mag + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
+      <td>35-30-24</td><td>800</td><td>~270-300 ms</td><td>Rapide</td><td>★★★</td><td>25</td><td class="cell-notes">MIP 200mm Mid Range Barrel + Large Extended Mag + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
       <td class="cell-notes">Fusil d'assaut au TTK extrêmement rapide grâce à sa cadence et ses dégâts élevés, dominant sur les petites cartes comme Shipment, Nuketown et Summit, bien que son petit chargeur et sa portée réduite soient des inconvénients.</td>
     </tr>
     
     <tr id="weapon-codm-cr-56-amax" data-name="cr-56 amax" data-class="fusil d'assaut"
         data-tier-rank="3" data-rpm="625" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>CR-56 AMAX</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=cr-56-amax">CR-56 AMAX</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>34-30-25</td>
-      <td>625</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>MIP Custom Long Barrel + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>34-30-25</td><td>625</td><td>~300 ms</td><td>Moyen</td><td>★★★</td><td>30</td><td class="cell-notes">MIP Custom Long Barrel + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">Fusil d'assaut équilibré à faible recul, offrant de bons dégâts et un bon contrôle sans nécessiter d'accessoires lourds — un choix polyvalent et fiable pour les engagements moyenne-longue portée.</td>
     </tr>
     
     <tr id="weapon-codm-ak-47" data-name="ak-47" data-class="fusil d'assaut"
         data-tier-rank="3" data-rpm="600" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>AK-47</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=ak-47">AK-47</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>33-30</td>
-      <td>600</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Élevé</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>Monolithic Suppressor + OWC Marksman + Granulated Grip Tape + OWC Laser Tactical + Extended Mag</td>
+      <td>33-30</td><td>600</td><td>~300 ms</td><td>Moyen</td><td>Élevé</td><td>30</td><td class="cell-notes">Monolithic Suppressor + OWC Marksman + Granulated Grip Tape + OWC Laser Tactical + Extended Mag</td>
       <td class="cell-notes">Fusil d'assaut classique à dégâts élevés avec un fort recul et une bonne portée, récompensant les rafales contrôlées. Un choix courant sur Crossfire, Firing Range et Terminal.</td>
     </tr>
     
     <tr id="weapon-codm-man-o-war" data-name="man-o-war" data-class="fusil d'assaut"
         data-tier-rank="2" data-rpm="550" data-magazine="25">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Man-O-War</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=man-o-war">Man-O-War</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>37-30</td>
-      <td>550</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Lent</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25</td>
-      <td>Monolithic Suppressor + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>37-30</td><td>550</td><td>~300 ms</td><td>Lent</td><td>Moyen</td><td>25</td><td class="cell-notes">Monolithic Suppressor + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">Fusil d'assaut en rafale apprécié pour ses dégâts élevés par tir et sa longue portée ; son maniement plus lent le rend moins efficace dans les rushs agressifs.</td>
     </tr>
     
     <tr id="weapon-codm-type-25" data-name="type 25" data-class="fusil d'assaut"
         data-tier-rank="2" data-rpm="900" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Type 25</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=type-25">Type 25</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>24-20</td>
-      <td>900</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Élevé</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>RTC Steady Stock + Stopping Power Reload + OWC Laser Tactical + Granulated Grip Tape + MIP Light Barrel</td>
+      <td>24-20</td><td>900</td><td>~300 ms</td><td>Rapide</td><td>Élevé</td><td>30</td><td class="cell-notes">RTC Steady Stock + Stopping Power Reload + OWC Laser Tactical + Granulated Grip Tape + MIP Light Barrel</td>
       <td class="cell-notes">Fusil d'assaut à tir rapide conçu pour le rush, avec des dégâts par tir plus faibles, adapté aux engagements agressifs à courte-moyenne portée.</td>
     </tr>
     
     <tr id="weapon-codm-uss9" data-name="uss9" data-class="pm (smg)"
         data-tier-rank="3" data-rpm="~750" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>USS9</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=uss9">USS9</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>High (30+)</td>
-      <td>~750</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Très faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>Suppressor + Long Barrel + Extended Mag + Laser + Granulated Grip</td>
+      <td>High (30+)</td><td>~750</td><td>~300ms</td><td>Rapide</td><td>Très faible</td><td>40</td><td class="cell-notes">Suppressor + Long Barrel + Extended Mag + Laser + Granulated Grip</td>
       <td class="cell-notes">SMG constant, reconnu pour ses dégâts élevés, sa bonne précision et son très faible recul.</td>
     </tr>
     
     <tr id="weapon-codm-cbr4" data-name="cbr4" data-class="pm (smg)"
         data-tier-rank="4" data-rpm="800" data-magazine="50">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>CBR4</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=cbr4">CBR4</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>24-21-18</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>50</td>
-      <td>OWC Marksman Barrel + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>24-21-18</td><td>800</td><td>~300 ms</td><td>Rapide</td><td>★★★★★</td><td>50</td><td class="cell-notes">OWC Marksman Barrel + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">Mitraillette meta polyvalente avec un recul très faible, un bon chargeur et une portée qui tient bien au-delà du combat rapproché — l'un des choix de rang S les plus faciles à maîtriser, particulièrement forte en Ranked.</td>
     </tr>
     
     <tr id="weapon-codm-ppsh-41" data-name="ppsh-41" data-class="pm (smg)"
         data-tier-rank="3" data-rpm="900" data-magazine="35/55">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>PPSh-41</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=ppsh-41">PPSh-41</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>24-20</td>
-      <td>900</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280 ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>35/55</td>
-      <td>Reinforced Heavy Barrel + 55 Round Drum Mag + Field Agent Grip + OWC Laser Tactical + No Stock</td>
+      <td>24-20</td><td>900</td><td>~280 ms</td><td>Rapide</td><td>★★★</td><td>35/55</td><td class="cell-notes">Reinforced Heavy Barrel + 55 Round Drum Mag + Field Agent Grip + OWC Laser Tactical + No Stock</td>
       <td class="cell-notes">Mitraillette agressive à haute capacité avec un grand chargeur (35 ou 55 balles) — excellente pour une pression soutenue en Hardpoint, bien que moins précise que la CBR4.</td>
     </tr>
     
     <tr id="weapon-codm-pp19-bizon" data-name="pp19 bizon" data-class="pm (smg)"
         data-tier-rank="2" data-rpm="650" data-magazine="64">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>PP19 Bizon</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=pp19-bizon">PP19 Bizon</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>26-23</td>
-      <td>650</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~330 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>64</td>
-      <td>Monolithic Suppressor + Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td>26-23</td><td>650</td><td>~330 ms</td><td>Moyen</td><td>★★★★★</td><td>64</td><td class="cell-notes">Monolithic Suppressor + Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes">Mitraillette facile à contrôler avec un énorme chargeur de 64 balles et un recul très faible, mais un TTK plus lent que les meilleures mitraillettes — un choix indulgent pour les nouveaux joueurs.</td>
     </tr>
     
     <tr id="weapon-codm-qxr" data-name="qxr" data-class="pm (smg)"
         data-tier-rank="3" data-rpm="~850" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>QXR</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=qxr">QXR</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Medium (24-28)</td>
-      <td>~850</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~290ms</td>
-      <td>Très rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>Enhanced Bolt + Monolithic Suppressor + Extended Mag + Laser + Granulated Grip</td>
+      <td>Medium (24-28)</td><td>~850</td><td>~290ms</td><td>Très rapide</td><td>Faible</td><td>40</td><td class="cell-notes">Enhanced Bolt + Monolithic Suppressor + Extended Mag + Laser + Granulated Grip</td>
       <td class="cell-notes">SMG maniable pour le combat rapproché, compétitif avec les bons accessoires.</td>
     </tr>
     
     <tr id="weapon-codm-holger-26" data-name="holger 26" data-class="mitrailleuse légère (lmg)"
         data-tier-rank="4" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Holger 26</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=holger-26">Holger 26</a></span> </td>
       <td>Mitrailleuse Légère (LMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>MIP Light Barrel (Short) + Large Extended Mag + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">MIP Light Barrel (Short) + Large Extended Mag + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
       <td class="cell-notes">Meilleure LMG polyvalente, équilibrant capacité de munitions et maniabilité.</td>
     </tr>
     
     <tr id="weapon-codm-chopper" data-name="chopper" data-class="mitrailleuse légère (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Chopper</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=chopper">Chopper</a></span> </td>
       <td>Mitrailleuse Légère (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Heavy Handle + RTC Light Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Heavy Handle + RTC Light Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape</td>
       <td class="cell-notes">LMG à grande capacité de munitions, idéale pour un tir de couverture soutenu.</td>
     </tr>
     
     <tr id="weapon-codm-sks" data-name="sks" data-class="fusil de précision"
         data-tier-rank="3" data-rpm="~400" data-magazine="20">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>SKS</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=sks">SKS</a></span> </td>
       <td>Fusil de Précision</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Very High (60+)</td>
-      <td>~400</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>20</td>
-      <td>RTC Steady Stock + OWC Laser Tactical + Extended Mag + Granulated Grip + Tactical Suppressor</td>
+      <td>Very High (60+)</td><td>~400</td><td>~300ms</td><td>Rapide</td><td>Faible</td><td>20</td><td class="cell-notes">RTC Steady Stock + OWC Laser Tactical + Extended Mag + Granulated Grip + Tactical Suppressor</td>
       <td class="cell-notes">Fusil de précision semi-automatique, flexible pour les engagements moyenne-longue portée.</td>
     </tr>
     
     <tr id="weapon-codm-dl-q33" data-name="dl q33" data-class="fusil de sniper"
         data-tier-rank="4" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>DL Q33</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=dl-q33">DL Q33</a></span> </td>
       <td>Fusil de Sniper</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Tactical Suppressor + Combat Stock + OWC Laser Tactical + Stippled Grip Tape + FMJ</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Tactical Suppressor + Combat Stock + OWC Laser Tactical + Stippled Grip Tape + FMJ</td>
       <td class="cell-notes">Fusil de sniper à cycle rapide, populaire pour le 'quickscope'.</td>
     </tr>
     
     <tr id="weapon-codm-sp-r-208" data-name="sp-r 208" data-class="fusil de sniper"
         data-tier-rank="3" data-rpm="~55" data-magazine="5">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>SP-R 208</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=sp-r-208">SP-R 208</a></span> </td>
       <td>Fusil de Sniper</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>One-Shot High (120+)</td>
-      <td>~55</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Instant</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>5</td>
-      <td>Lapua Mag + Laser Tactical + Light Barrel + Stippled Grip Tape + Skeleton Stock</td>
+      <td>One-Shot High (120+)</td><td>~55</td><td>Instant</td><td>Rapide</td><td>Faible</td><td>5</td><td class="cell-notes">Lapua Mag + Laser Tactical + Light Barrel + Stippled Grip Tape + Skeleton Stock</td>
       <td class="cell-notes">Fusil de sniper à verrou, apprécié pour son potentiel de tir unique.</td>
     </tr>
     
     <tr id="weapon-codm-mk2" data-name="mk2" data-class="fusil de sniper"
         data-tier-rank="3" data-rpm="~55" data-magazine="6">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>MK2</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=mk2">MK2</a></span> </td>
       <td>Fusil de Sniper</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>One-Shot High (120+)</td>
-      <td>~55</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Instant</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>6</td>
-      <td>Sport Barrel + Laser + Stippled Grip + Sleight of Hand + Stock</td>
+      <td>One-Shot High (120+)</td><td>~55</td><td>Instant</td><td>Rapide</td><td>Faible</td><td>6</td><td class="cell-notes">Sport Barrel + Laser + Stippled Grip + Sleight of Hand + Stock</td>
       <td class="cell-notes">Fusil de sniper de précision qui complète la catégorie.</td>
     </tr>
     
     <tr id="weapon-codm-krm-262" data-name="krm-262" data-class="fusil à pompe"
         data-tier-rank="4" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>KRM-262</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=krm-262">KRM-262</a></span> </td>
       <td>Fusil à Pompe</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + No Stock + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + No Stock + Granulated Grip Tape</td>
       <td class="cell-notes">Fusil à pompe souvent recommandé pour sa puissance à courte portée.</td>
     </tr>
     
     <tr id="weapon-codm-r9-0" data-name="r9-0" data-class="fusil à pompe"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>R9-0</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=r9-0">R9-0</a></span> </td>
       <td>Fusil à Pompe</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>RTC Extended Barrel + Marauder Suppressor + OWC Laser Tactical + Granulated Grip Tape + Speed Up Kill</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">RTC Extended Barrel + Marauder Suppressor + OWC Laser Tactical + Granulated Grip Tape + Speed Up Kill</td>
       <td class="cell-notes">Fusil à pompe à tir rapide, prisé pour le jeu agressif à courte portée.</td>
     </tr>
     
     <tr id="weapon-codm-striker" data-name="striker" data-class="fusil à pompe"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Striker</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=striker">Striker</a></span> </td>
       <td>Fusil à Pompe</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Long Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Long Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape + Stock</td>
       <td class="cell-notes">Fusil à pompe automatique qui complète l'arsenal courte portée.</td>
     </tr>
     
     <tr id="weapon-codm-m4" data-name="m4" data-class="fusil d'assaut"
         data-tier-rank="2" data-rpm="680" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>M4</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=m4">M4</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>24-19</td>
-      <td>680</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~350 ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Très faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>Monolithic Suppressor + MIP Extended Light Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>24-19</td><td>680</td><td>~350 ms</td><td>Rapide</td><td>Très faible</td><td>30</td><td class="cell-notes">Monolithic Suppressor + MIP Extended Light Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">Fusil d'assaut idéal pour les débutants, avec un recul très faible et une excellente précision, bien que son TTK soit inférieur à la meta actuelle sur les cartes de taille moyenne.</td>
     </tr>
     
     <tr id="weapon-codm-m16" data-name="m16" data-class="fusil d'assaut"
         data-tier-rank="2" data-rpm="550" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>M16</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=m16">M16</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30x3 burst</td>
-      <td>550</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>OWC Marksman + Tactical Suppressor + OWC Laser Tactical + Granulated Grip Tape + Strike Stock</td>
+      <td>30x3 burst</td><td>550</td><td>~300 ms</td><td>Moyen</td><td>Faible</td><td>30</td><td class="cell-notes">OWC Marksman + Tactical Suppressor + OWC Laser Tactical + Granulated Grip Tape + Strike Stock</td>
       <td class="cell-notes">Fusil d'assaut à rafales de 3 balles offrant une grande précision à longue portée et un faible recul, récompensant les rafales propres et contrôlées.</td>
     </tr>
     
     <tr id="weapon-codm-asm10" data-name="asm10" data-class="fusil d'assaut"
         data-tier-rank="2" data-rpm="550" data-magazine="25">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>ASM10</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=asm10">ASM10</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>34-28</td>
-      <td>550</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~330 ms</td>
-      <td>Lent</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Élevé</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25</td>
-      <td>OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>34-28</td><td>550</td><td>~330 ms</td><td>Lent</td><td>Élevé</td><td>25</td><td class="cell-notes">OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">Fusil d'assaut puissant avec des dégâts élevés par tir, limité par une mobilité lente et une cadence faible ; a actuellement besoin d'un boost de mobilité pour rivaliser.</td>
     </tr>
     
     <tr id="weapon-codm-hbra3" data-name="hbra3" data-class="fusil d'assaut"
         data-tier-rank="2" data-rpm="670" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>HBRa3</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=hbra3">HBRa3</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>29-24</td>
-      <td>670</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~350 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>29-24</td><td>670</td><td>~350 ms</td><td>Moyen</td><td>Faible</td><td>30</td><td class="cell-notes">OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">Fusil d'assaut équilibré et polyvalent avec un recul modéré — un solide choix polyvalent à moyenne portée.</td>
     </tr>
     
     <tr id="weapon-codm-ak117" data-name="ak117" data-class="fusil d'assaut"
         data-tier-rank="2" data-rpm="800" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>AK117</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=ak117">AK117</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25-20</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Très rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>Monolithic Suppressor + OWC Marksman + No Stock + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td>25-20</td><td>800</td><td>~300 ms</td><td>Très rapide</td><td>Moyen</td><td>40</td><td class="cell-notes">Monolithic Suppressor + OWC Marksman + No Stock + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes">Fusil d'assaut agressif à tir rapide avec un chargeur de 40 balles — l'un des meilleurs choix pour le style rush malgré un recul modéré.</td>
     </tr>
     
     <tr id="weapon-codm-lk24" data-name="lk24" data-class="fusil d'assaut"
         data-tier-rank="2" data-rpm="630" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>LK24</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=lk24">LK24</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>27-24</td>
-      <td>630</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~330 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Très faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>Monolithic Suppressor + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>27-24</td><td>630</td><td>~330 ms</td><td>Moyen</td><td>Très faible</td><td>30</td><td class="cell-notes">Monolithic Suppressor + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">Fusil d'assaut axé sur la précision avec un recul très faible, efficace à moyenne-longue portée.</td>
     </tr>
     
     <tr id="weapon-codm-kn-44" data-name="kn-44" data-class="fusil d'assaut"
         data-tier-rank="2" data-rpm="620" data-magazine="38">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>KN-44</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=kn-44">KN-44</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25</td>
-      <td>620</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~320 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Faible</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>38</td>
-      <td>OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>30-25</td><td>620</td><td>~320 ms</td><td>Moyen</td><td>Faible</td><td>38</td><td class="cell-notes">OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">Fusil d'assaut polyvalent et équilibré avec un faible recul et un grand chargeur de 38 balles — un choix solide et équilibré à la plupart des portées de combat.</td>
     </tr>
     
     <tr id="weapon-codm-icr-1" data-name="icr-1" data-class="fusil d'assaut"
         data-tier-rank="2" data-rpm="600" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>ICR-1</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=icr-1">ICR-1</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25-22</td>
-      <td>600</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~350 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>30-25-22</td><td>600</td><td>~350 ms</td><td>Moyen</td><td>★★★★★</td><td>40</td><td class="cell-notes">OWC Marksman + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">Fusil d'assaut axé sur le contrôle, avec un grand chargeur de 40 balles et une forte résistance au recul, adapté aux combats prolongés à moyenne-longue portée.</td>
     </tr>
     
     <tr id="weapon-codm-bk57" data-name="bk57" data-class="fusil d'assaut"
         data-tier-rank="2" data-rpm="630" data-magazine="36">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>BK57</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=bk57">BK57</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>32-28-24</td>
-      <td>630</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~320 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>36</td>
-      <td>OWC Marksman + Tactical Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>32-28-24</td><td>630</td><td>~320 ms</td><td>Moyen</td><td>★★★★</td><td>36</td><td class="cell-notes">OWC Marksman + Tactical Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">Fusil d'assaut équilibré offrant des dégâts constants et un recul modéré pour les engagements à moyenne portée.</td>
     </tr>
     
     <tr id="weapon-codm-peacekeeper-mk2" data-name="peacekeeper mk2" data-class="fusil d'assaut"
         data-tier-rank="3" data-rpm="800" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Peacekeeper MK2</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=peacekeeper-mk2">Peacekeeper MK2</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>32-27-24</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>Taskforce Barrel + Agency Suppressor + Double Stack Mag + Field Agent Grip + OWC Laser Tactical</td>
+      <td>32-27-24</td><td>800</td><td>~300 ms</td><td>Rapide</td><td>★★★</td><td>30</td><td class="cell-notes">Taskforce Barrel + Agency Suppressor + Double Stack Mag + Field Agent Grip + OWC Laser Tactical</td>
       <td class="cell-notes">Hybride fusil d'assaut/mitraillette avec une cadence rapide et un faible recul, qui se comporte presque comme une mitraillette à moyenne portée.</td>
     </tr>
     
     <tr id="weapon-codm-fr-556" data-name="fr .556" data-class="fusil d'assaut"
         data-tier-rank="2" data-rpm="670" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>FR .556</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=fr-556">FR .556</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25</td>
-      <td>670</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~320 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>MIP Light Barrel + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>30-25</td><td>670</td><td>~320 ms</td><td>Moyen</td><td>★★★★</td><td>30</td><td class="cell-notes">MIP Light Barrel + Monolithic Suppressor + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">Fusil d'assaut à rafales avec un fort potentiel à longue portée, bien que son recul exige un contrôle minutieux.</td>
     </tr>
     
     <tr id="weapon-codm-m13" data-name="m13" data-class="fusil d'assaut"
         data-tier-rank="3" data-rpm="900" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>M13</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=m13">M13</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>24-20</td>
-      <td>900</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Très rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>RTC Heavy Long Barrel + Large Extended Mag B + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
+      <td>24-20</td><td>900</td><td>~300 ms</td><td>Très rapide</td><td>★★★★</td><td>30</td><td class="cell-notes">RTC Heavy Long Barrel + Large Extended Mag B + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
       <td class="cell-notes">Fusil d'assaut à cadence extrêmement élevée et recul très faible, privilégiant la mobilité et les tirs de suivi rapides.</td>
     </tr>
     
     <tr id="weapon-codm-kilo-141" data-name="kilo 141" data-class="fusil d'assaut"
         data-tier-rank="4" data-rpm="680" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Kilo 141</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=kilo-141">Kilo 141</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>29-25-23</td>
-      <td>680</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~350 ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>Monolithic Suppressor + OWC Marksman + OWC Laser Tactical + Extended Mag + Granulated Grip Tape</td>
+      <td>29-25-23</td><td>680</td><td>~350 ms</td><td>Rapide</td><td>★★★★★</td><td>30</td><td class="cell-notes">Monolithic Suppressor + OWC Marksman + OWC Laser Tactical + Extended Mag + Granulated Grip Tape</td>
       <td class="cell-notes">Fusil d'assaut polyvalent de rang S combinant dégâts élevés, cadence élevée et recul très faible sur toutes les portées, de courte à longue.</td>
     </tr>
     
     <tr id="weapon-codm-swordfish" data-name="swordfish" data-class="fusil d'assaut"
         data-tier-rank="2" data-rpm="620" data-magazine="36">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Swordfish</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=swordfish">Swordfish</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>4-round burst</td>
-      <td>620</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>36</td>
-      <td>Halberd Mag + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
+      <td>4-round burst</td><td>620</td><td>~300 ms</td><td>Moyen</td><td>★★★★★</td><td>36</td><td class="cell-notes">Halberd Mag + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
       <td class="cell-notes">Fusil d'assaut de précision à rafales de 4 balles, avec une forte résistance au recul et une longue portée, récompensant un bon timing de rafale.</td>
     </tr>
     
     <tr id="weapon-codm-krig-6" data-name="krig 6" data-class="fusil d'assaut"
         data-tier-rank="3" data-rpm="650" data-magazine="50">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Krig 6</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=krig-6">Krig 6</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25-22</td>
-      <td>650</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~320 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>50</td>
-      <td>Agency Suppressor + Ranger Barrel + OWC Laser Tactical + Field Agent Grip + Extended Mag</td>
+      <td>30-25-22</td><td>650</td><td>~320 ms</td><td>Moyen</td><td>★★★★★</td><td>50</td><td class="cell-notes">Agency Suppressor + Ranger Barrel + OWC Laser Tactical + Field Agent Grip + Extended Mag</td>
       <td class="cell-notes">Fusil d'assaut de niveau compétitif avec un énorme chargeur de 50 balles, un recul très faible et un excellent contrôle à longue portée.</td>
     </tr>
     
     <tr id="weapon-codm-ffar-1" data-name="ffar 1" data-class="fusil d'assaut"
         data-tier-rank="4" data-rpm="850" data-magazine="44">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>FFAR 1</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=ffar-1">FFAR 1</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25-22</td>
-      <td>850</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280-300 ms</td>
-      <td>Très rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>44</td>
-      <td>Taskforce Barrel + Agency Suppressor + Field Agent Grip + STANAG 50 Round + Raider Stock</td>
+      <td>30-25-22</td><td>850</td><td>~280-300 ms</td><td>Très rapide</td><td>★★★</td><td>44</td><td class="cell-notes">Taskforce Barrel + Agency Suppressor + Field Agent Grip + STANAG 50 Round + Raider Stock</td>
       <td class="cell-notes">Fusil d'assaut maniable, semblable à une mitraillette, conçu pour une pression agressive à courte-moyenne portée ; désavantagé face aux fusils plus lents et plus puissants à longue portée.</td>
     </tr>
     
     <tr id="weapon-codm-grau-5-56" data-name="grau 5.56" data-class="fusil d'assaut"
         data-tier-rank="4" data-rpm="800" data-magazine="60">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Grau 5.56</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=grau-5-56">Grau 5.56</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>28-24-20</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>60</td>
-      <td>Tempus 26.4 Archangel + Monolithic Suppressor + 60 Round Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td>28-24-20</td><td>800</td><td>~300 ms</td><td>Rapide</td><td>★★★★★</td><td>60</td><td class="cell-notes">Tempus 26.4 Archangel + Monolithic Suppressor + 60 Round Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes">Fusil d'assaut au recul quasi nul, avec une excellente portée et un énorme chargeur de 60 balles — le roi de la régularité, plébiscité par les joueurs de précision sur les grandes cartes.</td>
     </tr>
     
     <tr id="weapon-codm-em2" data-name="em2" data-class="fusil d'assaut"
         data-tier-rank="3" data-rpm="600" data-magazine="35">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>EM2</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=em2">EM2</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>35-30-25</td>
-      <td>600</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>35</td>
-      <td>Agency Suppressor + Ranger Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>35-30-25</td><td>600</td><td>~300 ms</td><td>Moyen</td><td>★★★★</td><td>35</td><td class="cell-notes">Agency Suppressor + Ranger Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">Fusil d'assaut à dégâts élevés avec un recul modéré, efficace à moyenne-longue portée.</td>
     </tr>
     
     <tr id="weapon-codm-maddox" data-name="maddox" data-class="fusil d'assaut"
         data-tier-rank="3" data-rpm="850" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Maddox</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=maddox">Maddox</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25-22</td>
-      <td>850</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280-300 ms</td>
-      <td>Très rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>Echo Fire Mod + Long Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td>30-25-22</td><td>850</td><td>~280-300 ms</td><td>Très rapide</td><td>★★★</td><td>40</td><td class="cell-notes">Echo Fire Mod + Long Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes">Fusil d'assaut mobile à cadence extrêmement élevée qui sacrifie la portée pour des dégâts de suivi rapides.</td>
     </tr>
     
     <tr id="weapon-codm-hvk-30" data-name="hvk-30" data-class="fusil d'assaut"
         data-tier-rank="4" data-rpm="700+" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>HVK-30</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=hvk-30">HVK-30</a></span> </td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Très élevé</td>
-      <td>700+</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Parmi les meilleurs</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Large Caliber Ammo + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
+      <td>Très élevé</td><td>700+</td><td>Parmi les meilleurs</td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Large Caliber Ammo + OWC Marksman + OWC Laser Tactical + Granulated Grip Tape + No Stock</td>
       <td class="cell-notes">L'une des armes de la classe AR qui varie le plus selon les accessoires : équipée du canon Large Caliber, elle offre des dégâts et une cadence très élevés, devenant l'un des fusils d'assaut les plus puissants du jeu.</td>
     </tr>
     
     <tr id="weapon-codm-lapa" data-name="lapa" data-class="pm (smg)"
         data-tier-rank="3" data-rpm="800" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>LAPA</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=lapa">LAPA</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-26-22</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280 ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>Agency Suppressor + Rifled Barrel + Raider Stock + Field Agent Grip + Extended Mag</td>
+      <td>30-26-22</td><td>800</td><td>~280 ms</td><td>Rapide</td><td>★★★★</td><td>40</td><td class="cell-notes">Agency Suppressor + Rifled Barrel + Raider Stock + Field Agent Grip + Extended Mag</td>
       <td class="cell-notes">Mitraillette équilibrée avec de bons dégâts, une bonne portée et un bon contrôle — ne domine aucune catégorie en particulier, mais n'a pas non plus de faiblesse réelle.</td>
     </tr>
     
     <tr id="weapon-codm-ksp-45" data-name="ksp 45" data-class="pm (smg)"
         data-tier-rank="2" data-rpm="800" data-magazine="33">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>KSP 45</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=ksp-45">KSP 45</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Rafale</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~270 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>33</td>
-      <td>Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag + OWC Laser Tactical</td>
+      <td>Rafale</td><td>800</td><td>~270 ms</td><td>Moyen</td><td>★★★★</td><td>33</td><td class="cell-notes">Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag + OWC Laser Tactical</td>
       <td class="cell-notes">Mitraillette à rafales qui récompense un contrôle précis de la gâchette, avec une bonne résistance au recul pour sa classe.</td>
     </tr>
     
     <tr id="weapon-codm-tec-9" data-name="tec-9" data-class="pm (smg)"
         data-tier-rank="2" data-rpm="Semi/Auto (selon le mode)" data-magazine="48">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>TEC-9</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=tec-9">TEC-9</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>34-28</td>
-      <td>Semi/Auto (selon le mode)</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Variable</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>48</td>
-      <td>Full Auto Repeater + Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag</td>
+      <td>34-28</td><td>Semi/Auto (selon le mode)</td><td>Variable</td><td>Moyen</td><td>★★★★</td><td>48</td><td class="cell-notes">Full Auto Repeater + Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag</td>
       <td class="cell-notes">Mitraillette axée sur les dégâts qui se joue très différemment selon son mode de tir — en semi-automatique, elle est plus lente et précise, tandis que l'accessoire Full Auto Repeater en fait une option agressive à courte portée.</td>
     </tr>
     
     <tr id="weapon-codm-gks" data-name="gks" data-class="pm (smg)"
         data-tier-rank="2" data-rpm="600" data-magazine="36">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>GKS</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=gks">GKS</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>28-24</td>
-      <td>600</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~350 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>36</td>
-      <td>OWC Marksman Barrel + Monolithic Suppressor + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td>28-24</td><td>600</td><td>~350 ms</td><td>Moyen</td><td>★★★★★</td><td>36</td><td class="cell-notes">OWC Marksman Barrel + Monolithic Suppressor + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes">Mitraillette axée sur la précision avec la plus longue portée efficace de sa classe et un recul très faible, au prix d'une cadence plus lente.</td>
     </tr>
     
     <tr id="weapon-codm-rus-79u" data-name="rus-79u" data-class="pm (smg)"
         data-tier-rank="2" data-rpm="770" data-magazine="38">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>RUS-79U</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=rus-79u">RUS-79U</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>28-24</td>
-      <td>770</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>38</td>
-      <td>OWC Marksman Barrel + Monolithic Suppressor + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td>28-24</td><td>770</td><td>~300 ms</td><td>Rapide</td><td>★★★★</td><td>38</td><td class="cell-notes">OWC Marksman Barrel + Monolithic Suppressor + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes">Hybride fusil d'assaut/mitraillette avec une portée supérieure à la moyenne de la classe et un recul gérable, ce qui lui donne plus de flexibilité que la plupart des mitraillettes pures.</td>
     </tr>
     
     <tr id="weapon-codm-pharo" data-name="pharo" data-class="pm (smg)"
         data-tier-rank="2" data-rpm="900" data-magazine="36">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Pharo</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=pharo">Pharo</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Rafale</td>
-      <td>900</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Variable</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>36</td>
-      <td>OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
+      <td>Rafale</td><td>900</td><td>Variable</td><td>Rapide</td><td>★★★</td><td>36</td><td class="cell-notes">OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
       <td class="cell-notes">Mitraillette à rafales avec des dégâts variables et situationnels — récompense un timing de rafale précis plutôt que le tir à l'aveugle.</td>
     </tr>
     
     <tr id="weapon-codm-agr-556" data-name="agr 556" data-class="pm (smg)"
         data-tier-rank="2" data-rpm="700" data-magazine="60">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>AGR 556</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=agr-556">AGR 556</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25</td>
-      <td>700</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>60</td>
-      <td>5.56 Ammo / 60 Round Mag + Marksman Barrel + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
+      <td>30-25</td><td>700</td><td>~300 ms</td><td>Moyen</td><td>★★★★</td><td>60</td><td class="cell-notes">5.56 Ammo / 60 Round Mag + Marksman Barrel + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
       <td class="cell-notes">Hybride fusil d'assaut/mitraillette conçu autour de munitions 5.56 pour plus de portée et de capacité de chargeur, fonctionnant presque comme un fusil d'assaut léger.</td>
     </tr>
     
     <tr id="weapon-codm-msmc" data-name="msmc" data-class="pm (smg)"
         data-tier-rank="2" data-rpm="850" data-magazine="30">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>MSMC</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=msmc">MSMC</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>34-27</td>
-      <td>850</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280 ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30</td>
-      <td>Extended Mag + OWC Laser Tactical + No Stock + Granulated Grip Tape + Monolithic Suppressor</td>
+      <td>34-27</td><td>850</td><td>~280 ms</td><td>Rapide</td><td>★★</td><td>30</td><td class="cell-notes">Extended Mag + OWC Laser Tactical + No Stock + Granulated Grip Tape + Monolithic Suppressor</td>
       <td class="cell-notes">Mitraillette de rush old-school à cadence rapide et maniement vif, bien que son recul augmente rapidement lors d'un tir soutenu.</td>
     </tr>
     
     <tr id="weapon-codm-pdw-57" data-name="pdw-57" data-class="pm (smg)"
         data-tier-rank="1" data-rpm="650" data-magazine="50">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>PDW-57</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=pdw-57">PDW-57</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-C">C</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>27-22</td>
-      <td>650</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~350 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>50</td>
-      <td>Long Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
+      <td>27-22</td><td>650</td><td>~350 ms</td><td>Moyen</td><td>★★★★</td><td>50</td><td class="cell-notes">Long Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
       <td class="cell-notes">Mitraillette idéale pour les débutants avec un grand chargeur de 50 balles et un recul gérable, bien qu'elle soit en retrait par rapport à la meta actuelle des mitraillettes.</td>
     </tr>
     
     <tr id="weapon-codm-mx9" data-name="mx9" data-class="pm (smg)"
         data-tier-rank="3" data-rpm="900" data-magazine="45">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>MX9</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=mx9">MX9</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-24-20</td>
-      <td>900</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~270 ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>45</td>
-      <td>Agency Suppressor + Taskforce Barrel + Raider Stock + Field Agent Grip + Extended Mag</td>
+      <td>30-24-20</td><td>900</td><td>~270 ms</td><td>Rapide</td><td>★★★</td><td>45</td><td class="cell-notes">Agency Suppressor + Taskforce Barrel + Raider Stock + Field Agent Grip + Extended Mag</td>
       <td class="cell-notes">Mitraillette à haute mobilité conçue pour foncer sur les objectifs, avec une vitesse ADS très rapide et un excellent équilibre dégâts/mobilité, bien qu'elle perde en portée face à la CBR4 et que son recul augmente lors de tirs prolongés.</td>
     </tr>
     
     <tr id="weapon-codm-mac-10" data-name="mac-10" data-class="pm (smg)"
         data-tier-rank="3" data-rpm="1200" data-magazine="53">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>MAC-10</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=mac-10">MAC-10</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>24-21-18</td>
-      <td>1200</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~250 ms</td>
-      <td>Très rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>53</td>
-      <td>Reinforced Heavy Barrel + STANAG 53 Round Drum + Field Agent Grip + OWC Laser Tactical + No Stock</td>
+      <td>24-21-18</td><td>1200</td><td>~250 ms</td><td>Très rapide</td><td>★★</td><td>53</td><td class="cell-notes">Reinforced Heavy Barrel + STANAG 53 Round Drum + Field Agent Grip + OWC Laser Tactical + No Stock</td>
       <td class="cell-notes">Mitraillette à cadence extrêmement élevée conçue pour la pure vitesse — dévastatrice de près, mais avec un petit chargeur et un recul notable à distance.</td>
     </tr>
     
     <tr id="weapon-codm-ots-9" data-name="ots 9" data-class="pm (smg)"
         data-tier-rank="4" data-rpm="850" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>OTs 9</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=ots-9">OTs 9</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>30-25-22</td>
-      <td>850</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~280 ms</td>
-      <td>Rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag + OWC Laser Tactical</td>
+      <td>30-25-22</td><td>850</td><td>~280 ms</td><td>Rapide</td><td>★★★★</td><td>40</td><td class="cell-notes">Taskforce Barrel + Agency Suppressor + Field Agent Grip + Extended Mag + OWC Laser Tactical</td>
       <td class="cell-notes">Mitraillette de niveau compétitif alliant un TTK rapide à un excellent contrôle du recul — l'un des meilleurs choix polyvalents aux côtés de la CBR4.</td>
     </tr>
     
     <tr id="weapon-codm-cordite" data-name="cordite" data-class="pm (smg)"
         data-tier-rank="2" data-rpm="800" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Cordite</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=cordite">Cordite</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>28-24</td>
-      <td>800</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~300 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Monolithic Suppressor</td>
+      <td>28-24</td><td>800</td><td>~300 ms</td><td>Moyen</td><td>★★★</td><td>40</td><td class="cell-notes">OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Monolithic Suppressor</td>
       <td class="cell-notes">Mitraillette polyvalente de niveau moyen avec des dégâts constants et un recul modéré — solide, mais surclassée par des choix meta plus rapides.</td>
     </tr>
     
     <tr id="weapon-codm-striker-45" data-name="striker 45" data-class="pm (smg)"
         data-tier-rank="2" data-rpm="600" data-magazine="25">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Striker 45</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=striker-45">Striker 45</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>34-30-25</td>
-      <td>600</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~330 ms</td>
-      <td>Moyen</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★★★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>25</td>
-      <td>Monolithic Suppressor + Long Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td>34-30-25</td><td>600</td><td>~330 ms</td><td>Moyen</td><td>★★★★★</td><td>25</td><td class="cell-notes">Monolithic Suppressor + Long Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes">Mitraillette hybride puissante avec des dégâts par tir plus élevés que la plupart de la classe, compensés par une cadence plus lente et un petit chargeur.</td>
     </tr>
     
     <tr id="weapon-codm-fennec" data-name="fennec" data-class="pm (smg)"
         data-tier-rank="3" data-rpm="1110" data-magazine="40">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Fennec</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=fennec">Fennec</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>23-19</td>
-      <td>1110</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>~250 ms</td>
-      <td>Extrêmement rapide</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>★★</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>40</td>
-      <td>MIP Extended Light Barrel + Large Extended Mag + OWC Laser Tactical + No Stock + Granulated Grip Tape</td>
+      <td>23-19</td><td>1110</td><td>~250 ms</td><td>Extrêmement rapide</td><td>★★</td><td>40</td><td class="cell-notes">MIP Extended Light Barrel + Large Extended Mag + OWC Laser Tactical + No Stock + Granulated Grip Tape</td>
       <td class="cell-notes">Le DPS le plus élevé de la classe SMG grâce à une cadence extrême, mais ses dégâts chutent vite à distance et son petit chargeur oblige à recharger souvent — idéale sur les cartes serrées comme Shipment et Nuketown.</td>
     </tr>
     
     <tr id="weapon-codm-cx-9" data-name="cx-9" data-class="pm (smg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>CX-9</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=cx-9">CX-9</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>CX-38S Barrel + 50 Round Mag + OWC Laser Tactical + No Stock + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">CX-38S Barrel + 50 Round Mag + OWC Laser Tactical + No Stock + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-chicom" data-name="chicom" data-class="pm (smg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Chicom</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=chicom">Chicom</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>OWC Marksman Barrel + Monolithic Suppressor + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">OWC Marksman Barrel + Monolithic Suppressor + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-hg-40" data-name="hg 40" data-class="pm (smg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>HG 40</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=hg-40">HG 40</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Monolithic Suppressor + OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Monolithic Suppressor + OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-aks-74u" data-name="aks-74u" data-class="pm (smg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>AKS-74U</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=aks-74u">AKS-74U</a></span> </td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Monolithic Suppressor + Marksman Barrel + Extended Mag + Laser Tactical + Granulated Grip</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Monolithic Suppressor + Marksman Barrel + Extended Mag + Laser Tactical + Granulated Grip</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-pkm" data-name="pkm" data-class="mitrailleuse légère (lmg)"
         data-tier-rank="3" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>PKM</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=pkm">PKM</a></span> </td>
       <td>Mitrailleuse Légère (LMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Monolithic Suppressor + Heavy Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Monolithic Suppressor + Heavy Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-rpd" data-name="rpd" data-class="mitrailleuse légère (lmg)"
         data-tier-rank="3" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>RPD</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=rpd">RPD</a></span> </td>
       <td>Mitrailleuse Légère (LMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Cooling Compressor Barrel + OWC Laser Tactical + Granulated Grip Tape + Stock + FMJ</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Cooling Compressor Barrel + OWC Laser Tactical + Granulated Grip Tape + Stock + FMJ</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-bruen-mk9" data-name="bruen mk9" data-class="mitrailleuse légère (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Bruen MK9</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=bruen-mk9">Bruen MK9</a></span> </td>
       <td>Mitrailleuse Légère (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Summit Barrel + Monolithic Suppressor + No Stock + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Summit Barrel + Monolithic Suppressor + No Stock + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-s36" data-name="s36" data-class="mitrailleuse légère (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>S36</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=s36">S36</a></span> </td>
       <td>Mitrailleuse Légère (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Long Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Long Barrel + OWC Laser Tactical + Granulated Grip Tape + Extended Mag + Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-ul736" data-name="ul736" data-class="mitrailleuse légère (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>UL736</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=ul736">UL736</a></span> </td>
       <td>Mitrailleuse Légère (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Heavy Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Heavy Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape + Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-hades" data-name="hades" data-class="mitrailleuse légère (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Hades</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=hades">Hades</a></span> </td>
       <td>Mitrailleuse Légère (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Rapid Fire Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Rapid Fire Barrel + OWC Laser Tactical + Extended Mag + Granulated Grip Tape + Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-dingo" data-name="dingo" data-class="mitrailleuse légère (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Dingo</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=dingo">Dingo</a></span> </td>
       <td>Mitrailleuse Légère (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Rapid Fire Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Rapid Fire Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape + Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-mg42" data-name="mg42" data-class="mitrailleuse légère (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>MG42</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=mg42">MG42</a></span> </td>
       <td>Mitrailleuse Légère (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Reinforced Heavy Barrel + Extended Mag + Field Agent Grip + OWC Laser Tactical + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Reinforced Heavy Barrel + Extended Mag + Field Agent Grip + OWC Laser Tactical + Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-m4lmg" data-name="m4lmg" data-class="mitrailleuse légère (lmg)"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>M4LMG</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=m4lmg">M4LMG</a></span> </td>
       <td>Mitrailleuse Légère (LMG)</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Moyenne-longue portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Monolithic Suppressor + OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Monolithic Suppressor + OWC Marksman Barrel + Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-by15" data-name="by15" data-class="fusil à pompe"
         data-tier-rank="4" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>BY15</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=by15">BY15</a></span> </td>
       <td>Fusil à Pompe</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + No Stock + Sleight of Hand</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + No Stock + Sleight of Hand</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-echo" data-name="echo" data-class="fusil à pompe"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Echo</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=echo">Echo</a></span> </td>
       <td>Fusil à Pompe</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>RTC Extended Barrel + Marauder Suppressor + OWC Laser Tactical + Extended Mag + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">RTC Extended Barrel + Marauder Suppressor + OWC Laser Tactical + Extended Mag + Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-jak-12" data-name="jak-12" data-class="fusil à pompe"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>JAK-12</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=jak-12">JAK-12</a></span> </td>
       <td>Fusil à Pompe</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Marauder Suppressor + RTC Extended Barrel + Large Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Marauder Suppressor + RTC Extended Barrel + Large Extended Mag + OWC Laser Tactical + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-argus" data-name="argus" data-class="fusil à pompe"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Argus</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=argus">Argus</a></span> </td>
       <td>Fusil à Pompe</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Long Barrel + OWC Laser Tactical + No Stock + ADS attachments + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Long Barrel + OWC Laser Tactical + No Stock + ADS attachments + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-hs2126" data-name="hs2126" data-class="fusil à pompe"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>HS2126</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=hs2126">HS2126</a></span> </td>
       <td>Fusil à Pompe</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Extended Barrel + OWC Laser Tactical + Extended Mag + Stock + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Extended Barrel + OWC Laser Tactical + Extended Mag + Stock + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-shorty" data-name="shorty" data-class="fusil à pompe"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Shorty</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=shorty">Shorty</a></span> </td>
       <td>Fusil à Pompe</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + Sleight of Hand + Mobility Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Marauder Suppressor + RTC Extended Barrel + OWC Laser Tactical + Sleight of Hand + Mobility Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-renetti" data-name="renetti" data-class="arme secondaire"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Renetti</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=renetti">Renetti</a></span> </td>
       <td>Arme Secondaire</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Akimbo + MIP Light Barrel + OWC Laser Tactical + Lightweight Trigger + Extended Mag</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Akimbo + MIP Light Barrel + OWC Laser Tactical + Lightweight Trigger + Extended Mag</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-gs-50" data-name=".50 gs" data-class="arme secondaire"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>.50 GS</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=gs-50">.50 GS</a></span> </td>
       <td>Arme Secondaire</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Lightweight Trigger + OWC Laser Tactical + Extended Mag + Stippled Grip Tape + Monolithic Suppressor</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Lightweight Trigger + OWC Laser Tactical + Extended Mag + Stippled Grip Tape + Monolithic Suppressor</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-j358" data-name="j358" data-class="arme secondaire"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>J358</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=j358">J358</a></span> </td>
       <td>Arme Secondaire</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Stopping Power Reload + Lightweight Trigger + OWC Laser Tactical + Long Barrel + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Stopping Power Reload + Lightweight Trigger + OWC Laser Tactical + Long Barrel + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-mw11" data-name="mw11" data-class="arme secondaire"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>MW11</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=mw11">MW11</a></span> </td>
       <td>Arme Secondaire</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>OWC Laser Tactical + Lightweight Trigger + Extended Mag + Long Barrel + Granulated Grip Tape</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">OWC Laser Tactical + Lightweight Trigger + Extended Mag + Long Barrel + Granulated Grip Tape</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-crossbow" data-name="crossbow" data-class="arme secondaire"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Crossbow</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=crossbow">Crossbow</a></span> </td>
       <td>Arme Secondaire</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td>Courte-moyenne portée</td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Thermite Bolt + OWC Laser Tactical + Sleight of Hand + Marksman Barrel + Stock</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Thermite Bolt + OWC Laser Tactical + Sleight of Hand + Marksman Barrel + Stock</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-fhj-18" data-name="fhj-18" data-class="lanceur"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>FHJ-18</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=fhj-18">FHJ-18</a></span> </td>
       <td>Lanceur</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Launcher + Amped Perk + Fast Swap Secondary</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Launcher + Amped Perk + Fast Swap Secondary</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-smrs" data-name="smrs" data-class="lanceur"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>SMRS</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=smrs">SMRS</a></span> </td>
       <td>Lanceur</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Launcher + Amped Perk + Fast Swap Secondary</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Launcher + Amped Perk + Fast Swap Secondary</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-thumper" data-name="thumper" data-class="lanceur"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>Thumper</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=thumper">Thumper</a></span> </td>
       <td>Lanceur</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Launcher + Amped Perk + Fast Swap Secondary</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Launcher + Amped Perk + Fast Swap Secondary</td>
       <td class="cell-notes"></td>
     </tr>
     
     <tr id="weapon-codm-d13-sector" data-name="d13 sector" data-class="lanceur"
         data-tier-rank="0" data-rpm="-1" data-magazine="-1">
-      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span>D13 Sector</span> </td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=d13-sector">D13 Sector</a></span> </td>
       <td>Lanceur</td>
       <td><span class="tier-badge tier-unranked">&mdash;</span></td>
       <td></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td><span class="cell-dash">&mdash;</span></td>
-      <td>Launcher + Amped Perk + Fast Swap Secondary</td>
+      <td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td><span class="cell-dash">&mdash;</span></td><td class="cell-notes">Launcher + Amped Perk + Fast Swap Secondary</td>
       <td class="cell-notes"></td>
     </tr>
     </tbody>
@@ -2287,7 +1231,7 @@
           <thead><tr><th data-sort="name">Nom <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="class">Classe <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="tier-rank">Rang Ranked <span class="sort-icon" aria-hidden="true"></span></th><th data-sort="none">Rôle</th><th data-sort="none">Meilleur build dégâts</th></tr></thead>
           <tbody>
     <tr data-name="switchblade x9" data-class="pm (smg)" data-tier-rank="5">
-      <td class="cell-weapon"><span>Switchblade X9</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=switchblade-x9">Switchblade X9</a></span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-S">S+</span></td>
       <td>Entry/Rush</td>
@@ -2295,7 +1239,7 @@
     </tr>
     
     <tr data-name="qq9" data-class="pm (smg)" data-tier-rank="5">
-      <td class="cell-weapon"><span>QQ9</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=qq9">QQ9</a></span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-S">S+</span></td>
       <td>Aggressive</td>
@@ -2303,7 +1247,7 @@
     </tr>
     
     <tr data-name="dr-h" data-class="fusil d'assaut" data-tier-rank="5">
-      <td class="cell-weapon"><span>DR-H</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=dr-h">DR-H</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-S">S+</span></td>
       <td>Slayer</td>
@@ -2311,7 +1255,7 @@
     </tr>
     
     <tr data-name="cbr4" data-class="pm (smg)" data-tier-rank="5">
-      <td class="cell-weapon"><span>CBR4</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=cbr4">CBR4</a></span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-S">S+</span></td>
       <td>Flex</td>
@@ -2319,7 +1263,7 @@
     </tr>
     
     <tr data-name="dl q33" data-class="fusil de sniper" data-tier-rank="5">
-      <td class="cell-weapon"><span>DL Q33</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=dl-q33">DL Q33</a></span></td>
       <td>Fusil de Sniper</td>
       <td><span class="tier-badge tier-S">S+</span></td>
       <td>Quickscope</td>
@@ -2327,7 +1271,7 @@
     </tr>
     
     <tr data-name="grau 5.56" data-class="fusil d'assaut" data-tier-rank="5">
-      <td class="cell-weapon"><span>Grau 5.56</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=grau-5-56">Grau 5.56</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-S">S+</span></td>
       <td>Anchor</td>
@@ -2335,7 +1279,7 @@
     </tr>
     
     <tr data-name="hvk-30" data-class="fusil d'assaut" data-tier-rank="5">
-      <td class="cell-weapon"><span>HVK-30</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=hvk-30">HVK-30</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-S">S+</span></td>
       <td>Slayer</td>
@@ -2343,7 +1287,7 @@
     </tr>
     
     <tr data-name="bal-27" data-class="fusil d'assaut" data-tier-rank="4">
-      <td class="cell-weapon"><span>BAL-27</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=bal-27">BAL-27</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Flex / Slayer</td>
@@ -2351,7 +1295,7 @@
     </tr>
     
     <tr data-name="type 63" data-class="fusil de précision" data-tier-rank="4">
-      <td class="cell-weapon"><span>Type 63</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=type-63">Type 63</a></span></td>
       <td>Fusil de Précision</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Mid-Range Slayer</td>
@@ -2359,7 +1303,7 @@
     </tr>
     
     <tr data-name="vlk rogue" data-class="fusil à pompe" data-tier-rank="4">
-      <td class="cell-weapon"><span>VLK Rogue</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=vlk-rogue">VLK Rogue</a></span></td>
       <td>Fusil à Pompe</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Entry / Objective Breaker</td>
@@ -2367,7 +1311,7 @@
     </tr>
     
     <tr data-name="locus" data-class="fusil de sniper" data-tier-rank="4">
-      <td class="cell-weapon"><span>Locus</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=locus">Locus</a></span></td>
       <td>Fusil de Sniper</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Aggressive Sniper</td>
@@ -2375,7 +1319,7 @@
     </tr>
     
     <tr data-name="holger 26" data-class="mitrailleuse légère (lmg)" data-tier-rank="4">
-      <td class="cell-weapon"><span>Holger 26</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=holger-26">Holger 26</a></span></td>
       <td>Mitrailleuse Légère (LMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Flex LMG</td>
@@ -2383,7 +1327,7 @@
     </tr>
     
     <tr data-name="krm-262" data-class="fusil à pompe" data-tier-rank="4">
-      <td class="cell-weapon"><span>KRM-262</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=krm-262">KRM-262</a></span></td>
       <td>Fusil à Pompe</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Objective Defense</td>
@@ -2391,7 +1335,7 @@
     </tr>
     
     <tr data-name="kilo 141" data-class="fusil d'assaut" data-tier-rank="4">
-      <td class="cell-weapon"><span>Kilo 141</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=kilo-141">Kilo 141</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>All-round</td>
@@ -2399,7 +1343,7 @@
     </tr>
     
     <tr data-name="krig 6" data-class="fusil d'assaut" data-tier-rank="4">
-      <td class="cell-weapon"><span>Krig 6</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=krig-6">Krig 6</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Map Control</td>
@@ -2407,7 +1351,7 @@
     </tr>
     
     <tr data-name="ffar 1" data-class="fusil d'assaut" data-tier-rank="4">
-      <td class="cell-weapon"><span>FFAR 1</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=ffar-1">FFAR 1</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Aggressive</td>
@@ -2415,7 +1359,7 @@
     </tr>
     
     <tr data-name="ots 9" data-class="pm (smg)" data-tier-rank="4">
-      <td class="cell-weapon"><span>OTs 9</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=ots-9">OTs 9</a></span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Close-Medium</td>
@@ -2423,7 +1367,7 @@
     </tr>
     
     <tr data-name="fennec" data-class="pm (smg)" data-tier-rank="4">
-      <td class="cell-weapon"><span>Fennec</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=fennec">Fennec</a></span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>Close Range</td>
@@ -2431,7 +1375,7 @@
     </tr>
     
     <tr data-name="by15" data-class="fusil à pompe" data-tier-rank="4">
-      <td class="cell-weapon"><span>BY15</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=by15">BY15</a></span></td>
       <td>Fusil à Pompe</td>
       <td><span class="tier-badge tier-S">S</span></td>
       <td>One-Shot</td>
@@ -2439,7 +1383,7 @@
     </tr>
     
     <tr data-name="vmp" data-class="pm (smg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>VMP</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=vmp">VMP</a></span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Slayer / Flex</td>
@@ -2447,7 +1391,7 @@
     </tr>
     
     <tr data-name="xm4" data-class="fusil d'assaut" data-tier-rank="3">
-      <td class="cell-weapon"><span>XM4</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=xm4">XM4</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Slayer / Flex</td>
@@ -2455,7 +1399,7 @@
     </tr>
     
     <tr data-name="as val" data-class="fusil d'assaut" data-tier-rank="3">
-      <td class="cell-weapon"><span>AS VAL</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=as-val">AS VAL</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Small Maps</td>
@@ -2463,7 +1407,7 @@
     </tr>
     
     <tr data-name="cr-56 amax" data-class="fusil d'assaut" data-tier-rank="3">
-      <td class="cell-weapon"><span>CR-56 AMAX</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=cr-56-amax">CR-56 AMAX</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>High Damage</td>
@@ -2471,7 +1415,7 @@
     </tr>
     
     <tr data-name="ak-47" data-class="fusil d'assaut" data-tier-rank="3">
-      <td class="cell-weapon"><span>AK-47</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=ak-47">AK-47</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Long Range</td>
@@ -2479,7 +1423,7 @@
     </tr>
     
     <tr data-name="uss9" data-class="pm (smg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>USS9</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=uss9">USS9</a></span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Flex SMG</td>
@@ -2487,7 +1431,7 @@
     </tr>
     
     <tr data-name="ppsh-41" data-class="pm (smg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>PPSh-41</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=ppsh-41">PPSh-41</a></span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Hardpoint</td>
@@ -2495,7 +1439,7 @@
     </tr>
     
     <tr data-name="qxr" data-class="pm (smg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>QXR</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=qxr">QXR</a></span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Aggressive SMG</td>
@@ -2503,7 +1447,7 @@
     </tr>
     
     <tr data-name="sp-r 208" data-class="fusil de sniper" data-tier-rank="3">
-      <td class="cell-weapon"><span>SP-R 208</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=sp-r-208">SP-R 208</a></span></td>
       <td>Fusil de Sniper</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Aggressive Sniper</td>
@@ -2511,7 +1455,7 @@
     </tr>
     
     <tr data-name="peacekeeper mk2" data-class="fusil d'assaut" data-tier-rank="3">
-      <td class="cell-weapon"><span>Peacekeeper MK2</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=peacekeeper-mk2">Peacekeeper MK2</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Mechanical Players</td>
@@ -2519,7 +1463,7 @@
     </tr>
     
     <tr data-name="m13" data-class="fusil d'assaut" data-tier-rank="3">
-      <td class="cell-weapon"><span>M13</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=m13">M13</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Rush</td>
@@ -2527,7 +1471,7 @@
     </tr>
     
     <tr data-name="mx9" data-class="pm (smg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>MX9</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=mx9">MX9</a></span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Rush</td>
@@ -2535,7 +1479,7 @@
     </tr>
     
     <tr data-name="mac-10" data-class="pm (smg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>MAC-10</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=mac-10">MAC-10</a></span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Close Range</td>
@@ -2543,7 +1487,7 @@
     </tr>
     
     <tr data-name="pkm" data-class="mitrailleuse légère (lmg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>PKM</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=pkm">PKM</a></span></td>
       <td>Mitrailleuse Légère (LMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Long Range</td>
@@ -2551,7 +1495,7 @@
     </tr>
     
     <tr data-name="rpd" data-class="mitrailleuse légère (lmg)" data-tier-rank="3">
-      <td class="cell-weapon"><span>RPD</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=rpd">RPD</a></span></td>
       <td>Mitrailleuse Légère (LMG)</td>
       <td><span class="tier-badge tier-A">A</span></td>
       <td>Control</td>
@@ -2559,7 +1503,7 @@
     </tr>
     
     <tr data-name="so-14" data-class="fusil d'assaut" data-tier-rank="2">
-      <td class="cell-weapon"><span>SO-14</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=so-14">SO-14</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Anchor / Long Range</td>
@@ -2567,7 +1511,7 @@
     </tr>
     
     <tr data-name="fss hurricane" data-class="pm (smg)" data-tier-rank="2">
-      <td class="cell-weapon"><span>FSS Hurricane</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=fss-hurricane">FSS Hurricane</a></span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Rush / Entry</td>
@@ -2575,7 +1519,7 @@
     </tr>
     
     <tr data-name="oden" data-class="fusil d'assaut" data-tier-rank="2">
-      <td class="cell-weapon"><span>ODEN</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=oden">ODEN</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2583,7 +1527,7 @@
     </tr>
     
     <tr data-name="pp19 bizon" data-class="pm (smg)" data-tier-rank="2">
-      <td class="cell-weapon"><span>PP19 Bizon</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=pp19-bizon">PP19 Bizon</a></span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2591,7 +1535,7 @@
     </tr>
     
     <tr data-name="sks" data-class="fusil de précision" data-tier-rank="2">
-      <td class="cell-weapon"><span>SKS</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=sks">SKS</a></span></td>
       <td>Fusil de Précision</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Precision Slayer</td>
@@ -2599,7 +1543,7 @@
     </tr>
     
     <tr data-name="mk2" data-class="fusil de sniper" data-tier-rank="2">
-      <td class="cell-weapon"><span>MK2</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=mk2">MK2</a></span></td>
       <td>Fusil de Sniper</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td>Precision Sniper</td>
@@ -2607,7 +1551,7 @@
     </tr>
     
     <tr data-name="m4" data-class="fusil d'assaut" data-tier-rank="2">
-      <td class="cell-weapon"><span>M4</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=m4">M4</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2615,7 +1559,7 @@
     </tr>
     
     <tr data-name="kn-44" data-class="fusil d'assaut" data-tier-rank="2">
-      <td class="cell-weapon"><span>KN-44</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=kn-44">KN-44</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2623,7 +1567,7 @@
     </tr>
     
     <tr data-name="icr-1" data-class="fusil d'assaut" data-tier-rank="2">
-      <td class="cell-weapon"><span>ICR-1</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=icr-1">ICR-1</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2631,7 +1575,7 @@
     </tr>
     
     <tr data-name="bk57" data-class="fusil d'assaut" data-tier-rank="2">
-      <td class="cell-weapon"><span>BK57</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=bk57">BK57</a></span></td>
       <td>Fusil d'Assaut</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2639,7 +1583,7 @@
     </tr>
     
     <tr data-name="rus-79u" data-class="pm (smg)" data-tier-rank="2">
-      <td class="cell-weapon"><span>RUS-79U</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=rus-79u">RUS-79U</a></span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2647,7 +1591,7 @@
     </tr>
     
     <tr data-name="cordite" data-class="pm (smg)" data-tier-rank="2">
-      <td class="cell-weapon"><span>Cordite</span></td>
+      <td class="cell-weapon"><span class="weapon-icon" aria-hidden="true"></span><span><a href="/madsmobile/fr/codm/compare/?w=cordite">Cordite</a></span></td>
       <td>PM (SMG)</td>
       <td><span class="tier-badge tier-B">B</span></td>
       <td><span class="cell-dash">&mdash;</span></td>
@@ -2663,7 +1607,7 @@
     
     </section>
     <section class="teaser-section">
-      <h2>Personnages et Skins</h2>
+      <h2>Personnages</h2>
       <a class="see-all" href="/madsmobile/fr/codm/characters/">Personnages &rarr;</a>
     </section>
     <section class="teaser-section">
@@ -2687,10 +1631,8 @@
 </main>
 <footer class="site-footer">
   <p class="footer-description">MADS Mobile est une base de données vérifiée d'armes, de personnages et de classements méta pour les meilleurs jeux de tir mobiles au monde.</p>
-  <p class="footer-disclaimer">Les informations publiées sur MADS Mobile reposent sur la recherche, l'analyse et l'évaluation des données de jeu disponibles. Les mises à jour et les changements d'équilibrage peuvent modifier les statistiques et les recommandations. Si vous constatez des divergences, veuillez contacter notre équipe.</p>
-  <p>Base de données de FPS mobiles vérifiée. Données actualisées mensuellement.</p>
+  <p class="footer-disclaimer">Les informations publiées sur MADS Mobile reposent sur la recherche, l'analyse et l'évaluation des données de jeu disponibles. Les mises à jour et les changements d'équilibrage peuvent modifier les statistiques et les recommandations. Si vous constatez des divergences, veuillez contacter notre équipe. Contact: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
   <p class="footer-social"><span class="footer-social-label">Suivez-nous:</span> <a href="https://www.instagram.com/madsmobilegg/" target="_blank" rel="noopener noreferrer">Instagram</a> <a href="https://x.com/MADSmobile" target="_blank" rel="noopener noreferrer">X</a> <a href="https://www.threads.com/@madsmobilegg" target="_blank" rel="noopener noreferrer">Threads</a></p>
-  <p class="footer-contact">Contact: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
   <p class="footer-copyright">&copy; 2026 MADS Mobile &mdash; Tous droits réservés.</p>
 </footer>
 <script src="/madsmobile/assets/app.js"></script>
