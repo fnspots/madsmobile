@@ -58,7 +58,7 @@ section{margin-bottom:36px}
 .cell-dash{color:var(--muted)}
 
 .cell-weapon{display:flex;align-items:center;gap:8px;font-weight:600}
-.weapon-icon{width:28px;height:28px;border-radius:6px;background:#20262e;border:1px solid var(--line);display:inline-block;flex:none;object-fit:cover}
+.weapon-icon{width:84px;height:28px;border-radius:6px;background:#20262e;border:1px solid var(--line);display:inline-block;flex:none;object-fit:contain}
 .tier-badge{display:inline-block;min-width:22px;text-align:center;padding:2px 8px;border-radius:6px;font-weight:800;font-size:.8rem;color:#12151a}
 .tier-S{background:var(--s);color:#fff}
 .tier-A{background:var(--a)}
