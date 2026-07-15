@@ -106,9 +106,11 @@ section{margin-bottom:36px}
 .weapon-sort-buttons button{padding:6px 12px;border-radius:6px;border:1px solid var(--line);background:var(--bg2);color:var(--muted);font-size:.78rem;cursor:pointer}
 .weapon-sort-buttons button:hover{color:var(--fg);border-color:var(--accent)}.weapon-sort-buttons button.sort-active{color:var(--fg);border-color:var(--accent)}
 .weapon-card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
-.weapon-card{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:16px}
+.weapon-card{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:16px;overflow:hidden}
+.weapon-card-image{width:calc(100% + 32px);margin:-16px -16px 12px;height:158px;background:radial-gradient(circle at center, #ffffff 0%, #ffe4d9 22%, var(--accent) 78%);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.weapon-card-icon{width:88%;height:88%;object-fit:contain;filter:drop-shadow(0 6px 14px rgba(0,0,0,.35))}
+span.weapon-card-icon{width:88%;height:88%}
 .weapon-card-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
-.weapon-card-icon{width:44px;height:44px;border-radius:8px;background:#20262e;border:1px solid var(--line);flex:none;object-fit:cover}
 .weapon-card-name{font-weight:700}
 .weapon-card-line{color:var(--muted);font-size:.8rem;margin-top:2px}
 .weapon-card-notes{font-size:.85rem;margin:6px 0}
