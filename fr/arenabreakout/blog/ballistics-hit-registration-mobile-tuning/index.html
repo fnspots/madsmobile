@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arena Breakout Mobile : ajustements balistiques et détection des impacts pour le tactile | MADS Mobile</title>
+<meta name="description" content="Les derniers correctifs affinent la pénétration et les dégâts de fragmentation aux membres, corrigent les bras absorbant des tirs destinés au gilet, et…">
+<link rel="canonical" href="https://fnspots.github.io/madsmobile/fr/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="en" href="https://fnspots.github.io/madsmobile/en/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">
+<link rel="alternate" hreflang="zh" href="https://fnspots.github.io/madsmobile/zh/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">
+<link rel="alternate" hreflang="fr" href="https://fnspots.github.io/madsmobile/fr/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">
+<link rel="alternate" hreflang="it" href="https://fnspots.github.io/madsmobile/it/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">
+<link rel="alternate" hreflang="pt" href="https://fnspots.github.io/madsmobile/pt/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">
+<link rel="alternate" hreflang="hi" href="https://fnspots.github.io/madsmobile/hi/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">
+<link rel="alternate" hreflang="es" href="https://fnspots.github.io/madsmobile/es/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">
+<link rel="alternate" hreflang="x-default" href="https://fnspots.github.io/madsmobile/en/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">
+<meta property="og:title" content="Arena Breakout Mobile : ajustements balistiques et détection des impacts pour le tactile | MADS Mobile">
+<meta property="og:description" content="Les derniers correctifs affinent la pénétration et les dégâts de fragmentation aux membres, corrigent les bras absorbant des tirs destinés au gilet, et…">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fnspots.github.io/madsmobile/fr/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">
+<meta property="og:image" content="https://fnspots.github.io/madsmobile/assets/img/brand/logo.png">
+<meta property="og:site_name" content="MADS Mobile">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/madsmobile/assets/favicon.ico" sizes="any">
+<link rel="icon" href="/madsmobile/assets/favicon-16x16.png" type="image/png" sizes="16x16">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/madsmobile/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Arena Breakout Mobile : ajustements balistiques et détection des impacts pour le tactile", "datePublished": "2026-07-04", "about": "Arena Breakout", "description": "Les derniers correctifs affinent la pénétration et les dégâts de fragmentation aux membres, corrigent les bras absorbant des tirs destinés au gilet, et améliorent le tickrate serveur pour réduire les « balles fantômes »."}</script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/madsmobile/fr/"><img src="/madsmobile/assets/img/brand/logo.png" alt="MADS Mobile" class="brand-logo" width="32" height="32"><span class="brand-text">MADS Mobile</span></a>
+  <nav class="crumbs"><a href="/madsmobile/fr/">&larr; Retour à tous les jeux</a><span class="tabs">
+    <a href="/madsmobile/fr/arenabreakout/">Méta / Armes</a>
+    <span class="nav-link-disabled" aria-disabled="true">Personnages · Bientôt disponible</span>
+    
+    <a href="/madsmobile/fr/arenabreakout/blog/">Blog</a>
+    </span></nav>
+  <nav class="lang-switch" aria-label="Langue">
+    <a class="blog-nav-link" href="/madsmobile/fr/blog/">Blog</a>
+    <span class="nav-divider" aria-hidden="true"></span>
+    <a class="" href="/madsmobile/en/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">English</a><a class="" href="/madsmobile/zh/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">中文</a><a class="active" href="/madsmobile/fr/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">Français</a><a class="" href="/madsmobile/it/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">Italiano</a><a class="" href="/madsmobile/pt/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">Português</a><a class="" href="/madsmobile/hi/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">हिन्दी</a><a class="" href="/madsmobile/es/arenabreakout/blog/ballistics-hit-registration-mobile-tuning/">Español</a>
+  </nav>
+</header>
+<main>
+
+    <nav class="crumbs"><a href="/madsmobile/fr/">&larr; Retour à tous les jeux</a><span class="tabs">
+    <a href="/madsmobile/fr/arenabreakout/">Méta / Armes</a>
+    <span class="nav-link-disabled" aria-disabled="true">Personnages · Bientôt disponible</span>
+    
+    <a href="/madsmobile/fr/arenabreakout/blog/">Blog</a>
+    </span></nav>
+    <article class="blog-post">
+      <img class="post-hero-image" src="https://raw.githubusercontent.com/fnspots/madsmobile/main/MADS_images/Arena%20Breakout%20Mobile/Blog/MADS_Mobile_Arena_Breakout_Ballistics_Hit_Registration.jpg" alt="Arena Breakout Mobile : ajustements balistiques et détection des impacts pour le tactile" loading="lazy">
+      <h1>Arena Breakout Mobile : ajustements balistiques et détection des impacts pour le tactile</h1>
+      <p class="post-date">Publié: 2026-07-04</p>
+      <p class="post-body">Arena Breakout ne pardonne rien, et sur mobile, un mauvais enregistrement des tirs vous renvoie directement au lobby en ayant tout perdu. Les dernières optimisations techniques visent à affiner le comportement des munitions et les hitbox corporelles, pour que le réalisme extrême du jeu se traduise proprement sur les contrôles tactiles et les connexions mobiles. Le calcul de pénétration des balles contre le niveau d'armure a été affiné pour les impacts aux membres : les dégâts de fragmentation et la pénalité de mobilité liée à un membre détruit sont désormais calculés plus précisément en temps réel, si bien qu'un impact aux jambes avec des munitions à fragmentation produit un ralentissement immédiat mais progressif, au lieu des pics de désynchronisation qui donnaient auparavant l'impression que le personnage se figeait sur place. Les hitbox des bras en visée ont également été corrigées : ils absorbaient auparavant des tirs qui auraient logiquement dû toucher le gilet, faussant l'issue des duels ; le calcul balistique privilégie désormais la trajectoire réelle du projectile, le laissant traverser un bras pour atteindre l'armure du torse s'il conserve assez d'énergie cinétique. Comme Arena Breakout se passe presque entièrement d'assistance de visée magnétique pour préserver sa difficulté, le menu des réglages a reçu une courbe de sensibilité gyroscopique plus fine, et le tickrate des serveurs en matchmaking a été amélioré pour réduire l'effet de « balles fantômes » lors de tirs en rafale sur des cibles rapides se déplaçant latéralement.</p>
+      
+    </article>
+    
+</main>
+<footer class="site-footer">
+  <p class="footer-description">MADS Mobile est une base de données vérifiée d'armes, de personnages et de classements méta pour les meilleurs jeux de tir mobiles au monde.</p>
+  <p class="footer-disclaimer">Les informations publiées sur MADS Mobile reposent sur la recherche, l'analyse et l'évaluation des données de jeu disponibles. Les mises à jour et les changements d'équilibrage peuvent modifier les statistiques et les recommandations. Si vous constatez des divergences, veuillez contacter notre équipe. Contact: <a href="mailto:madsmobilegg@gmail.com">madsmobilegg@gmail.com</a></p>
+  <p class="footer-social"><span class="footer-social-label">Suivez-nous:</span> <a href="https://www.instagram.com/madsmobilegg/" target="_blank" rel="noopener noreferrer">Instagram</a> <a href="https://x.com/MADSmobile" target="_blank" rel="noopener noreferrer">X</a> <a href="https://www.threads.com/@madsmobilegg" target="_blank" rel="noopener noreferrer">Threads</a></p>
+  <p class="footer-copyright">&copy; 2026 MADS Mobile &mdash; Tous droits réservés.</p>
+</footer>
+<script src="/madsmobile/assets/app.js"></script>
+</body>
+</html>
