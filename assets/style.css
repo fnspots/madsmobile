@@ -112,6 +112,8 @@ section{margin-bottom:36px}
 .weapon-card-image{width:calc(100% + 32px);margin:-16px -16px 12px;height:158px;background:radial-gradient(circle at center, #ffffff 0%, #ffe4d9 22%, var(--accent) 78%);display:flex;align-items:center;justify-content:center;overflow:hidden}
 .weapon-card-icon{width:88%;height:88%;object-fit:contain;filter:drop-shadow(0 6px 14px rgba(0,0,0,.35))}
 span.weapon-card-icon{width:88%;height:88%}
+.weapon-card-icon-pending{display:flex;align-items:center;justify-content:center;text-align:center}
+.weapon-card-icon-pending .pending-label{font-size:.78rem;font-weight:600;color:rgba(0,0,0,.55);padding:0 10px}
 .weapon-card-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
 .weapon-card-name{font-weight:700}
 .weapon-card-line{color:var(--muted);font-size:.8rem;margin-top:2px}
