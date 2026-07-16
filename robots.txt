@@ -15,4 +15,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://fnspots.github.io/madsmobile/sitemap.xml
+Sitemap: https://madsmobile.com/sitemap.xml
